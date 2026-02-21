@@ -1,4 +1,4 @@
-name: Build ScriptStar Website
+name: Build Keyframe Toolbox Website
 on:
   workflow_dispatch:
   push:
