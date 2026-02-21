@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://keyframetoolbox.fcp.cafe/sitemap.xml.gz
