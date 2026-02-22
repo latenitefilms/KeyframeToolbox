@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.825082300147">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.825083031521">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=3.12.0.825082300147" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.12.0.825083031521" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.12.0.825082300147" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.12.0.825083031521" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.12.0.825082300147" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.12.0.825083031521" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -279,14 +279,14 @@
         <span>Keyframe graph basics</span>
     </h2>
 </doc-anchor-target>
+<p>Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.</p>
 <ul>
-<li>Each graph has a keyframe at the start (left) and end (right).</li>
-<li>These two keyframes cannot be removed, but they can be moved horizontally.</li>
-<li>If the playhead is over the clip, a line indicates the position of the timeline playhead in relation to the clip.</li>
-<li>The graph width maps to the clip width, while height maps to the limits shown to the right of that graph.</li>
-<li>Opacity has a fixed 0..100 range, while the other properties use defaults that should make sense.</li>
-<li>All other limits can be changed by dragging them, horizontally or vertically. Hold option as you drag to change both sides in opposite directions.</li>
-<li>Press the button between the limits to fit the graph to the current values within it, plus a small buffer.</li>
+<li><strong>These two keyframes cannot be removed</strong>, but they can be moved horizontally.</li>
+<li>If the playhead is over the clip, <strong>a line indicates the position of the timeline playhead</strong> in relation to the clip.</li>
+<li><strong>The graph width maps to the clip width</strong>, while the <strong>graph height maps to the values of the property</strong>, within the limits shown to the right of that graph.</li>
+<li><strong>Opacity has a fixed 0..100 range</strong>, while the other properties use defaults that should make sense.</li>
+<li><strong>All other limits can be changed by dragging them</strong>, horizontally or vertically. Hold <strong>option</strong> as you drag to change both sides in opposite directions.</li>
+<li><strong>Press the button between the limits to fit the graph</strong> to the current values within it, plus a small buffer.</li>
 </ul>
 <doc-anchor-target id="adding-and-moving-keyframes">
     <h2>
@@ -294,14 +294,15 @@
         <span>Adding and moving keyframes</span>
     </h2>
 </doc-anchor-target>
+<p>Keyframes can be moved and new keyframes can be added.</p>
 <ul>
-<li>Double-click on a graph line to add a linear keyframe and remember a value at a point in time.</li>
-<li>In each graph, click and drag to move a keyframe.</li>
+<li><strong>Double-click</strong> on a graph line to add a linear keyframe and remember a value at a point in time.</li>
+<li><strong>Click and drag on a keyframe</strong> to move it.</li>
 <li>During the drag, numbers will appear showing the keyfrane&#x27;s value (above) and time (below).</li>
-<li>Hold shift while moving a keyframe to lock movement to horizontal (time) or vertical (value) movement.</li>
+<li><strong>Shift-drag on a keyframe</strong> to lock movement to horizontal (time) or vertical (value) movement.</li>
 <li>If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.</li>
-<li>If shift is now held down, the keyframe will snap to this line to align with keyframes on other properties.</li>
-<li>Shift-dragging a keyframe will also snap to the line that indicates the playhead position, if present.</li>
+<li>If <strong>shift</strong> is now held down, the keyframe will snap to this line to align with keyframes on other properties.</li>
+<li><strong>Shift-dragging</strong> a keyframe will also snap to the line that indicates the playhead position, if present.</li>
 <li>Dragging a line connnecting two keyframes will move both keyframes together.</li>
 </ul>
 <doc-anchor-target id="smoothing-keyframes">
@@ -310,26 +311,26 @@
         <span>Smoothing keyframes</span>
     </h2>
 </doc-anchor-target>
+<p>Handles connected to keyframes control the graph curve that controls how one value changes into another.</p>
 <ul>
-<li>Handles connected to keyframes control the graph curve that controls how one value changes into another.</li>
-<li>Option- or command- drag on a line to add a non-linear keyframe, dragging out two symmetric handles to create a bezier curve.</li>
-<li>Option- or command-drag on a keyframe to add handles to a linear keyframe, or reset and redraw the handles on an existing non-linear keyframe.</li>
-<li>Optionally, hold shift while doing this to lock the curve to horizontal (0°).</li>
-<li>Option- or command-click on a keyframe to remove handles and reset the keyframe to linear.</li>
-<li>Option- or command-drag on a handle to split a handle pair and make it asymmetric.</li>
-<li>Shift-drag a handle to maintain its current angle and only change distance.</li>
+<li><strong>Option- or command- drag on a line</strong> to add a non-linear keyframe, dragging out two symmetric handles to create a bezier curve.</li>
+<li><strong>Option- or command-drag on a keyframe</strong> to add handles to a linear keyframe, or reset and redraw the handles on an existing non-linear keyframe.</li>
+<li>Optionally, hold <strong>shift</strong> while doing this to lock the curve to horizontal (0°).</li>
+<li><strong>Option- or command-click on a keyframe</strong> to remove handles and reset the keyframe to linear.</li>
+<li><strong>Option- or command-drag on a handle</strong> to split a handle pair and make it asymmetric.
+-** Shift-drag a handle** to maintain its current angle and only change distance.</li>
 </ul>
-<doc-anchor-target id="manipulating-keyframes-and-handles">
+<doc-anchor-target id="deleting-keyframes-and-handles">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#manipulating-keyframes-and-handles">#</doc-anchor-trigger>
-        <span>Manipulating keyframes and handles</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#deleting-keyframes-and-handles">#</doc-anchor-trigger>
+        <span>Deleting keyframes and handles</span>
     </h2>
 </doc-anchor-target>
+<p>Keyframes and handles can be deleted.</p>
 <ul>
-<li>Control-click on a keyframe to delete it.</li>
-<li>Control-click on a handle to delete it. This operation only deletes one handle in a symmetric pair.</li>
-<li>Control-click on the first keyframe to copy the value of the second keyframe.</li>
-<li>Control-click on the last keyframe to copy the value of second-last keyframe.</li>
+<li><strong>Control-click on a keyframe</strong> to delete it.</li>
+<li><strong>Control-click on a handle</strong> to delete it. This operation only deletes one handle in a symmetric pair.</li>
+<li>Though the first and last keyframes cannot be deleted, you can <strong>control-click on the first keyframe</strong> to duplicate the value of the second keyframe, or <strong>control-click on the last keyframe</strong> to duplicate the value of second-last keyframe.</li>
 </ul>
 <doc-anchor-target id="working-with-precision">
     <h2>
@@ -337,11 +338,12 @@
         <span>Working with precision</span>
     </h2>
 </doc-anchor-target>
+<p>Exact numbers can be entered for keyframes and handles.</p>
 <ul>
-<li>Double-click on any keyframe to see its value (above) and time (below).</li>
-<li>Double-click on any handle to see its distance (above) and angle (below).</li>
-<li>In both these cases, type in new values to change them, then approve the change by presing Return or Enter, or cancel the change with Escape.</li>
-<li>Altenatively, use up and down arrows to change the values by 1, and shift-up and shift-down arrows to change the values by 10.</li>
+<li><strong>Double-click on any keyframe</strong> to see its value (above) and time (below).</li>
+<li><strong>Double-click on any handle</strong> to see its distance (above) and angle (below).</li>
+<li>In both these cases, <strong>type in new values</strong> to change them, then approve the change by presing <code translate="no" v-pre>Return</code> or <code translate="no" v-pre>Enter</code>, or cancel the change with <code translate="no" v-pre>Escape</code>.</li>
+<li>Altenatively, use <strong>up and down arrows</strong> to change the values by 1, and <strong>shift-up and shift-down arrows</strong> to change the values by 10.</li>
 </ul>
 <doc-anchor-target id="selecting-moving-and-scaling-keyframes">
     <h2>
@@ -349,13 +351,15 @@
         <span>Selecting, moving and scaling keyframes</span>
     </h2>
 </doc-anchor-target>
+<p>Multiple keyframes can be selected and manipulated.</p>
 <ul>
-<li>Clicking a keyframe selects it. Shift-clicking additional keyframes selects additional keyframes.</li>
-<li>Drag from empty space to create a selection marquee that encloses keyframes to select them.</li>
-<li>Hold shift as you drag a selection box to select additional keyframes.</li>
+<li><strong>Clicking a keyframe selects it</strong>.</li>
+<li><strong>Shift-clicking</strong> additional keyframes selects additional keyframes.</li>
+<li><strong>Drag from empty space across one or more keyframes</strong> to create a selection marquee that selectes enclosed keyframes.</li>
+<li><strong>Hold shift as you drag a selection box</strong> to select additional keyframes.</li>
 <li>When multiple keyframes have been selected, a bounding box appears that allows the selected keyframes to be scaled and/or moved.</li>
-<li>Drag one of the selected keyframes to move them, or drag the sides or corners of the bounding box to move the contained keyframes proportionally to one another.</li>
-<li>Hold shift as you drag one of multiple selected keyframes to constrain to horizontal or vertical movement.</li>
+<li><strong>Drag one of the selected keyframes</strong> to move them, or <strong>drag the sides or corners of the bounding box</strong> to move the contained keyframes proportionally to one another.</li>
+<li><strong>Hold shift as you drag</strong> one of multiple selected keyframes to constrain to horizontal or vertical movement.</li>
 <li>Click elsewhere in the graph to dismiss the bounding box.</li>
 </ul>
 <doc-anchor-target id="using-the-reset-button-and-the-graph-menu">
@@ -364,10 +368,10 @@
         <span>Using the reset button and the graph menu</span>
     </h2>
 </doc-anchor-target>
+<p>Next to each graph&#x27;s name is a reset button and a menu that enables some advanced features.</p>
 <ul>
-<li>Each property graph can be reset using the reset button next to its name.</li>
-<li>Shift-click any graph&#x27;s reset button to reset all graphs at once.</li>
-<li>The menu next to the each graph&#x27;s reset button enables some advanced features.</li>
+<li><strong>Each property graph can be reset</strong> using the reset button next to its name.</li>
+<li><strong>Shift-click any graph&#x27;s reset button</strong> to reset all graphs at once.</li>
 <li>Use <code translate="no" v-pre>Copy Graph</code> to copy all keyframes from a graph.</li>
 <li>Use <code translate="no" v-pre>Paste Graph</code> to paste copied keyframes from one graph into another graph.</li>
 <li>When a single keyframe is selected, use <code translate="no" v-pre>Copy Value from Previous Keyframe</code> or <code translate="no" v-pre>Copy Value from Next Keyframe</code> to do that.</li>
