@@ -1,6 +1,6 @@
 # How To Use
 
-This is a work in progress, and may change. However, here's a list of commands you can use to control keyframes and handles. Right now, option and command do the same thing, to hopefully make it easier for users of both Motion and After Effects to work with handles. This may change.
+This is a work in progress, and may change. However, here's a list of commands you can use to control keyframes and handles. Right now, option and command are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. This may change.
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
 
