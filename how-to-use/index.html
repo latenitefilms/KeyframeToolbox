@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.825081941752">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.12.0.825082133495">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.12.0">
@@ -31,11 +31,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=3.12.0.825081941752" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.12.0.825082133495" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.12.0.825081941752" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.12.0.825082133495" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.12.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.12.0.825081941752" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.12.0.825082133495" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -281,6 +281,7 @@
 <ul>
 <li>Each graph has a keyframe at the start (left) and end (right).</li>
 <li>These two keyframes cannot be removed, but they can be moved horizontally.</li>
+<li>If the playhead is over the clip, a line indicates the position of the timeline playhead in relation to the clip.</li>
 <li>The graph width maps to the clip width, while height maps to the limits shown to the right of that graph.</li>
 <li>Opacity has a fixed 0..100 range, while the other properties use defaults that should make sense.</li>
 <li>All other limits can be changed by dragging them, horizontally or vertically. Hold option as you drag to change both sides in opposite directions.</li>
@@ -295,10 +296,11 @@
 <ul>
 <li>Double-click on a graph line to add a linear keyframe and remember a value at a point in time.</li>
 <li>In each graph, click and drag to move a keyframe.</li>
-<li>During the drag, values will appear showing the keyfrane&#x27;s value and time.</li>
+<li>During the drag, numbers will appear showing the keyfrane&#x27;s value (above) and time (below).</li>
 <li>Hold shift while moving a keyframe to lock movement to horizontal (time) or vertical (value) movement.</li>
-<li>If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear. If shift is held down, the keyframe will snap to this line and align with the other keyframe.</li>
-<li>Additionally, a line indicates the position of the playhead in relation to the clip. Shift-dragging a keyframe will also snap to this line.</li>
+<li>If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.</li>
+<li>If shift is now held down, the keyframe will snap to this line to align with keyframes on other properties.</li>
+<li>Shift-dragging a keyframe will also snap to the line that indicates the playhead position, if present.</li>
 <li>Dragging a line connnecting two keyframes will move both keyframes together.</li>
 </ul>
 <doc-anchor-target id="smoothing-keyframes">
