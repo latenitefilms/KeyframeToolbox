@@ -4,6 +4,8 @@ This is a work in progress, and may change. However, here's a list of commands y
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
 
+In the current effect, graphs include Opacity, Position X, Position Y, Scale, Rotation, and Blur.
+
 ## Keyframe graph basics
 
 - Each graph has a keyframe at the start (left) and end (right).
