@@ -7,8 +7,7 @@ favicon: static/favicon.ico
 
 branding:
   title: Keyframe Toolbox
-  logo: static/logo-dark.png
-  logoDark: static/logo-light.png
+  logo: static/logo.png
 
 links:
 
