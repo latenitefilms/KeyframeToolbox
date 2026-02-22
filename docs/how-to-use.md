@@ -8,6 +8,7 @@ In the Keyframe Toolbox interface you'll see several graphs, each one controllin
 
 - Each graph has a keyframe at the start (left) and end (right).
 - These two keyframes cannot be removed, but they can be moved horizontally.
+- If the playhead is over the clip, a line indicates the position of the timeline playhead in relation to the clip. 
 - The graph width maps to the clip width, while height maps to the limits shown to the right of that graph.
 - Opacity has a fixed 0..100 range, while the other properties use defaults that should make sense.
 - All other limits can be changed by dragging them, horizontally or vertically. Hold option as you drag to change both sides in opposite directions.
@@ -17,10 +18,11 @@ In the Keyframe Toolbox interface you'll see several graphs, each one controllin
 
 - Double-click on a graph line to add a linear keyframe and remember a value at a point in time.
 - In each graph, click and drag to move a keyframe.
-- During the drag, values will appear showing the keyfrane's value and time.
+- During the drag, numbers will appear showing the keyfrane's value (above) and time (below).
 - Hold shift while moving a keyframe to lock movement to horizontal (time) or vertical (value) movement.
-- If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear. If shift is held down, the keyframe will snap to this line and align with the other keyframe.
-- Additionally, a line indicates the position of the playhead in relation to the clip. Shift-dragging a keyframe will also snap to this line.
+- If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.
+- If shift is now held down, the keyframe will snap to this line to align with keyframes on other properties.
+- Shift-dragging a keyframe will also snap to the line that indicates the playhead position, if present.
 - Dragging a line connnecting two keyframes will move both keyframes together.
 
 ## Smoothing keyframes
