@@ -1,5 +1,10 @@
 # How To Use
 
+!!!tip Now in public beta! 🥳
+KeyFrame Toolbox is currently in public beta.\
+You can download it on Apple's [TestFlight](https://testflight.apple.com/join/YwzGCS6a).
+!!!
+
 This is a work in progress, and may change. However, here's a list of commands you can use to control keyframes and handles. Right now, option and command are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. This may change. Currently, control-clicking and right-clicking are not the same — right clicking doesn't do anything.
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
@@ -11,7 +16,7 @@ In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Sc
 Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.
 
 - **These two keyframes cannot be removed**, but they can be moved horizontally.
-- If the playhead is over the clip, **a line indicates the position of the timeline playhead** in relation to the clip. 
+- If the playhead is over the clip, **a line indicates the position of the timeline playhead** in relation to the clip.
 - **The graph width maps to the clip width**, while the **graph height maps to the values of the property**, within the limits shown to the right of that graph.
 - **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense.
 - **All other limits can be changed by dragging them**, horizontally or vertically. Hold **option** as you drag to change both sides in opposite directions.
@@ -75,7 +80,7 @@ Multiple keyframes can be selected and manipulated.
 
 Next to each graph's name is a reset button and a menu that enables some advanced features.
 
-- **Each property graph can be reset** using the reset button next to its name. 
+- **Each property graph can be reset** using the reset button next to its name.
 - **Shift-click any graph's reset button** to reset all graphs at once.
 - Use `Copy Graph` to copy all keyframes from a graph.
 - Use `Paste Graph` to paste copied keyframes from one graph into another graph.
