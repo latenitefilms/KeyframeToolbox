@@ -11,6 +11,8 @@ In the Keyframe Toolbox interface you'll see several graphs, each one controllin
 
 In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation`, and `Blur`.
 
+---
+
 ## Keyframe graph basics
 
 Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.
@@ -21,6 +23,8 @@ Each graph starts with has a keyframe at the start (left) and end (right) and a 
 - **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense.
 - **All other limits can be changed by dragging them**, horizontally or vertically. Hold **option** as you drag to change both sides in opposite directions.
 - **Press the button between the limits to fit the graph** to the current values within it, plus a small buffer.
+
+---
 
 ## Adding and moving keyframes
 
@@ -35,6 +39,8 @@ Keyframes can be moved and new keyframes can be added.
 - **Shift-dragging** a keyframe will also snap to the line that indicates the playhead position, if present.
 - Dragging a line connnecting two keyframes will move both keyframes together.
 
+---
+
 ## Smoothing keyframes
 
 Handles connected to keyframes control the graph curve that controls how one value changes into another.
@@ -44,7 +50,9 @@ Handles connected to keyframes control the graph curve that controls how one val
 - Optionally, hold **shift** while doing this to lock the curve to horizontal (0°).
 - **Option- or command-click on a keyframe** to remove handles and reset the keyframe to linear.
 - **Option- or command-drag on a handle** to split a handle pair and make it asymmetric.
--** Shift-drag a handle** to maintain its current angle and only change distance.
+- **Shift-drag a handle** to maintain its current angle and only change distance.
+
+---
 
 ## Deleting keyframes and handles
 
@@ -54,6 +62,8 @@ Keyframes and handles can be deleted.
 - **Control-click on a handle** to delete it. This operation only deletes one handle in a symmetric pair.
 - Though the first and last keyframes cannot be deleted, you can **control-click on the first keyframe** to duplicate the value of the second keyframe, or **control-click on the last keyframe** to duplicate the value of second-last keyframe.
 
+---
+
 ## Working with precision
 
 Exact numbers can be entered for keyframes and handles.
@@ -62,6 +72,8 @@ Exact numbers can be entered for keyframes and handles.
 - **Double-click on any handle** to see its distance (above) and angle (below).
 - In both these cases, **type in new values** to change them, then approve the change by presing `Return` or `Enter`, or cancel the change with `Escape`.
 - Altenatively, use **up and down arrows** to change the values by 1, and **shift-up and shift-down arrows** to change the values by 10.
+
+---
 
 ## Selecting, moving and scaling keyframes
 
@@ -76,6 +88,8 @@ Multiple keyframes can be selected and manipulated.
 - **Hold shift as you drag** one of multiple selected keyframes to constrain to horizontal or vertical movement.
 - Click elsewhere in the graph to dismiss the bounding box.
 
+---
+
 ## Using the reset button and the graph menu
 
 Next to each graph's name is a reset button and a menu that enables some advanced features.
@@ -87,6 +101,8 @@ Next to each graph's name is a reset button and a menu that enables some advance
 - When a single keyframe is selected, use `Copy Value from Previous Keyframe` or `Copy Value from Next Keyframe` to do that.
 - If no keyframes are selected, an entire graph can be reversed in time by choosing `Time-Reverse Graph`.
 - If two or more contiguous keyframes are selected, they can be reversed by choosing `Time-Reverse Keyframes`.
+
+---
 
 ## Settings
 
