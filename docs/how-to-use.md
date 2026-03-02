@@ -49,12 +49,23 @@ In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Sc
 
 Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.
 
-- **These two keyframes cannot be removed**, but they can be moved horizontally.
-- If the playhead is over the clip, **a line indicates the position of the timeline playhead** in relation to the clip.
+- **These two keyframes cannot be removed**, but they can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
+- If the playhead is over the clip, **a line indicates the position of the timeline playhead** in relation to the clip. Note that this line can sometimes be shown in the wrong place due to limitations in communication with FCP that we're trying to resolve. However, it will update to the correct position as you move keyframes around.
 - **The graph width maps to the clip width**, while the **graph height maps to the values of the property**, within the limits shown to the right of that graph.
 - **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense.
 - **All other limits can be changed by dragging them**, horizontally or vertically. Hold **option** as you drag to change both sides in opposite directions.
 - **Press the button between the limits to fit the graph** to the current values within it, plus a small buffer.
+
+---
+
+## Scaling the graphs
+Each graph can be shown in one of three sizes.
+
+- To the right of the reset button next to each graph's name, you'll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.
+- When Minimized, the "Fit" button within the upper and lower limits is not available. All other controls work in any size.
+- **`SHIFT` click on a toggle** to force all graphs to that size.
+- **`OPTION` click on a toggle** to set that graph to the chosen size and minimize all other graphs.
+-- As it's not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.
 
 ---
 
@@ -68,7 +79,7 @@ Keyframes can be moved and new keyframes can be added.
 - **`SHIFT` drag on a keyframe** to lock movement to horizontal (time) or vertical (value) movement.
 - If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.
 - If `SHIFT` is now held down, the keyframe will snap to this line to align with keyframes on other properties.
-- **`SHIFT` dragging** a keyframe will also snap to the line that indicates the playhead position, if present.
+- **Dragging a keyframe and adding `SHIFT` while dragging** will also snap to the line that indicates the playhead position, if present. This allows you to snap a keyframe to the current playhead position.
 - Dragging a line connnecting two keyframes will move both keyframes together.
 
 ---
@@ -91,6 +102,7 @@ Handles connected to keyframes control the graph curve that controls how one val
 Keyframes and handles can be deleted.
 
 - **`CONTROL` click on a keyframe** to delete it.
+- **Right-click on a keyframe** and select Delete Keyframe to delete it.
 - **`CONTROL` click on a handle** to delete it. This operation only deletes one handle in a symmetric pair.
 - Though the first and last keyframes cannot be deleted, you can **`CONTROL` click on the first keyframe** to duplicate the value of the second keyframe, or **`CONTROL` click on the last keyframe** to duplicate the value of second-last keyframe.
 
@@ -103,7 +115,7 @@ Exact numbers can be entered for keyframes and handles.
 - **Double-click on any keyframe** to see its value (above) and time (below).
 - **Double-click on any handle** to see its distance (above) and angle (below).
 - In both these cases, **type in new values** to change them, then approve the change by presing `RETURN` or `ENTER`, or cancel the change with `ESCAPE`.
-- Altenatively, use **up and down arrows** to change the values by 1, and **`SHIFT` up and `SHIFT` down arrows** to change the values by 10.
+- Alternatively, use **up and down arrows** to change the values by 1, and **`SHIFT` up and `SHIFT` down arrows** to change the values by 10.
 
 ---
 
@@ -118,25 +130,86 @@ Multiple keyframes can be selected and manipulated.
 - When multiple keyframes have been selected, a bounding box appears that allows the selected keyframes to be scaled and/or moved.
 - **Drag one of the selected keyframes** to move them, or **drag the sides or corners of the bounding box** to move the contained keyframes proportionally to one another.
 - **Hold `SHIFT` as you drag** one of multiple selected keyframes to constrain to horizontal or vertical movement.
+- Right-click to delete, copy, or perform other operations on multiple keyframes at once.
 - Click elsewhere in the graph to dismiss the bounding box.
 
 ---
 
 ## Using the reset button and the graph menu
 
-Next to each graph's name is a reset button and a menu that enables some advanced features.
+Next to each graph's name are some buttons and a menu that enables some advanced features. 
 
 - **Each property graph can be reset** using the reset button next to its name.
 - **`SHIFT` click any graph's reset button** to reset all graphs at once.
-- Use `Copy Graph` to copy all keyframes from a graph.
-- Use `Paste Graph` to paste copied keyframes from one graph into another graph.
-- When a single keyframe is selected, use `Copy Value from Previous Keyframe` or `Copy Value from Next Keyframe` to do that.
-- If no keyframes are selected, an entire graph can be reversed in time by choosing `Time-Reverse Graph`.
-- If two or more contiguous keyframes are selected, they can be reversed by choosing `Time-Reverse Keyframes`.
+- Right-clicking on a graph is another way to display a graph's menu.
+- Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.
+- Use `Copy Keyframes` or `Copy Graph` to copy keyframes from a graph.
+- Use `Paste Keyframes` or `Paste Graph` to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.
+- When a single keyframe is selected, use `Clone Value from Previous Keyframe` or `Clone Value from Next Keyframe` to simulate a Hold keyframe.
+- If no keyframes are selected, an entire graph can be reversed in time by choosing `Time-Reverse Graph`, or flipped vertically by choosing `Invert Graph`.
+- If two or more contiguous keyframes are selected, they can be reversed by choosing `Time-Reverse Keyframes`, or flipped vertically by choosing `Invert Keyframes`.
+
+---
+
+
+## Presets
+
+To create flexible keyframe graphs based on common animation patterns.
+
+- The graph menu and the right-click menu both contain a **Presets** submenu.
+- Adjusting the controls on these presets allows many common animation patterns to be created, including bounces, fades up and down moves in and out, and more.
+- If no keyframes are selected, these presets replace the entire graph.
+- If two or more contiguous keyframes are selected, these presets apply within the selected keyframe range, using the width and height of the selected keyframes. This allows more than one preset to be used in the same graph.
+- The presets include:
+  - Oscillate Graph (Oscillate Keyframes)
+  - Min, Max
+  - Min, Max, Min
+  - Min, Max, Hold, Min
+  - Min, Max, Hold, Max
+- In each case, when a preset is chosen, several draggable options appear underneath each graph.
+- These options can be repeatedly changed until a keyframe is moved or the clip selection in FCP is changed.
+- In **Oscillate**, the options are:
+  - Upper limit
+  - Lower limit
+  - Wavelength
+  - Phase
+  - Bend (handle strength)
+  - Decay
+  - Oscillate mode, which cycles through a Sine wave, a bounce down and a bounce up
+- In **Min, Max** and **Min, Max, Min**, the options are:
+  - Upper limit
+  - Lower limit
+  - Bend (handle strength)
+  - A toggle to flip the graph, reversing Min and Max
+- In **Min, Max, Hold, Min** and **Min, Max Max, Hold, Max**, the options are:
+  - Upper limit
+  - Lower limit
+  - Bend (handle strength)
+  - Hold duration (in %)
+  - A toggle to flip the graph, reversing Min and Max
+- Remember that when a single keyframe is adjusted, the controls disappear. Simply select the keyframes and choose the preset once more.
+
+---
+
+## Before the first keyframe and after the last keyframe
+
+To control a virtual keyframe graph beyond the first and last keyframes.
+
+- If the first keyframe is moved to the right or the last keyframe is moved to the left, a dashed line displays the _virtual_ graph beyond the bounds of the _real_ graph.
+- This strategy allows an animation to be repeated many times, if desired.
+- By default, this graph is a constant line, but the graph and right-click menus allow two other options to be chosen:
+  - Ping-pong, which repeats the real graph backwards, then forwards, repeating while time permits.
+  - Progressive, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.
+
 
 ---
 
 ## Settings
 
-- This doesn't do anything yet.
-- We do plan to add presets.
+Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
+
+- Click the Settings button to pop up a panel with two sections: Properties and Temporal Blur.
+- Properties allows some graphs to be hidden by unchecking them. At least one graph must remain active.
+-- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.
+-- Currently, all graphs are activated by default.
+- Temporal Blur, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
