@@ -110,6 +110,8 @@ Handles connected to keyframes control the graph curve that controls how one val
 
 Keyframes and handles can be deleted.
 
+![](/static/delete-keyframes.png)
+
 - **`CONTROL`-click on a keyframe** to delete it.
 - **Right-click on a keyframe** and select Delete Keyframe to delete it.
 - **`CONTROL`-click on a handle** to delete it. This operation only deletes one handle in a symmetric pair.
@@ -127,7 +129,7 @@ Exact numbers can be entered for keyframes and handles.
 - **Double-click on any keyframe** to see its value (above) and time (below).
 - **Double-click on any handle** to see its distance (above) and angle (below).
 - In both these cases, **type in new values** to change them, then approve the change by presing `RETURN` or `ENTER`, or cancel the change with `ESCAPE`.
-- Alternatively, use **up and down arrows** to change the values by 1, and **`SHIFT` up and `SHIFT` down arrows** to change the values by 10.
+- Alternatively, use **up and down arrows** to change the values by 1, and **`SHIFT`-up and `SHIFT`-down arrows** to change the values by 10.
 
 ---
 
