@@ -78,7 +78,7 @@ Each graph can be shown in one of three sizes.
 
 Keyframes can be moved and new keyframes can be added.
 
-![](/static/dragging-snapping.png)
+![](/static/dragging-snapping-crop.png)
 
 - **Double-click** on a graph line to add a linear keyframe and remember a value at a point in time.
 - **Click and drag on a keyframe** to move it.
