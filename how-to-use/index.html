@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825774820652">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825774902003">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.1.0.825774820652" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.825774902003" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825774820652" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825774902003" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825774820652" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825774902003" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -319,7 +319,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </p>
 <p>You can then apply Keyframe Toolbox to any effect and away you go!</p>
 <p><figure class="content-center">
-    <img src="../static/keyframe-toolbox-01.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../static/keyframe-toolbox-hero.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -344,6 +344,11 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.</p>
+<p><figure class="content-center">
+    <img src="../static/basic-graph.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li><strong>These two keyframes cannot be removed</strong>, but they can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.</li>
 <li>If the playhead is over the clip, <strong>a line indicates the position of the timeline playhead</strong> in relation to the clip. Note that this line can sometimes be shown in the wrong place due to limitations in communication with FCP that we&#x27;re trying to resolve. However, it will update to the correct position as you move keyframes around.</li>
@@ -360,11 +365,16 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Each graph can be shown in one of three sizes.</p>
+<p><figure class="content-center">
+    <img src="/static/graph-sizes.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li>To the right of the reset button next to each graph&#x27;s name, you&#x27;ll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.</li>
 <li>When Minimized, the &quot;Fit&quot; button within the upper and lower limits is not available. All other controls work in any size.</li>
-<li><strong><code translate="no" v-pre>SHIFT</code> click on a toggle</strong> to force all graphs to that size.</li>
-<li><strong><code translate="no" v-pre>OPTION</code> click on a toggle</strong> to set that graph to the chosen size and minimize all other graphs.
+<li><strong><code translate="no" v-pre>SHIFT</code>-click on a toggle</strong> to force all graphs to that size.</li>
+<li><strong><code translate="no" v-pre>OPTION</code>-click on a toggle</strong> to set that graph to the chosen size and minimize all other graphs.
 -- As it&#x27;s not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.</li>
 </ul>
 <hr>
@@ -375,11 +385,16 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Keyframes can be moved and new keyframes can be added.</p>
+<p><figure class="content-center">
+    <img src="../static/dragging-snapping.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li><strong>Double-click</strong> on a graph line to add a linear keyframe and remember a value at a point in time.</li>
 <li><strong>Click and drag on a keyframe</strong> to move it.</li>
 <li>During the drag, numbers will appear showing the keyfrane&#x27;s value (above) and time (below).</li>
-<li><strong><code translate="no" v-pre>SHIFT</code> drag on a keyframe</strong> to lock movement to horizontal (time) or vertical (value) movement.</li>
+<li><strong><code translate="no" v-pre>SHIFT</code>-drag on a keyframe</strong> to lock movement to horizontal (time) or vertical (value) movement.</li>
 <li>If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.</li>
 <li>If <code translate="no" v-pre>SHIFT</code> is now held down, the keyframe will snap to this line to align with keyframes on other properties.</li>
 <li><strong>Dragging a keyframe and adding <code translate="no" v-pre>SHIFT</code> while dragging</strong> will also snap to the line that indicates the playhead position, if present. This allows you to snap a keyframe to the current playhead position.</li>
@@ -393,12 +408,17 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Handles connected to keyframes control the graph curve that controls how one value changes into another.</p>
+<p><figure class="content-center">
+    <img src="../static/simple-keyframes.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
-<li><strong><code translate="no" v-pre>OPTION</code> or <code translate="no" v-pre>COMMAND</code> drag on a line</strong> to add a non-linear keyframe, dragging out two symmetric handles to create a bezier curve.</li>
-<li><strong><code translate="no" v-pre>OPTION</code> or <code translate="no" v-pre>COMMAND</code> drag on a keyframe</strong> to add handles to a linear keyframe, or reset and redraw the handles on an existing non-linear keyframe.</li>
+<li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-drag on a line</strong> to add a non-linear keyframe, dragging out two symmetric handles to create a bezier curve.</li>
+<li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-drag on a keyframe</strong> to add handles to a linear keyframe, or reset and redraw the handles on an existing non-linear keyframe.</li>
 <li>Optionally, hold <code translate="no" v-pre>SHIFT</code> while doing this to lock the curve to horizontal (0°).</li>
-<li><strong><code translate="no" v-pre>OPTION</code> or <code translate="no" v-pre>COMMAND</code> click on a keyframe</strong> to remove handles and reset the keyframe to linear.</li>
-<li><strong><code translate="no" v-pre>OPTION</code> or <code translate="no" v-pre>COMMAND</code> drag on a handle</strong> to split a handle pair and make it asymmetric.</li>
+<li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-click on a keyframe</strong> to remove handles and reset the keyframe to linear.</li>
+<li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-drag on a handle</strong> to split a handle pair and make it asymmetric.</li>
 <li><strong><code translate="no" v-pre>SHIFT</code> drag a handle</strong> to maintain its current angle and only change distance.</li>
 </ul>
 <hr>
@@ -410,9 +430,10 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </doc-anchor-target>
 <p>Keyframes and handles can be deleted.</p>
 <ul>
-<li><strong><code translate="no" v-pre>CONTROL</code> click on a keyframe</strong> to delete it.</li>
+<li><strong><code translate="no" v-pre>CONTROL</code>-click on a keyframe</strong> to delete it.</li>
 <li><strong>Right-click on a keyframe</strong> and select Delete Keyframe to delete it.</li>
-<li><strong><code translate="no" v-pre>CONTROL</code> click on a handle</strong> to delete it. This operation only deletes one handle in a symmetric pair.</li>
+<li><strong><code translate="no" v-pre>CONTROL</code>-click on a handle</strong> to delete it. This operation only deletes one handle in a symmetric pair.</li>
+<li><strong><code translate="no" v-pre>COMNMAND</code>- or <code translate="no" v-pre>OPTION</code>-click on a keyframe</strong> to delete its handles and convert it to linear.</li>
 <li>Though the first and last keyframes cannot be deleted, you can <strong><code translate="no" v-pre>CONTROL</code> click on the first keyframe</strong> to duplicate the value of the second keyframe, or <strong><code translate="no" v-pre>CONTROL</code> click on the last keyframe</strong> to duplicate the value of second-last keyframe.</li>
 </ul>
 <hr>
@@ -423,6 +444,11 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Exact numbers can be entered for keyframes and handles.</p>
+<p><figure class="content-center">
+    <img src="../static/precision.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li><strong>Double-click on any keyframe</strong> to see its value (above) and time (below).</li>
 <li><strong>Double-click on any handle</strong> to see its distance (above) and angle (below).</li>
@@ -437,9 +463,14 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Multiple keyframes can be selected and manipulated.</p>
+<p><figure class="content-center">
+    <img src="../static/multi-select.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li><strong>Clicking a keyframe selects it</strong>.</li>
-<li><strong><code translate="no" v-pre>SHIFT</code> clicking</strong> additional keyframes selects additional keyframes.</li>
+<li><strong><code translate="no" v-pre>SHIFT</code>-clicking</strong> additional keyframes selects additional keyframes.</li>
 <li><strong>Drag from empty space across one or more keyframes</strong> to create a selection marquee that selectes enclosed keyframes.</li>
 <li><strong>Hold <code translate="no" v-pre>SHIFT</code> as you drag a selection box</strong> to select additional keyframes.</li>
 <li>When multiple keyframes have been selected, a bounding box appears that allows the selected keyframes to be scaled and/or moved.</li>
@@ -456,10 +487,16 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Next to each graph&#x27;s name are some buttons and a menu that enables some advanced features.</p>
+<p><figure class="content-center">
+    <img src="../static/opacity-graph-menu.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li><strong>Each property graph can be reset</strong> using the reset button next to its name.</li>
-<li><strong><code translate="no" v-pre>SHIFT</code> click any graph&#x27;s reset button</strong> to reset all graphs at once.</li>
-<li>Right-clicking on a graph is another way to display a graph&#x27;s menu.</li>
+<li><strong><code translate="no" v-pre>SHIFT</code>-click any graph&#x27;s reset button</strong> to reset all graphs at once.</li>
+<li>Three toggle buttons, discussed earlier, control the size of each graph.</li>
+<li>The graph menu can be accessed by the menu to the right of the toggle buttons, or by right-clicking on the graph.</li>
 <li>Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.</li>
 <li>Use <code translate="no" v-pre>Copy Keyframes</code> or <code translate="no" v-pre>Copy Graph</code> to copy keyframes from a graph.</li>
 <li>Use <code translate="no" v-pre>Paste Keyframes</code> or <code translate="no" v-pre>Paste Graph</code> to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.</li>
@@ -475,11 +512,23 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>To create flexible keyframe graphs based on common animation patterns.</p>
+<p><figure class="content-center">
+    <img src="../static/opacity-expanded-graph.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li>The graph menu and the right-click menu both contain a <strong>Presets</strong> submenu.</li>
 <li>Adjusting the controls on these presets allows many common animation patterns to be created, including bounces, fades up and down moves in and out, and more.</li>
 <li>If no keyframes are selected, these presets replace the entire graph.</li>
 <li>If two or more contiguous keyframes are selected, these presets apply within the selected keyframe range, using the width and height of the selected keyframes. This allows more than one preset to be used in the same graph.</li>
+</ul>
+<p><figure class="content-center">
+    <img src="../static/pos-y-oscillate-bounce.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<ul>
 <li>The presets include:
 <ul>
 <li>Oscillate Graph (Oscillate Keyframes)</li>
@@ -491,10 +540,17 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </li>
 <li>In each case, when a preset is chosen, several draggable options appear underneath each graph.</li>
 <li>These options can be repeatedly changed until a keyframe is moved or the clip selection in FCP is changed.</li>
+</ul>
+<p><figure class="content-center">
+    <img src="/static/pos-x-oscillate-graph" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<ul>
 <li>In <strong>Oscillate</strong>, the options are:
 <ul>
 <li>Upper limit</li>
-<li>Lower limit</li>
+<li>Lower limit (hold <code translate="no" v-pre>SHIFT</code> while dragging to change these quickly, but they cannot exceed current graph limits)</li>
 <li>Wavelength</li>
 <li>Phase</li>
 <li>Bend (handle strength)</li>
@@ -529,6 +585,11 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>To control a virtual keyframe graph beyond the first and last keyframes.</p>
+<p><figure class="content-center">
+    <img src="/static/before-first-after-last" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li>If the first keyframe is moved to the right or the last keyframe is moved to the left, a dashed line displays the <em>virtual</em> graph beyond the bounds of the <em>real</em> graph.</li>
 <li>This strategy allows an animation to be repeated many times, if desired.</li>
@@ -547,6 +608,11 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
     </h2>
 </doc-anchor-target>
 <p>Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.</p>
+<p><figure class="content-center">
+    <img src="/static/settings" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <ul>
 <li>Click the Settings button to pop up a panel with two sections: Properties and Temporal Blur.</li>
 <li>Properties allows some graphs to be hidden by unchecking them. At least one graph must remain active.-- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.-- Currently, all graphs are activated by default.</li>
