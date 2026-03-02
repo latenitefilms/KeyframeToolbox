@@ -113,7 +113,7 @@ Keyframes and handles can be deleted.
 ![](/static/delete-keyframes.png)
 
 - **`CONTROL`-click on a keyframe** to delete it.
-- **Right-click on a keyframe** and select Delete Keyframe to delete it.
+- **Right-click on one or more selected keyframe and select Delete Keyframe(s)** to delete them.
 - **`CONTROL`-click on a handle** to delete it. This operation only deletes one handle in a symmetric pair.
 - **`COMNMAND`- or `OPTION`-click on a keyframe** to delete its handles and convert it to linear.
 - Though the first and last keyframes cannot be deleted, you can **`CONTROL` click on the first keyframe** to duplicate the value of the second keyframe, or **`CONTROL` click on the last keyframe** to duplicate the value of second-last keyframe.
