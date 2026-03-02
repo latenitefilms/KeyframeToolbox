@@ -239,8 +239,8 @@ Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
 
 ![](/static/settings.png)
 
-- Click the Settings button to pop up a panel with two sections: Properties and Temporal Blur.
-- Properties allows some graphs to be hidden by unchecking them. At least one graph must remain active.
+- Click the Settings button to pop up a panel with two sections: **Properties** and **Temporal Blur**.
+- **Properties** allows some graphs to be hidden by unchecking them. At least one graph must remain active.
 -- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.
 -- Currently, all graphs are activated by default.
-- Temporal Blur, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
+- **Temporal Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
