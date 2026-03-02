@@ -193,7 +193,7 @@ To create flexible keyframe graphs based on common animation patterns.
 - In each case, when a preset is chosen, several draggable options appear underneath each graph.
 - These options can be repeatedly changed until a keyframe is moved or the clip selection in FCP is changed.
 
-![](/static/pos-x-oscillate-graph)
+![](/static/pos-x-oscillate-graph.png)
 
 - In **Oscillate**, the options are:
   - Upper limit
@@ -222,7 +222,7 @@ To create flexible keyframe graphs based on common animation patterns.
 
 To control a virtual keyframe graph beyond the first and last keyframes.
 
-![](/static/before-first-after-last)
+![](/static/before-first-after-last.png)
 
 - If the first keyframe is moved to the right or the last keyframe is moved to the left, a dashed line displays the _virtual_ graph beyond the bounds of the _real_ graph.
 - This strategy allows an animation to be repeated many times, if desired.
@@ -237,7 +237,7 @@ To control a virtual keyframe graph beyond the first and last keyframes.
 
 Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
 
-![](/static/settings)
+![](/static/settings.png)
 
 - Click the Settings button to pop up a panel with two sections: Properties and Temporal Blur.
 - Properties allows some graphs to be hidden by unchecking them. At least one graph must remain active.
