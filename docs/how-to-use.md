@@ -31,7 +31,7 @@ You'll find Keyframe Toolbox in the **Effects Browser**.
 
 You can then apply Keyframe Toolbox to any effect and away you go!
 
-![](/static/keyframe-toolbox-01.png)
+![](/static/keyframe-toolbox-hero.png)
 
 ---
 
@@ -50,6 +50,8 @@ In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Sc
 
 Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.
 
+![](/static/basic-graph.png)
+
 - **These two keyframes cannot be removed**, but they can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
 - If the playhead is over the clip, **a line indicates the position of the timeline playhead** in relation to the clip. Note that this line can sometimes be shown in the wrong place due to limitations in communication with FCP that we're trying to resolve. However, it will update to the correct position as you move keyframes around.
 - **The graph width maps to the clip width**, while the **graph height maps to the values of the property**, within the limits shown to the right of that graph.
@@ -62,10 +64,12 @@ Each graph starts with has a keyframe at the start (left) and end (right) and a 
 ## Scaling the graphs
 Each graph can be shown in one of three sizes.
 
+![](/static/graph-sizes.png)
+
 - To the right of the reset button next to each graph's name, you'll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.
 - When Minimized, the "Fit" button within the upper and lower limits is not available. All other controls work in any size.
-- **`SHIFT` click on a toggle** to force all graphs to that size.
-- **`OPTION` click on a toggle** to set that graph to the chosen size and minimize all other graphs.
+- **`SHIFT`-click on a toggle** to force all graphs to that size.
+- **`OPTION`-click on a toggle** to set that graph to the chosen size and minimize all other graphs.
 -- As it's not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.
 
 ---
@@ -74,10 +78,12 @@ Each graph can be shown in one of three sizes.
 
 Keyframes can be moved and new keyframes can be added.
 
+![](/static/dragging-snapping.png)
+
 - **Double-click** on a graph line to add a linear keyframe and remember a value at a point in time.
 - **Click and drag on a keyframe** to move it.
 - During the drag, numbers will appear showing the keyfrane's value (above) and time (below).
-- **`SHIFT` drag on a keyframe** to lock movement to horizontal (time) or vertical (value) movement.
+- **`SHIFT`-drag on a keyframe** to lock movement to horizontal (time) or vertical (value) movement.
 - If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.
 - If `SHIFT` is now held down, the keyframe will snap to this line to align with keyframes on other properties.
 - **Dragging a keyframe and adding `SHIFT` while dragging** will also snap to the line that indicates the playhead position, if present. This allows you to snap a keyframe to the current playhead position.
@@ -89,11 +95,13 @@ Keyframes can be moved and new keyframes can be added.
 
 Handles connected to keyframes control the graph curve that controls how one value changes into another.
 
-- **`OPTION` or `COMMAND` drag on a line** to add a non-linear keyframe, dragging out two symmetric handles to create a bezier curve.
-- **`OPTION` or `COMMAND` drag on a keyframe** to add handles to a linear keyframe, or reset and redraw the handles on an existing non-linear keyframe.
+![](/static/simple-keyframes.png)
+
+- **`OPTION`- or `COMMAND`-drag on a line** to add a non-linear keyframe, dragging out two symmetric handles to create a bezier curve.
+- **`OPTION`- or `COMMAND`-drag on a keyframe** to add handles to a linear keyframe, or reset and redraw the handles on an existing non-linear keyframe.
 - Optionally, hold `SHIFT` while doing this to lock the curve to horizontal (0°).
-- **`OPTION` or `COMMAND` click on a keyframe** to remove handles and reset the keyframe to linear.
-- **`OPTION` or `COMMAND` drag on a handle** to split a handle pair and make it asymmetric.
+- **`OPTION`- or `COMMAND`-click on a keyframe** to remove handles and reset the keyframe to linear.
+- **`OPTION`- or `COMMAND`-drag on a handle** to split a handle pair and make it asymmetric.
 - **`SHIFT` drag a handle** to maintain its current angle and only change distance.
 
 ---
@@ -102,9 +110,10 @@ Handles connected to keyframes control the graph curve that controls how one val
 
 Keyframes and handles can be deleted.
 
-- **`CONTROL` click on a keyframe** to delete it.
+- **`CONTROL`-click on a keyframe** to delete it.
 - **Right-click on a keyframe** and select Delete Keyframe to delete it.
-- **`CONTROL` click on a handle** to delete it. This operation only deletes one handle in a symmetric pair.
+- **`CONTROL`-click on a handle** to delete it. This operation only deletes one handle in a symmetric pair.
+- **`COMNMAND`- or `OPTION`-click on a keyframe** to delete its handles and convert it to linear.
 - Though the first and last keyframes cannot be deleted, you can **`CONTROL` click on the first keyframe** to duplicate the value of the second keyframe, or **`CONTROL` click on the last keyframe** to duplicate the value of second-last keyframe.
 
 ---
@@ -112,6 +121,8 @@ Keyframes and handles can be deleted.
 ## Working with precision
 
 Exact numbers can be entered for keyframes and handles.
+
+![](/static/precision.png)
 
 - **Double-click on any keyframe** to see its value (above) and time (below).
 - **Double-click on any handle** to see its distance (above) and angle (below).
@@ -124,8 +135,10 @@ Exact numbers can be entered for keyframes and handles.
 
 Multiple keyframes can be selected and manipulated.
 
+![](/static/multi-select.png)
+
 - **Clicking a keyframe selects it**.
-- **`SHIFT` clicking** additional keyframes selects additional keyframes.
+- **`SHIFT`-clicking** additional keyframes selects additional keyframes.
 - **Drag from empty space across one or more keyframes** to create a selection marquee that selectes enclosed keyframes.
 - **Hold `SHIFT` as you drag a selection box** to select additional keyframes.
 - When multiple keyframes have been selected, a bounding box appears that allows the selected keyframes to be scaled and/or moved.
@@ -140,9 +153,12 @@ Multiple keyframes can be selected and manipulated.
 
 Next to each graph's name are some buttons and a menu that enables some advanced features. 
 
+![](/static/opacity-graph-menu.png)
+
 - **Each property graph can be reset** using the reset button next to its name.
-- **`SHIFT` click any graph's reset button** to reset all graphs at once.
-- Right-clicking on a graph is another way to display a graph's menu.
+- **`SHIFT`-click any graph's reset button** to reset all graphs at once.
+- Three toggle buttons, discussed earlier, control the size of each graph.
+- The graph menu can be accessed by the menu to the right of the toggle buttons, or by right-clicking on the graph.
 - Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.
 - Use `Copy Keyframes` or `Copy Graph` to copy keyframes from a graph.
 - Use `Paste Keyframes` or `Paste Graph` to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.
@@ -157,10 +173,15 @@ Next to each graph's name are some buttons and a menu that enables some advanced
 
 To create flexible keyframe graphs based on common animation patterns.
 
+![](/static/opacity-expanded-graph.png)
+
 - The graph menu and the right-click menu both contain a **Presets** submenu.
 - Adjusting the controls on these presets allows many common animation patterns to be created, including bounces, fades up and down moves in and out, and more.
 - If no keyframes are selected, these presets replace the entire graph.
 - If two or more contiguous keyframes are selected, these presets apply within the selected keyframe range, using the width and height of the selected keyframes. This allows more than one preset to be used in the same graph.
+
+![](/static/pos-y-oscillate-bounce.png)
+
 - The presets include:
   - Oscillate Graph (Oscillate Keyframes)
   - Min, Max
@@ -169,9 +190,12 @@ To create flexible keyframe graphs based on common animation patterns.
   - Min, Max, Hold, Max
 - In each case, when a preset is chosen, several draggable options appear underneath each graph.
 - These options can be repeatedly changed until a keyframe is moved or the clip selection in FCP is changed.
+
+![](/static/pos-x-oscillate-graph)
+
 - In **Oscillate**, the options are:
   - Upper limit
-  - Lower limit
+  - Lower limit (hold `SHIFT` while dragging to change these quickly, but they cannot exceed current graph limits)
   - Wavelength
   - Phase
   - Bend (handle strength)
@@ -196,6 +220,8 @@ To create flexible keyframe graphs based on common animation patterns.
 
 To control a virtual keyframe graph beyond the first and last keyframes.
 
+![](/static/before-first-after-last)
+
 - If the first keyframe is moved to the right or the last keyframe is moved to the left, a dashed line displays the _virtual_ graph beyond the bounds of the _real_ graph.
 - This strategy allows an animation to be repeated many times, if desired.
 - By default, this graph is a constant line, but the graph and right-click menus allow two other options to be chosen:
@@ -208,6 +234,8 @@ To control a virtual keyframe graph beyond the first and last keyframes.
 ## Settings
 
 Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
+
+![](/static/settings)
 
 - Click the Settings button to pop up a panel with two sections: Properties and Temporal Blur.
 - Properties allows some graphs to be hidden by unchecking them. At least one graph must remain active.
