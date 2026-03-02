@@ -41,8 +41,9 @@ This is a work in progress, and may change. However, here's a list of commands y
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
 
-In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation`, and `Blur`.
-
+In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`,and `Blur`.
+ - (Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)
+ 
 ---
 
 ## Keyframe graph basics
@@ -198,8 +199,8 @@ To control a virtual keyframe graph beyond the first and last keyframes.
 - If the first keyframe is moved to the right or the last keyframe is moved to the left, a dashed line displays the _virtual_ graph beyond the bounds of the _real_ graph.
 - This strategy allows an animation to be repeated many times, if desired.
 - By default, this graph is a constant line, but the graph and right-click menus allow two other options to be chosen:
-  - Ping-pong, which repeats the real graph backwards, then forwards, repeating while time permits.
-  - Progressive, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.
+  - **Ping-Pong**, which repeats the real graph backwards, then forwards, repeating while time permits.
+  - **Progressive**, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.
 
 
 ---
