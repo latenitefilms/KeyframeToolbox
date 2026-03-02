@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825772146405">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825772472726">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.1.0.825772146405" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.825772472726" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825772146405" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825772472726" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825772146405" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825772472726" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -332,7 +332,10 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </doc-anchor-target>
 <p>This is a work in progress, and may change. However, here&#x27;s a list of commands you can use to control keyframes and handles. Right now, option and command are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. This may change. Currently, control-clicking and right-clicking are not the same — right clicking doesn&#x27;t do anything.</p>
 <p>In the Keyframe Toolbox interface you&#x27;ll see several graphs, each one controlling a separate parameter.</p>
-<p>In the current effect, graphs include <code translate="no" v-pre>Opacity</code>, <code translate="no" v-pre>Position X</code>, <code translate="no" v-pre>Position Y</code>, <code translate="no" v-pre>Scale</code>, <code translate="no" v-pre>Rotation</code>, and <code translate="no" v-pre>Blur</code>.</p>
+<p>In the current effect, graphs include <code translate="no" v-pre>Opacity</code>, <code translate="no" v-pre>Position X</code>, <code translate="no" v-pre>Position Y</code>, <code translate="no" v-pre>Scale</code>, <code translate="no" v-pre>Rotation Z</code>, <code translate="no" v-pre>Rotation X</code>, <code translate="no" v-pre>Rotation Y</code>,and <code translate="no" v-pre>Blur</code>.</p>
+<ul>
+<li>(Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)</li>
+</ul>
 <hr>
 <doc-anchor-target id="keyframe-graph-basics">
     <h2>
@@ -531,8 +534,8 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>This strategy allows an animation to be repeated many times, if desired.</li>
 <li>By default, this graph is a constant line, but the graph and right-click menus allow two other options to be chosen:
 <ul>
-<li>Ping-pong, which repeats the real graph backwards, then forwards, repeating while time permits.</li>
-<li>Progressive, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.</li>
+<li><strong>Ping-Pong</strong>, which repeats the real graph backwards, then forwards, repeating while time permits.</li>
+<li><strong>Progressive</strong>, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.</li>
 </ul>
 </li>
 </ul>
