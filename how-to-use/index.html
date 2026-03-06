@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.825779472740">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826076531368">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.1.0.825779472740" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.826076531368" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.825779472740" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826076531368" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.825779472740" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826076531368" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -336,6 +336,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <ul>
 <li>(Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)</li>
 </ul>
+<p>Tooltips are present, so if you hover over an icon, menu or graph item, you&#x27;ll be told what modifier keys do in that particular context.</p>
 <hr>
 <doc-anchor-target id="keyframe-graph-basics">
     <h2>
@@ -350,11 +351,13 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </figure>
 </p>
 <ul>
-<li><strong>These two keyframes cannot be removed</strong>, but they can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.</li>
-<li>If the playhead is over the clip, <strong>a line briefly indicates the position of the timeline playhead</strong> in relation to the clip. Note that this line can sometimes be shown in the wrong place due to limitations in communication with FCP that we&#x27;re trying to resolve, and as a result we&#x27;ve made the line fade out quite quickly. However, the line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead (hold <code translate="no" v-pre>SHIFT</code> for this feature).</li>
+<li>At least two keyframes must remain in the graph, so the first and last keyframes cannot be deleted until other keyframes are added.</li>
+<li>However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.</li>
+<li>If the playhead is over the clip, <strong>a line briefly indicates the position of the timeline playhead</strong> in relation to the clip. The line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead.</li>
+<li>As you drag a keyframe, hold <code translate="no" v-pre>SHIFT</code> to enable snapping to the playhead.</li>
 <li><strong>The graph width maps to the clip width</strong>, while the <strong>graph height maps to the values of the property</strong>, within the limits shown to the right of that graph.</li>
-<li><strong>Opacity has a fixed 0..100 range</strong>, while the other properties use defaults that should make sense.</li>
-<li><strong>All other limits can be changed by dragging them</strong>, horizontally or vertically. Hold <strong>option</strong> as you drag to change both sides in opposite directions.</li>
+<li><strong>Opacity has a fixed 0..100 range</strong>, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.</li>
+<li><strong>All other limits can be changed by dragging them</strong>, horizontally or vertically. Hold <code translate="no" v-pre>OPTION</code> as you drag to change both sides in opposite directions.</li>
 <li><strong>Press the button between the limits to fit the graph</strong> to the current values within it, plus a small buffer.</li>
 </ul>
 <hr>
@@ -439,7 +442,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong>Right-click on one or more selected keyframe and select Delete Keyframe(s)</strong> to delete them.</li>
 <li><strong><code translate="no" v-pre>CONTROL</code>-click on a handle</strong> to delete it. This operation only deletes one handle in a symmetric pair.</li>
 <li><strong><code translate="no" v-pre>COMNMAND</code>- or <code translate="no" v-pre>OPTION</code>-click on a keyframe</strong> to delete its handles and convert it to linear.</li>
-<li>Though the first and last keyframes cannot be deleted, you can <strong><code translate="no" v-pre>CONTROL</code> click on the first keyframe</strong> to duplicate the value of the second keyframe, or <strong><code translate="no" v-pre>CONTROL</code> click on the last keyframe</strong> to duplicate the value of second-last keyframe.</li>
+<li>The first and last keyframes can be deleted just like other keyframes, but at least two keyframes must remain — there must be a first and a last keyframe.</li>
 </ul>
 <hr>
 <doc-anchor-target id="working-with-precision">
@@ -508,6 +511,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>If two or more contiguous keyframes are selected, they can be reversed by choosing <code translate="no" v-pre>Time-Reverse Keyframes</code>, or flipped vertically by choosing <code translate="no" v-pre>Invert Keyframes</code>.</li>
 <li>Use <code translate="no" v-pre>Copy Keyframes</code> or <code translate="no" v-pre>Copy Graph</code> to copy keyframes from a graph.</li>
 <li>Use <code translate="no" v-pre>Paste Keyframes</code> or <code translate="no" v-pre>Paste Graph</code> to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.</li>
+<li><code translate="no" v-pre>Clone Value from Previous Keyframe</code> and <code translate="no" v-pre>Clone Value from Next Keyframe</code> change the value of the selected keyframe to a the value or a neighbouring keyframe.</li>
 <li><strong>Presets</strong> and <strong>Before First Keyframe and After Last Keyframe</strong> are discussed in the following sections.</li>
 </ul>
 <hr>
@@ -544,7 +548,17 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>Min, Max, Hold, Max</li>
 </ul>
 </li>
-<li>In each case, when a preset is chosen, several draggable options appear underneath each graph.</li>
+<li>In each case, when a preset is chosen, several draggable options appear underneath each graph, including some of:
+<ul>
+<li>Upper limit</li>
+<li>Lower limit</li>
+<li>Bend (handle size)</li>
+<li>Wavelength</li>
+<li>Phase</li>
+<li>Decay</li>
+<li>Graph type or Flip — use this to make a preset work in the opposite way, so <em>Min, Max</em> becomes <em>Max, Min</em>.</li>
+</ul>
+</li>
 <li>These options can be repeatedly changed until a keyframe is moved or the clip selection in FCP is changed.</li>
 </ul>
 <p><figure class="content-center">
@@ -605,6 +619,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong>Progressive</strong>, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.</li>
 </ul>
 </li>
+<li>You can create new keyframes on the <em>virtual</em> graph in the standard ways.</li>
 </ul>
 <hr>
 <doc-anchor-target id="settings">
@@ -622,7 +637,8 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <ul>
 <li>Click the Settings button to pop up a panel with two sections: <strong>Properties</strong> and <strong>Temporal Blur</strong>.</li>
 <li><strong>Properties</strong> allows some graphs to be hidden by unchecking them. At least one graph must remain active.-- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.-- Currently, all graphs are activated by default.</li>
-<li><strong>Temporal Blur</strong>, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.</li>
+<li><strong>Timing Mode</strong>, which allows:-- <code translate="no" v-pre>Relative Timing (graph maps to clip)</code> which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.-- <code translate="no" v-pre>Absolute Timing (graph maps to time)</code> which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.</li>
+<li><strong>Motion Blur</strong>, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.</li>
 </ul>
 
                 
