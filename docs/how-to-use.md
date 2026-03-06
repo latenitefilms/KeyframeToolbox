@@ -43,6 +43,8 @@ In the Keyframe Toolbox interface you'll see several graphs, each one controllin
 
 In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`,and `Blur`.
  - (Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)
+
+Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context.
  
 ---
 
@@ -52,11 +54,13 @@ Each graph starts with has a keyframe at the start (left) and end (right) and a 
 
 ![](/static/basic-graph.png)
 
-- **These two keyframes cannot be removed**, but they can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
-- If the playhead is over the clip, **a line briefly indicates the position of the timeline playhead** in relation to the clip. Note that this line can sometimes be shown in the wrong place due to limitations in communication with FCP that we're trying to resolve, and as a result we've made the line fade out quite quickly. However, the line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead (hold `SHIFT` for this feature).
+- At least two keyframes must remain in the graph, so the first and last keyframes cannot be deleted until other keyframes are added.
+- However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
+- If the playhead is over the clip, **a line briefly indicates the position of the timeline playhead** in relation to the clip. The line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead.
+- As you drag a keyframe, hold `SHIFT` to enable snapping to the playhead.
 - **The graph width maps to the clip width**, while the **graph height maps to the values of the property**, within the limits shown to the right of that graph.
-- **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense.
-- **All other limits can be changed by dragging them**, horizontally or vertically. Hold **option** as you drag to change both sides in opposite directions.
+- **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.
+- **All other limits can be changed by dragging them**, horizontally or vertically. Hold `OPTION` as you drag to change both sides in opposite directions.
 - **Press the button between the limits to fit the graph** to the current values within it, plus a small buffer.
 
 ---
@@ -116,7 +120,7 @@ Keyframes and handles can be deleted.
 - **Right-click on one or more selected keyframe and select Delete Keyframe(s)** to delete them.
 - **`CONTROL`-click on a handle** to delete it. This operation only deletes one handle in a symmetric pair.
 - **`COMNMAND`- or `OPTION`-click on a keyframe** to delete its handles and convert it to linear.
-- Though the first and last keyframes cannot be deleted, you can **`CONTROL` click on the first keyframe** to duplicate the value of the second keyframe, or **`CONTROL` click on the last keyframe** to duplicate the value of second-last keyframe.
+- The first and last keyframes can be deleted just like other keyframes, but at least two keyframes must remain — there must be a first and a last keyframe.
 
 ---
 
@@ -167,6 +171,8 @@ Next to each graph's name are some buttons and a menu that enables some advanced
 - If two or more contiguous keyframes are selected, they can be reversed by choosing `Time-Reverse Keyframes`, or flipped vertically by choosing `Invert Keyframes`.
 - Use `Copy Keyframes` or `Copy Graph` to copy keyframes from a graph.
 - Use `Paste Keyframes` or `Paste Graph` to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.
+- `Clone Value from Previous Keyframe` and `Clone Value from Next Keyframe` change the value of the selected keyframe to a the value or a neighbouring keyframe. 
+
 - **Presets** and **Before First Keyframe and After Last Keyframe** are discussed in the following sections.
 ---
 
@@ -190,7 +196,14 @@ To create flexible keyframe graphs based on common animation patterns.
   - Min, Max, Min
   - Min, Max, Hold, Min
   - Min, Max, Hold, Max
-- In each case, when a preset is chosen, several draggable options appear underneath each graph.
+- In each case, when a preset is chosen, several draggable options appear underneath each graph, including some of:
+  - Upper limit
+  - Lower limit
+  - Bend (handle size)
+  - Wavelength
+  - Phase
+  - Decay
+  - Graph type or Flip — use this to make a preset work in the opposite way, so _Min, Max_ becomes _Max, Min_.
 - These options can be repeatedly changed until a keyframe is moved or the clip selection in FCP is changed.
 
 ![](/static/pos-x-oscillate-graph.png)
@@ -229,6 +242,7 @@ To control a virtual keyframe graph beyond the first and last keyframes.
 - By default, this graph is a constant line, but the graph and right-click menus allow two other options to be chosen:
   - **Ping-Pong**, which repeats the real graph backwards, then forwards, repeating while time permits.
   - **Progressive**, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.
+- You can create new keyframes on the _virtual_ graph in the standard ways.
 
 
 ---
@@ -243,4 +257,7 @@ Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
 - **Properties** allows some graphs to be hidden by unchecking them. At least one graph must remain active.
 -- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.
 -- Currently, all graphs are activated by default.
-- **Temporal Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
+- **Timing Mode**, which allows:
+-- `Relative Timing (graph maps to clip)` which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.
+-- `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
+- **Motion Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
