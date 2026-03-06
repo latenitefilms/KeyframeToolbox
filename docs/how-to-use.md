@@ -37,14 +37,32 @@ You can then apply Keyframe Toolbox to any effect and away you go!
 
 ## Using Keyframe Toolbox
 
-This is a work in progress, and may change. However, here's a list of commands you can use to control keyframes and handles. Right now, option and command are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. This may change. Currently, control-clicking and right-clicking are not the same — right clicking doesn't do anything.
+This effect is built to let you use familiar beziér keyframes and handles to control common properties in Final Cut Pro. 
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
 
 In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`,and `Blur`.
  - (Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)
 
-Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context.
+Because Final Cut Pro captures keys before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context. 
+
+Right now, Option and Command are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. Shift is a constraining modifier, as usual, and Control-clicking a keyframe or handle deletes it, while right-clicking pops up a menu. (If you don't have the normal right-click behavior set up on your pointing device, you can use the menu above each graph instead of right-clicking.)
+
+---
+
+## An important note about still images and aspect ratios
+
+If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.
+
+However, there's a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they've been applied to, they are limited to the size of the frame the image takes up. It's not possible to move an image outside that area — it just clips off at the original border. Setting Spatial Conform to Fill does solve this problem, but can cause quality issues, as it can mean the image is scaled down and then scaled back up in some contexts.
+
+To deal with this, the standard workflow for many animation plug-ins based on effects is to place each element in a compound clip, and that works here too. You can select any smaller elements and place them in a compound clip before applying Keyframe Toolbox. However, this can introduce some complexity around the sizing of compound clips and also timing.
+
+As a better solution, we've added a feature to pad any still image with extra space, making it the same aspect ratio as the timeline the effect is placed in. This means you won't need to change Spatial Conform before applying Keyframe Toolbox, and you won't hit any scaling quality problems.
+
+To use it, you'll need to have applied Keyframe Toolbox to a clip in your timeline — even on a temporary clip. With that in place, drag an image from the Browser to the logo at the top of the effect. (This image will need to be in the same Event as your current Project, due to how FCP works.)
+
+Keyframe Toolbox will then send the new image back to a new event called "images with padding". The new image also has its new resolution as part of its name. You can now add this image to your timeline instead of your original image.
  
 ---
 
