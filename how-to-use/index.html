@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826155531497">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826156062056">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.1.0.826155531497" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.826156062056" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826155531497" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826156062056" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826155531497" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826156062056" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -345,7 +345,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
         <span>An important note about still images and aspect ratios</span>
     </h2>
 </doc-anchor-target>
-<p>If you&#x27;re working with regular video clips in the same aspect ratio as your canvas, you won&#x27;t have any problems. You also probably won&#x27;t have any problems if you&#x27;re working in a different aspect ratio, and have set Spatial Conform to Fill.</p>
+<p>If you&#x27;re working with regular video clips in the same aspect ratio as your canvas, you won&#x27;t have any problems. You also probably won&#x27;t have any problems if you&#x27;re working in a different aspect ratio, and have set Spatial Conform to Fill. If that&#x27;s your plan, skip straight to the next section!</p>
 <p>However, there&#x27;s a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they&#x27;ve been applied to, they are limited to the size of the frame the image takes up. It&#x27;s not possible to move an image outside that area — it just clips off at the original border. Setting Spatial Conform to Fill does solve this problem, but can cause quality issues, as it can mean the image is scaled down and then scaled back up in some contexts.</p>
 <p>To deal with this, the standard workflow for many animation plug-ins based on effects is to place each element in a compound clip, and that works here too. You can select any smaller elements and place them in a compound clip before applying Keyframe Toolbox. However, this can introduce some complexity around the sizing of compound clips and also timing.</p>
 <p>As a better solution, we&#x27;ve added a feature to pad any still image with extra space, making it the same aspect ratio as the timeline the effect is placed in. This means you won&#x27;t need to change Spatial Conform before applying Keyframe Toolbox, and you won&#x27;t hit any scaling quality problems.</p>
@@ -653,6 +653,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong>Properties</strong> allows some graphs to be hidden by unchecking them. At least one graph must remain active.-- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.-- Currently, all graphs are activated by default.</li>
 <li><strong>Timing Mode</strong>, which allows:-- <code translate="no" v-pre>Relative Timing (graph maps to clip)</code> which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.-- <code translate="no" v-pre>Absolute Timing (graph maps to time)</code> which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.</li>
 <li><strong>Motion Blur</strong>, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.</li>
+<li><strong>Help</strong>, which includes a global setting to disable tooltips, if they&#x27;re bothering you.</li>
 </ul>
 
                 
