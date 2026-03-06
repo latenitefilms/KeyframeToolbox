@@ -52,7 +52,7 @@ Right now, Option and Command are equivalent, to hopefully make it easier for us
 
 ## An important note about still images and aspect ratios
 
-If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.
+If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill. If that's your plan, skip straight to the next section!
 
 However, there's a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they've been applied to, they are limited to the size of the frame the image takes up. It's not possible to move an image outside that area — it just clips off at the original border. Setting Spatial Conform to Fill does solve this problem, but can cause quality issues, as it can mean the image is scaled down and then scaled back up in some contexts.
 
@@ -279,3 +279,4 @@ Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
 -- `Relative Timing (graph maps to clip)` which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.
 -- `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
 - **Motion Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
+- **Help**, which includes a global setting to disable tooltips, if they're bothering you.
