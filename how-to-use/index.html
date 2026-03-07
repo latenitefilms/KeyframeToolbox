@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826156062056">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826166041735">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.1.0.826156062056" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.826166041735" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826156062056" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826166041735" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826156062056" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826166041735" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -365,11 +365,13 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </figure>
 </p>
 <ul>
+<li><strong>The graph width maps to the clip width</strong>, while the <strong>graph height maps to the values of the property</strong>, within the limits shown to the right of that graph.</li>
+<li>A Keyframe remembers a values at a point in time.</li>
+<li>Linear keyframes transition values directly, in a straight line, while non-linear keyframes have handles that influence curves, creating smoother transitions between values.</li>
 <li>At least two keyframes must remain in the graph, so the first and last keyframes cannot be deleted until other keyframes are added.</li>
 <li>However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.</li>
 <li>If the playhead is over the clip, <strong>a line briefly indicates the position of the timeline playhead</strong> in relation to the clip. The line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead.</li>
 <li>As you drag a keyframe, hold <code translate="no" v-pre>SHIFT</code> to enable snapping to the playhead.</li>
-<li><strong>The graph width maps to the clip width</strong>, while the <strong>graph height maps to the values of the property</strong>, within the limits shown to the right of that graph.</li>
 <li><strong>Opacity has a fixed 0..100 range</strong>, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.</li>
 <li><strong>All other limits can be changed by dragging them</strong>, horizontally or vertically. Hold <code translate="no" v-pre>OPTION</code> as you drag to change both sides in opposite directions.</li>
 <li><strong>Press the button between the limits to fit the graph</strong> to the current values within it, plus a small buffer.</li>
