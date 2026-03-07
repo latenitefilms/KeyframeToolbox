@@ -85,12 +85,15 @@ Keyframes remembers values at points in time.
 
 ---
 
-## Scaling the graphs
-Each graph can be shown in one of three sizes.
+## Resetting and scaling the graphs
+
+Each graph can be reset, and shown in one of three sizes.
 
 ![](/static/graph-sizes.png)
 
-- To the right of the reset button next to each graph's name, you'll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.
+- **Each property graph can be reset** using the reset button next to its name.
+- **`SHIFT`-click any graph's reset button** to reset all graphs at once.
+- To the right of the reset button, you'll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.
 - When Minimized, the "Fit" button within the upper and lower limits is not available. All other controls work in any size.
 - **`SHIFT`-click on a toggle** to force all graphs to that size.
 - **`OPTION`-click on a toggle** to set that graph to the chosen size and minimize all other graphs.
@@ -126,7 +129,7 @@ Handles connected to keyframes control the graph curve that controls how one val
 - Optionally, hold `SHIFT` while doing this to lock the curve to horizontal (0°).
 - **`OPTION`- or `COMMAND`-click on a keyframe** to remove handles and reset the keyframe to linear.
 - **`OPTION`- or `COMMAND`-drag on a handle** to split a handle pair and make it asymmetric.
-- **`SHIFT` drag a handle** to maintain its current angle and only change distance.
+- **`SHIFT`-drag a handle** to maintain its current angle and only change distance.
 
 ---
 
@@ -175,15 +178,12 @@ Multiple keyframes can be selected and manipulated.
 
 ---
 
-## Using the reset button and the graph menu
+## Using the graph menu
 
-Next to each graph's name are some buttons and a menu that enables some advanced features. 
+Each grpah has a menu that enables some advanced features. 
 
 ![](/static/opacity-graph-menu.png)
 
-- **Each property graph can be reset** using the reset button next to its name.
-- **`SHIFT`-click any graph's reset button** to reset all graphs at once.
-- Three toggle buttons, discussed earlier, control the size of each graph.
 - The graph menu can be accessed by the menu to the right of the toggle buttons, or by right-clicking on the graph.
 - Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.
 - When a single keyframe is selected, use `Clone Value from Previous Keyframe` or `Clone Value from Next Keyframe` to simulate a Hold keyframe.
