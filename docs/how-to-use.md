@@ -278,7 +278,7 @@ Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
 -- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.
 -- Currently, all graphs are activated by default.
 - **Timing Mode**, which allows:
--- `Relative Timing (graph maps to clip)` which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.
--- `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
+  - `Relative Timing (graph maps to clip)` which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.
+  - `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
 - **Motion Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
 - **Help**, which includes a global setting to disable tooltips, if they're bothering you.
