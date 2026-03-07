@@ -180,7 +180,7 @@ Multiple keyframes can be selected and manipulated.
 
 ## Using the graph menu
 
-Each grpah has a menu that enables some advanced features. 
+Each graph has a menu that enables some advanced features. 
 
 ![](/static/opacity-graph-menu.png)
 
@@ -219,20 +219,20 @@ To create flexible keyframe graphs based on common animation patterns.
 - Note that all these presets include a toggle to invert the graph.
 - While it’s possible to control the upper and lower limits of any presets after choosing it, selecting multiple keyframes before choosing a preset sets the limits from keyframe values.
 - In each case, when a preset is chosen, several draggable options appear underneath each graph, including some of:
-  - Upper limit
-  - Lower limit
-  - Bend (handle size)
+  - Upper limit  
+  - Lower limit (hold `SHIFT` while dragging to change limits quickly, but they cannot exceed current graph limits)
+  - Bend (handle size/amount of smoothing)
   - Wavelength
   - Phase
   - Decay
   - Graph type or Flip — use this to make a preset work in the opposite way, so _Min, Max_ becomes _Max, Min_.
-- These options can be repeatedly changed until a keyframe is moved or the clip selection in FCP is changed.
+- A preset's options can be repeatedly changed **until a keyframe is moved** or the clip selection in FCP is changed.
 
 ![](/static/pos-x-oscillate-graph.png)
 
 - In **Oscillate**, the options are:
   - Upper limit
-  - Lower limit (hold `SHIFT` while dragging to change these quickly, but they cannot exceed current graph limits)
+  - Lower limit
   - Wavelength
   - Phase
   - Bend (handle strength)
