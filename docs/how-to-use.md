@@ -215,7 +215,7 @@ To create flexible keyframe graphs based on common animation patterns.
   - Min, Max
   - Min, Max, Min
   - Min, Max, Hold, Min
-  - Min, Max, Hold, Max
+  - Min, Mid, Hold, Max
 - In each case, when a preset is chosen, several draggable options appear underneath each graph, including some of:
   - Upper limit
   - Lower limit
@@ -241,7 +241,7 @@ To create flexible keyframe graphs based on common animation patterns.
   - Lower limit
   - Bend (handle strength)
   - A toggle to flip the graph, reversing Min and Max
-- In **Min, Max, Hold, Min** and **Min, Max, Hold, Max**, the options are:
+- In **Min, Max, Hold, Min** and **Min, Mid, Hold, Max**, the options are:
   - Upper limit
   - Lower limit
   - Bend (handle strength)
@@ -273,7 +273,7 @@ Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
 
 ![](/static/settings.png)
 
-- Click the Settings button to pop up a panel with two sections: **Properties** and **Temporal Blur**.
+- Click the Settings button to pop up a panel with two sections: **Properties** and **Motion Blur**.
 - **Properties** allows some graphs to be hidden by unchecking them. At least one graph must remain active.
 -- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.
 -- Currently, all graphs are activated by default.
