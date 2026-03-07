@@ -241,7 +241,7 @@ To create flexible keyframe graphs based on common animation patterns.
   - Lower limit
   - Bend (handle strength)
   - A toggle to flip the graph, reversing Min and Max
-- In **Min, Max, Hold, Min** and **Min, Max Max, Hold, Max**, the options are:
+- In **Min, Max, Hold, Min** and **Min, Max, Hold, Max**, the options are:
   - Upper limit
   - Lower limit
   - Bend (handle strength)
