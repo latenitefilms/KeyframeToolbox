@@ -269,14 +269,14 @@ To control a virtual keyframe graph beyond the first and last keyframes.
 
 ## Settings
 
-Currently, Settings allows graphs to be hidden and Temporal Blur to be enabled.
+Settings gives access to advanced features.
 
 ![](/static/settings.png)
 
 - Click the Settings button to pop up a panel with two sections: **Properties** and **Motion Blur**.
 - **Properties** allows some graphs to be hidden by unchecking them. At least one graph must remain active.
--- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.
--- Currently, all graphs are activated by default.
+  - Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.
+  - Currently, all graphs are activated by default.
 - **Timing Mode**, which allows:
   - `Relative Timing (graph maps to clip)` which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.
   - `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
