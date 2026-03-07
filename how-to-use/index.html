@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826170851062">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826171179983">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.1.0.826170851062" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.826171179983" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826170851062" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826171179983" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826170851062" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826171179983" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -560,7 +560,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>Min, Max</li>
 <li>Min, Max, Min</li>
 <li>Min, Max, Hold, Min</li>
-<li>Min, Max, Hold, Max</li>
+<li>Min, Mid, Hold, Max</li>
 </ul>
 </li>
 <li>In each case, when a preset is chosen, several draggable options appear underneath each graph, including some of:
@@ -601,7 +601,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>A toggle to flip the graph, reversing Min and Max</li>
 </ul>
 </li>
-<li>In <strong>Min, Max, Hold, Min</strong> and <strong>Min, Max, Hold, Max</strong>, the options are:
+<li>In <strong>Min, Max, Hold, Min</strong> and <strong>Min, Mid, Hold, Max</strong>, the options are:
 <ul>
 <li>Upper limit</li>
 <li>Lower limit</li>
@@ -650,7 +650,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </figure>
 </p>
 <ul>
-<li>Click the Settings button to pop up a panel with two sections: <strong>Properties</strong> and <strong>Temporal Blur</strong>.</li>
+<li>Click the Settings button to pop up a panel with two sections: <strong>Properties</strong> and <strong>Motion Blur</strong>.</li>
 <li><strong>Properties</strong> allows some graphs to be hidden by unchecking them. At least one graph must remain active.-- Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.-- Currently, all graphs are activated by default.</li>
 <li><strong>Timing Mode</strong>, which allows:-- <code translate="no" v-pre>Relative Timing (graph maps to clip)</code> which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.-- <code translate="no" v-pre>Absolute Timing (graph maps to time)</code> which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.</li>
 <li><strong>Motion Blur</strong>, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.</li>
