@@ -261,7 +261,7 @@ To control a virtual keyframe graph beyond the first and last keyframes.
 - This strategy allows an animation to be repeated many times, if desired.
 - By default, this graph is a constant line, but the graph and right-click menus allow two other options to be chosen:
   - **Ping-Pong**, which repeats the real graph backwards, then forwards, repeating while time permits.
-  - **Progressive**, which repeates the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.
+  - **Progressive**, which repeats the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.
 - You can create new keyframes on the _virtual_ graph in the standard ways.
 
 
