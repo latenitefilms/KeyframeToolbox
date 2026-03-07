@@ -115,7 +115,7 @@ Keyframes can be moved and new keyframes can be added.
 
 ---
 
-## Smoothing keyframes
+## Non-linear (smooth) keyframes
 
 Handles connected to keyframes control the graph curve that controls how one value changes into another.
 
