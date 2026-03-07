@@ -72,11 +72,13 @@ Each graph starts with has a keyframe at the start (left) and end (right) and a 
 
 ![](/static/basic-graph.png)
 
+- **The graph width maps to the clip width**, while the **graph height maps to the values of the property**, within the limits shown to the right of that graph.
+- A Keyframe remembers a values at a point in time.
+- Linear keyframes transition values directly, in a straight line, while non-linear keyframes have handles that influence curves, creating smoother transitions between values.
 - At least two keyframes must remain in the graph, so the first and last keyframes cannot be deleted until other keyframes are added.
 - However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
 - If the playhead is over the clip, **a line briefly indicates the position of the timeline playhead** in relation to the clip. The line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead.
 - As you drag a keyframe, hold `SHIFT` to enable snapping to the playhead.
-- **The graph width maps to the clip width**, while the **graph height maps to the values of the property**, within the limits shown to the right of that graph.
 - **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.
 - **All other limits can be changed by dragging them**, horizontally or vertically. Hold `OPTION` as you drag to change both sides in opposite directions.
 - **Press the button between the limits to fit the graph** to the current values within it, plus a small buffer.
