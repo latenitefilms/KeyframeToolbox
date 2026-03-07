@@ -68,12 +68,12 @@ Keyframe Toolbox will then send the new image back to a new event called "images
 
 ## Keyframe graph basics
 
-Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.
+Keyframes remembers values at points in time.
 
 ![](/static/basic-graph.png)
 
+- Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.
 - **The graph width maps to the clip width**, while the **graph height maps to the values of the property**, within the limits shown to the right of that graph.
-- A Keyframe remembers a values at a point in time.
 - Linear keyframes transition values directly, in a straight line, while non-linear keyframes have handles that influence curves, creating smoother transitions between values.
 - At least two keyframes must remain in the graph, so the first and last keyframes cannot be deleted until other keyframes are added.
 - However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
