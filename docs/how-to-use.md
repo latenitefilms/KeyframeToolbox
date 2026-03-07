@@ -41,7 +41,7 @@ This effect is built to let you use familiar beziér keyframes and handles to co
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
 
-In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`,and `Blur`.
+In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`, and `Blur`.
  - (Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)
 
 Because Final Cut Pro captures regular keystrokes before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context. 
