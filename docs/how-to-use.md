@@ -82,6 +82,7 @@ Keyframes remembers values at points in time.
 - **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.
 - **All other limits can be changed by dragging them**, horizontally or vertically. Hold `OPTION` as you drag to change both sides in opposite directions.
 - **Press the button between the limits to fit the graph** to the current values within it, plus a small buffer.
+- Tick marks underneath each graph indicate seconds, with an extra indication 5-second and 10-second intervals.
 
 ---
 
