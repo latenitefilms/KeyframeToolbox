@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826170393395">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.1.0.826170711895">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.1.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.1.0.826170393395" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.1.0.826170711895" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826170393395" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.1.0.826170711895" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.1.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826170393395" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.1.0.826170711895" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -377,20 +377,22 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong>Press the button between the limits to fit the graph</strong> to the current values within it, plus a small buffer.</li>
 </ul>
 <hr>
-<doc-anchor-target id="scaling-the-graphs">
+<doc-anchor-target id="resetting-and-scaling-the-graphs">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#scaling-the-graphs">#</doc-anchor-trigger>
-        <span>Scaling the graphs</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#resetting-and-scaling-the-graphs">#</doc-anchor-trigger>
+        <span>Resetting and scaling the graphs</span>
     </h2>
 </doc-anchor-target>
-<p>Each graph can be shown in one of three sizes.</p>
+<p>Each graph can be reset, and shown in one of three sizes.</p>
 <p><figure class="content-center">
     <img src="../static/graph-sizes.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <ul>
-<li>To the right of the reset button next to each graph&#x27;s name, you&#x27;ll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.</li>
+<li><strong>Each property graph can be reset</strong> using the reset button next to its name.</li>
+<li><strong><code translate="no" v-pre>SHIFT</code>-click any graph&#x27;s reset button</strong> to reset all graphs at once.</li>
+<li>To the right of the reset button, you&#x27;ll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.</li>
 <li>When Minimized, the &quot;Fit&quot; button within the upper and lower limits is not available. All other controls work in any size.</li>
 <li><strong><code translate="no" v-pre>SHIFT</code>-click on a toggle</strong> to force all graphs to that size.</li>
 <li><strong><code translate="no" v-pre>OPTION</code>-click on a toggle</strong> to set that graph to the chosen size and minimize all other graphs.
@@ -438,7 +440,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>Optionally, hold <code translate="no" v-pre>SHIFT</code> while doing this to lock the curve to horizontal (0°).</li>
 <li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-click on a keyframe</strong> to remove handles and reset the keyframe to linear.</li>
 <li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-drag on a handle</strong> to split a handle pair and make it asymmetric.</li>
-<li><strong><code translate="no" v-pre>SHIFT</code> drag a handle</strong> to maintain its current angle and only change distance.</li>
+<li><strong><code translate="no" v-pre>SHIFT</code>-drag a handle</strong> to maintain its current angle and only change distance.</li>
 </ul>
 <hr>
 <doc-anchor-target id="deleting-keyframes-and-handles">
@@ -504,22 +506,19 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>Click elsewhere in the graph to dismiss the bounding box.</li>
 </ul>
 <hr>
-<doc-anchor-target id="using-the-reset-button-and-the-graph-menu">
+<doc-anchor-target id="using-the-graph-menu">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#using-the-reset-button-and-the-graph-menu">#</doc-anchor-trigger>
-        <span>Using the reset button and the graph menu</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-the-graph-menu">#</doc-anchor-trigger>
+        <span>Using the graph menu</span>
     </h2>
 </doc-anchor-target>
-<p>Next to each graph&#x27;s name are some buttons and a menu that enables some advanced features.</p>
+<p>Each grpah has a menu that enables some advanced features.</p>
 <p><figure class="content-center">
     <img src="../static/opacity-graph-menu.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <ul>
-<li><strong>Each property graph can be reset</strong> using the reset button next to its name.</li>
-<li><strong><code translate="no" v-pre>SHIFT</code>-click any graph&#x27;s reset button</strong> to reset all graphs at once.</li>
-<li>Three toggle buttons, discussed earlier, control the size of each graph.</li>
 <li>The graph menu can be accessed by the menu to the right of the toggle buttons, or by right-clicking on the graph.</li>
 <li>Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.</li>
 <li>When a single keyframe is selected, use <code translate="no" v-pre>Clone Value from Previous Keyframe</code> or <code translate="no" v-pre>Clone Value from Next Keyframe</code> to simulate a Hold keyframe.</li>
