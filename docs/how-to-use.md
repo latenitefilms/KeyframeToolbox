@@ -44,7 +44,7 @@ In the Keyframe Toolbox interface you'll see several graphs, each one controllin
 In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`,and `Blur`.
  - (Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)
 
-Because Final Cut Pro captures keys before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context. 
+Because Final Cut Pro captures regular keystrokes before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context. 
 
 Right now, Option and Command are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. Shift is a constraining modifier, as usual, and Control-clicking a keyframe or handle deletes it, while right-clicking pops up a menu. (If you don't have the normal right-click behavior set up on your pointing device, you can use the menu above each graph instead of right-clicking.)
 
