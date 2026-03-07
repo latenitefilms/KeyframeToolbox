@@ -216,8 +216,8 @@ To create flexible keyframe graphs based on common animation patterns.
   - Min, Max, Min (move in one direction and then immediately back)
   - Min, Max, Hold, Min (move in one direction, pause, move back)
   - Min, Mid, Hold, Max (move halfway, pause, move further)
-  - Note that all these presets include a toggle to invert the graph.
-  - While it’s possible to control the upper and lower limits of any presets after choosing it, selecting multiple keyframes before choosing a preset sets the limits from keyframe values.
+- Note that all these presets include a toggle to invert the graph.
+- While it’s possible to control the upper and lower limits of any presets after choosing it, selecting multiple keyframes before choosing a preset sets the limits from keyframe values.
 - In each case, when a preset is chosen, several draggable options appear underneath each graph, including some of:
   - Upper limit
   - Lower limit
