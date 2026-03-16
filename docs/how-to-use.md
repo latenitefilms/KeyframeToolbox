@@ -31,7 +31,7 @@ You'll find Keyframe Toolbox in the **Effects Browser**.
 
 ![](/static/effects-browser.png)
 
-You can then apply Keyframe Toolbox to any effect and away you go!
+You can then apply Keyframe Toolbox to any effect and away you go! If you want to use it regularly, you can right-click it an choose Make Default Video Effect. To apply it, you can then use ⌥E.
 
 ![](/static/keyframe-toolbox-hero.png)
 
