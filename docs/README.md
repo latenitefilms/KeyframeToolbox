@@ -7,7 +7,7 @@ You can download it on Apple's [TestFlight](https://testflight.apple.com/join/Yw
 
 **Keyframe Toolbox** finally brings advanced keyframe animation to Final Cut Pro.
 
-<iframe src="https://player.vimeo.com/video/1173474364" width="3840" height="2160" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="https://vimeo.com/1173474364/af4e031d57">KT Launch Promo v 5 - 4K</a> from <a href="https://vimeo.com/user1116072">Iain Anderson</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173474364?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Keyframe Toolbox Launch"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ---
 
@@ -16,7 +16,7 @@ You can download it on Apple's [TestFlight](https://testflight.apple.com/join/Yw
 ![](/static/keyframe-toolbox-01.png)
 
 
-Whilst Final Cut Pro has some basic keyframe controls for Opacity, Position, Scale, Rotation, it includes only limited control over how keyframes transition into one another. In many contexts, only linear keyframes can be created.  Though the classic Final Cut Pro included basic keyframe graphs, no NLE has ever really offered a complete set of integrated keyframe controls.
+Whilst Final Cut Pro has some basic keyframe controls for Opacity, Position, Scale, Rotation, it includes only limited control over how keyframes transition into one another. In many contexts, only linear keyframes can be created, leading to clunky animations. Though the classic Final Cut Pro included basic keyframe graphs, no NLE has ever really offered a complete set of integrated keyframe controls.
 
 It's time.
 
