@@ -11,11 +11,9 @@ You can download it on Apple's [TestFlight](https://testflight.apple.com/join/Yw
 
 ---
 
-## Intro Video
+## Introduction Video
 
-As Keyframe Toolbox is still in beta, we're still making tweaks and changes to the user interface.
-
-Once we're happy, we'll release a proper introduction video here.
+<iframe src="https://player.vimeo.com/video/1173474364" width="3840" height="2160" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="https://vimeo.com/1173474364/af4e031d57">KT Launch Promo v 5 - 4K</a> from <a href="https://vimeo.com/user1116072">Iain Anderson</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ---
 
