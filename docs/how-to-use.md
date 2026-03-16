@@ -37,7 +37,7 @@ You can then apply Keyframe Toolbox to any effect and away you go!
 
 ---
 
-## Using Keyframe Toolbox
+## Introducing Keyframe Toolbox
 
 This effect is built to let you use familiar beziér keyframes and handles to control common properties in Final Cut Pro. 
 
@@ -49,6 +49,8 @@ In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Sc
 Because Final Cut Pro captures regular keystrokes before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context. 
 
 Right now, `OPTION (⌥)`  and `COMMAND (⌘)` are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. `SHIFT (⇧)` is a constraining modifier, as usual, and `CONTROL (⌃)`-clicking a keyframe or handle deletes it, while right-clicking pops up a menu. (This means that `CONTROL (⌃)`-clicking does not pop up the right-click menu. If you don't have right-click behavior set up on your pointing device (such as a two-finger click on a trackpad) you can use the menu above each graph instead of right-clicking.)
+
+[! embed](https://vimeo.com/1173533501/8866a9b8da?share=copy&fl=sv&fe=ci)
 
 ---
 
