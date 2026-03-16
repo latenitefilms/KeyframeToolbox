@@ -106,7 +106,7 @@ Each graph can be reset, and shown in one of three sizes.
 - When Minimized, the "Fit" button within the upper and lower limits is not available. All other controls work in any size.
 - **`SHIFT`-click on a toggle** to force all graphs to that size.
 - **`OPTION`-click on a toggle** to set that graph to the chosen size and minimize all other graphs.
--- As it's not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.
+  - As it's not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533381?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 4 — Resetting and scaling the graphs"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
