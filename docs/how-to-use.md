@@ -54,7 +54,7 @@ Right now, `OPTION (⌥)`  and `COMMAND (⌘)` are equivalent, to hopefully make
 
 ---
 
-## An important note about still images and aspect ratios
+## Preparing still images
 
 If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill. If that's your plan, skip straight to the next section!
 
@@ -67,7 +67,9 @@ As a better solution, we've added a feature to pad any still image with extra sp
 To use it, you'll need to have applied Keyframe Toolbox to a clip in your timeline — even on a temporary clip. With that in place, drag an image from the Browser to the logo at the top of the effect. (This image will need to be in the same Event as your current Project, due to how FCP works.)
 
 Keyframe Toolbox will then send the new image back to a new event called "images with padding". The new image also has its new resolution as part of its name. You can now add this image to your timeline instead of your original image.
- 
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533494?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 2 — Preparing Still Images"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 ## Keyframe graph basics
@@ -88,6 +90,8 @@ Keyframes remembers values at points in time.
 - **Press the button between the limits to fit the graph** to the current values within it, plus a small buffer.
 - Tick marks underneath each graph indicate seconds, with an extra indication 5-second and 10-second intervals.
 
+<div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533437?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+
 ---
 
 ## Resetting and scaling the graphs
@@ -103,6 +107,8 @@ Each graph can be reset, and shown in one of three sizes.
 - **`SHIFT`-click on a toggle** to force all graphs to that size.
 - **`OPTION`-click on a toggle** to set that graph to the chosen size and minimize all other graphs.
 -- As it's not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.
+
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533381?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 4 — Resetting and scaling the graphs"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ---
 
@@ -121,6 +127,8 @@ Keyframes can be moved and new keyframes can be added.
 - **Dragging a keyframe and adding `SHIFT` while dragging** will also snap to the line that indicates the playhead position, if present. This allows you to snap a keyframe to the current playhead position.
 - Dragging a line connnecting two keyframes will move both keyframes together.
 
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533425?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 5 — Adding and moving keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 ## Non-linear (smooth) keyframes
@@ -136,6 +144,8 @@ Handles connected to keyframes control the graph curve that controls how one val
 - **`OPTION`- or `COMMAND`-drag on a handle** to split a handle pair and make it asymmetric.
 - **`SHIFT`-drag a handle** to maintain its current angle and only change distance.
 
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533389?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 6 — Non-linear keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 ## Deleting keyframes and handles
@@ -150,6 +160,8 @@ Keyframes and handles can be deleted.
 - **`COMNMAND`- or `OPTION`-click on a keyframe** to delete its handles and convert it to linear.
 - The first and last keyframes can be deleted just like other keyframes, but at least two keyframes must remain — there must be a first and a last keyframe.
 
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 7 — Deleting keyframes and handles"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 ## Working with precision
@@ -162,6 +174,8 @@ Exact numbers can be entered for keyframes and handles.
 - **Double-click on any handle** to see its distance (above) and angle (below).
 - In both these cases, **type in new values** to change them, then approve the change by presing `RETURN` or `ENTER`, or cancel the change with `ESCAPE`.
 - Alternatively, use **up and down arrows** to change the values by 1, and **`SHIFT`-up and `SHIFT`-down arrows** to change the values by 10.
+
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533372?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 8 — Working with precision"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ---
 
@@ -181,6 +195,8 @@ Multiple keyframes can be selected and manipulated.
 - Right-click to delete, copy, or perform other operations on multiple keyframes at once.
 - Click elsewhere in the graph to dismiss the bounding box.
 
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533395?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 9 — Selecting, moving and scaling keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 ## Using the graph menu
@@ -199,6 +215,9 @@ Each graph has a menu that enables some advanced features.
 - `Clone Value from Previous Keyframe` and `Clone Value from Next Keyframe` change the value of the selected keyframe to a the value or a neighbouring keyframe. 
 
 - **Presets** and **Before First Keyframe and After Last Keyframe** are discussed in the following sections.
+
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533427?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 10 — Using the graph menu"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 
@@ -256,6 +275,8 @@ To create flexible keyframe graphs based on common animation patterns.
   - A toggle to flip the graph, reversing Min and Max
 - Remember that when a single keyframe is adjusted, the controls disappear. Simply select the keyframes and choose the preset once more.
 
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533497?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 11 — Presets"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 ---
 
 ## Before First Keyframe and After Last Keyframe
@@ -271,6 +292,7 @@ To control a virtual keyframe graph beyond the first and last keyframes.
   - **Progressive**, which repeats the real graph, but transposed so that the first virtual keyframe is positioned on the real final keyframe. This graph also repeats while time permits.
 - You can create new keyframes on the _virtual_ graph in the standard ways.
 
+<div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533435?h=120310bc90&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 
 ---
 
@@ -289,3 +311,5 @@ Settings gives access to advanced features.
   - `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
 - **Motion Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
 - **Help**, which includes a global setting to disable tooltips, if they're bothering you.
+
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533429?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 13 — Settings"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
