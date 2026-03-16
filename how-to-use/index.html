@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826945021048">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.826947264875">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.2.0">
@@ -32,11 +32,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.2.0.826945021048" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.2.0.826947264875" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.2.0.826945021048" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.2.0.826947264875" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.2.0.826945021048" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.2.0.826947264875" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -341,10 +341,10 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <p>Right now, <code translate="no" v-pre>OPTION (⌥)</code>  and <code translate="no" v-pre>COMMAND (⌘)</code> are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. <code translate="no" v-pre>SHIFT (⇧)</code> is a constraining modifier, as usual, and <code translate="no" v-pre>CONTROL (⌃)</code>-clicking a keyframe or handle deletes it, while right-clicking pops up a menu. (This means that <code translate="no" v-pre>CONTROL (⌃)</code>-clicking does not pop up the right-click menu. If you don&#x27;t have right-click behavior set up on your pointing device (such as a two-finger click on a trackpad) you can use the menu above each graph instead of right-clicking.)</p>
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533501?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 1 — Introducing Keyframe Toolbox"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="an-important-note-about-still-images-and-aspect-ratios">
+<doc-anchor-target id="preparing-still-images">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#an-important-note-about-still-images-and-aspect-ratios">#</doc-anchor-trigger>
-        <span>An important note about still images and aspect ratios</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#preparing-still-images">#</doc-anchor-trigger>
+        <span>Preparing still images</span>
     </h2>
 </doc-anchor-target>
 <p>If you&#x27;re working with regular video clips in the same aspect ratio as your canvas, you won&#x27;t have any problems. You also probably won&#x27;t have any problems if you&#x27;re working in a different aspect ratio, and have set Spatial Conform to Fill. If that&#x27;s your plan, skip straight to the next section!</p>
@@ -353,6 +353,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <p>As a better solution, we&#x27;ve added a feature to pad any still image with extra space, making it the same aspect ratio as the timeline the effect is placed in. This means you won&#x27;t need to change Spatial Conform before applying Keyframe Toolbox, and you won&#x27;t hit any scaling quality problems.</p>
 <p>To use it, you&#x27;ll need to have applied Keyframe Toolbox to a clip in your timeline — even on a temporary clip. With that in place, drag an image from the Browser to the logo at the top of the effect. (This image will need to be in the same Event as your current Project, due to how FCP works.)</p>
 <p>Keyframe Toolbox will then send the new image back to a new event called &quot;images with padding&quot;. The new image also has its new resolution as part of its name. You can now add this image to your timeline instead of your original image.</p>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533494?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 2 — Preparing Still Images"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="keyframe-graph-basics">
     <h2>
@@ -379,6 +380,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong>Press the button between the limits to fit the graph</strong> to the current values within it, plus a small buffer.</li>
 <li>Tick marks underneath each graph indicate seconds, with an extra indication 5-second and 10-second intervals.</li>
 </ul>
+<div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533437?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 <hr>
 <doc-anchor-target id="resetting-and-scaling-the-graphs">
     <h2>
@@ -401,6 +403,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong><code translate="no" v-pre>OPTION</code>-click on a toggle</strong> to set that graph to the chosen size and minimize all other graphs.
 -- As it&#x27;s not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533381?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 4 — Resetting and scaling the graphs"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="adding-and-moving-keyframes">
     <h2>
@@ -424,6 +427,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong>Dragging a keyframe and adding <code translate="no" v-pre>SHIFT</code> while dragging</strong> will also snap to the line that indicates the playhead position, if present. This allows you to snap a keyframe to the current playhead position.</li>
 <li>Dragging a line connnecting two keyframes will move both keyframes together.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533425?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 5 — Adding and moving keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="non-linear-smooth-keyframes">
     <h2>
@@ -445,6 +449,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-drag on a handle</strong> to split a handle pair and make it asymmetric.</li>
 <li><strong><code translate="no" v-pre>SHIFT</code>-drag a handle</strong> to maintain its current angle and only change distance.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533389?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 6 — Non-linear keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="deleting-keyframes-and-handles">
     <h2>
@@ -465,6 +470,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong><code translate="no" v-pre>COMNMAND</code>- or <code translate="no" v-pre>OPTION</code>-click on a keyframe</strong> to delete its handles and convert it to linear.</li>
 <li>The first and last keyframes can be deleted just like other keyframes, but at least two keyframes must remain — there must be a first and a last keyframe.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 7 — Deleting keyframes and handles"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="working-with-precision">
     <h2>
@@ -484,6 +490,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>In both these cases, <strong>type in new values</strong> to change them, then approve the change by presing <code translate="no" v-pre>RETURN</code> or <code translate="no" v-pre>ENTER</code>, or cancel the change with <code translate="no" v-pre>ESCAPE</code>.</li>
 <li>Alternatively, use <strong>up and down arrows</strong> to change the values by 1, and <strong><code translate="no" v-pre>SHIFT</code>-up and <code translate="no" v-pre>SHIFT</code>-down arrows</strong> to change the values by 10.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533372?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 8 — Working with precision"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="selecting-moving-and-scaling-keyframes">
     <h2>
@@ -508,6 +515,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li>Right-click to delete, copy, or perform other operations on multiple keyframes at once.</li>
 <li>Click elsewhere in the graph to dismiss the bounding box.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533395?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 9 — Selecting, moving and scaling keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="using-the-graph-menu">
     <h2>
@@ -532,6 +540,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><code translate="no" v-pre>Clone Value from Previous Keyframe</code> and <code translate="no" v-pre>Clone Value from Next Keyframe</code> change the value of the selected keyframe to a the value or a neighbouring keyframe.</li>
 <li><strong>Presets</strong> and <strong>Before First Keyframe and After Last Keyframe</strong> are discussed in the following sections.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533427?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 10 — Using the graph menu"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="presets">
     <h2>
@@ -617,6 +626,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </li>
 <li>Remember that when a single keyframe is adjusted, the controls disappear. Simply select the keyframes and choose the preset once more.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533497?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 11 — Presets"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
 <doc-anchor-target id="before-first-keyframe-and-after-last-keyframe">
     <h2>
@@ -641,6 +651,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 </li>
 <li>You can create new keyframes on the <em>virtual</em> graph in the standard ways.</li>
 </ul>
+<div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533435?h=120310bc90&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 <hr>
 <doc-anchor-target id="settings">
     <h2>
@@ -671,6 +682,7 @@ You can download it on Apple&#x27;s <a href="https://testflight.apple.com/join/Y
 <li><strong>Motion Blur</strong>, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.</li>
 <li><strong>Help</strong>, which includes a global setting to disable tooltips, if they&#x27;re bothering you.</li>
 </ul>
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533429?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 13 — Settings"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
                 
                 <!-- Required only on API pages -->
