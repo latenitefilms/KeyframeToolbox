@@ -1,13 +1,15 @@
 # Buy on Mac App Store
 
-!!!tip Now in public beta! 🥳
-KeyFrame Toolbox is currently in public beta.\
-You can download it on Apple's [TestFlight](https://testflight.apple.com/join/YwzGCS6a).
-!!!
-
 **Keyframe Toolbox** will be a one-time payment of **USD$19.99** on the **Mac App Store** (subject to change prior to release).
 
 There is no free trial.
+
+!!!tip Currently in public beta! 🥳
+KeyFrame Toolbox is currently in public beta whilst we wait for Apple's Approval.\
+You can download it on Apple's [TestFlight](https://testflight.apple.com/join/YwzGCS6a).
+!!!
+
+> [:icon-desktop-download: Click here to **buy** on the **Mac App Store**](https://apps.apple.com/app/keyframe-toolbox/id6759331578)
 
 You can find information about Educational Pricing [here](/educational/).
 

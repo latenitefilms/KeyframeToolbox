@@ -1,10 +1,5 @@
 # Support
 
-!!!tip Now in public beta! 🥳
-KeyFrame Toolbox is currently in public beta.\
-You can download it on Apple's [TestFlight](https://testflight.apple.com/join/YwzGCS6a).
-!!!
-
 If you run into any bugs, crashes, or you have a feature request, you can post an issue [here](https://github.com/latenitefilms/KeyframeToolbox/issues).
 
 If you have any general questions or feedback, you can discuss [here](https://github.com/latenitefilms/KeyframeToolbox/discussions).

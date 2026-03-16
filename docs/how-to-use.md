@@ -1,10 +1,5 @@
 # How To Use
 
-!!!tip Now in public beta! 🥳
-KeyFrame Toolbox is currently in public beta.\
-You can download it on Apple's [TestFlight](https://testflight.apple.com/join/YwzGCS6a).
-!!!
-
 Keyframe Toolbox is currently in **public beta** - so we are actively making changes and improvements based on YOUR feedback.
 
 We will be constantly adding new builds to TestFlight as we add new features and fix any bugs reported.
@@ -39,14 +34,14 @@ You can then apply Keyframe Toolbox to any effect and away you go! If you want t
 
 ## Introducing Keyframe Toolbox
 
-This effect is built to let you use familiar beziér keyframes and handles to control common properties in Final Cut Pro. 
+This effect is built to let you use familiar beziér keyframes and handles to control common properties in Final Cut Pro.
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
 
 In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`, and `Blur`.
  - (Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)
 
-Because Final Cut Pro captures regular keystrokes before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context. 
+Because Final Cut Pro captures regular keystrokes before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context.
 
 Right now, `OPTION (⌥)`  and `COMMAND (⌘)` are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. `SHIFT (⇧)` is a constraining modifier, as usual, and `CONTROL (⌃)`-clicking a keyframe or handle deletes it, while right-clicking pops up a menu. (This means that `CONTROL (⌃)`-clicking does not pop up the right-click menu. If you don't have right-click behavior set up on your pointing device (such as a two-finger click on a trackpad) you can use the menu above each graph instead of right-clicking.)
 
@@ -201,7 +196,7 @@ Multiple keyframes can be selected and manipulated.
 
 ## Using the graph menu
 
-Each graph has a menu that enables some advanced features. 
+Each graph has a menu that enables some advanced features.
 
 ![](/static/opacity-graph-menu.png)
 
@@ -212,7 +207,7 @@ Each graph has a menu that enables some advanced features.
 - If two or more contiguous keyframes are selected, they can be reversed by choosing `Time-Reverse Keyframes`, or flipped vertically by choosing `Invert Keyframes`.
 - Use `Copy Keyframes` or `Copy Graph` to copy keyframes from a graph.
 - Use `Paste Keyframes` or `Paste Graph` to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.
-- `Clone Value from Previous Keyframe` and `Clone Value from Next Keyframe` change the value of the selected keyframe to a the value or a neighbouring keyframe. 
+- `Clone Value from Previous Keyframe` and `Clone Value from Next Keyframe` change the value of the selected keyframe to a the value or a neighbouring keyframe.
 
 - **Presets** and **Before First Keyframe and After Last Keyframe** are discussed in the following sections.
 
@@ -243,7 +238,7 @@ To create flexible keyframe graphs based on common animation patterns.
 - Note that all these presets include a toggle to invert the graph.
 - While it’s possible to control the upper and lower limits of any presets after choosing it, selecting multiple keyframes before choosing a preset sets the limits from keyframe values.
 - In each case, when a preset is chosen, several draggable options appear underneath each graph, including some of:
-  - Upper limit  
+  - Upper limit
   - Lower limit (hold `SHIFT` while dragging to change limits quickly, but they cannot exceed current graph limits)
   - Bend (handle size/amount of smoothing)
   - Wavelength

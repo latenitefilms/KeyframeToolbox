@@ -1,11 +1,8 @@
 # System Requirements
 
-!!!tip Now in public beta! 🥳
-KeyFrame Toolbox is currently in public beta.\
-You can download it on Apple's [TestFlight](https://testflight.apple.com/join/YwzGCS6a).
-!!!
+ScriptStar requires **Final Cut Pro 10.6.5** or later.
 
-ScriptStar requires **Final Cut Pro v12** (lifetime/perpetual) or **Final Cut Pro Creator Studio v12** (subscription) or later.
+ScriptStar works great on **Final Cut Pro v12** (lifetime/perpetual) and **Final Cut Pro Creator Studio v12** (subscription).
 
 It requires **macOS Sequoia v15.6** or later.
 

@@ -1,6 +1,6 @@
 # Credits
 
-**Keyframe Toolbox** has been created by [Iain Anderson](https://iain-anderson.com) and Chris Hocking.
+**Keyframe Toolbox** has been created by [Iain Anderson](https://iain-anderson.com) and [Chris Hocking](https://fcp.cafe/latenite).
 
 The **Keyframe Toolbox** icon was designed by the amazing [Matthew Skiles](http://matthewskiles.com).
 
