@@ -11,6 +11,8 @@ We will be constantly adding new builds to TestFlight as we add new features and
 
 Please add any and all feedback to our [GitHub Issues page](https://github.com/latenitefilms/KeyframeToolbox/issues).
 
+We've prepared written and video tutorials. If you'd prefer to watch the videos, you can see them [all together here](https://vimeo.com/user/1116072/folder/28575750).
+
 ---
 
 ## Installation
