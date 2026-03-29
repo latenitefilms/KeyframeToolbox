@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.2.0.827006372135">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828076764212">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.2.0">
+    <meta name="generator" content="Retype 4.4.0">
 
     <!-- Primary Meta Tags -->
     <title>How To Use</title>
     <meta name="title" content="How To Use">
-    <meta name="description" content="Keyframe Toolbox is currently in public beta - so we are actively making changes and improvements based on YOUR feedback.">
+    <meta name="description" content="This page contains all the information you need to get up-and-running with Keyframe Toolbox.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://keyframetoolbox.fcp.cafe/how-to-use/">
@@ -21,22 +21,30 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/">
     <meta property="og:title" content="How To Use">
-    <meta property="og:description" content="Keyframe Toolbox is currently in public beta - so we are actively making changes and improvements based on YOUR feedback.">
-    <meta property="og:image" content="https://keyframetoolbox.fcp.cafe/static/test-flight-install.png">
+    <meta property="og:description" content="This page contains all the information you need to get up-and-running with Keyframe Toolbox.">
+    <meta property="og:image" content="https://keyframetoolbox.fcp.cafe/static/keyframe-toolbox-installed.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="How To Use">
     <meta property="og:site_name" content="Keyframe Toolbox">
     <meta property="og:locale" content="en_US">
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/">
+    <meta name="twitter:title" content="How To Use">
+    <meta name="twitter:description" content="This page contains all the information you need to get up-and-running with Keyframe Toolbox.">
+    <meta name="twitter:image" content="https://keyframetoolbox.fcp.cafe/static/keyframe-toolbox-installed.png">
+    <meta name="twitter:image:alt" content="How To Use">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.2.0.827006372135" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.4.0.828076764212" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.2.0.827006372135" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.2.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.2.0.827006372135" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.4.0.828076764212" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.4.0.828076764212" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -51,10 +59,9 @@
             <!-- Logo -->
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
-                    <a id="retype-branding-logo" href="../" class="flex items-center leading-snug text-xl">
+                    <a id="retype-branding-logo" href="https://keyframetoolbox.fcp.cafe/" class="flex items-center leading-snug text-xl">
                         <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
-                            <img class="max-h-10 dark:hidden md:inline-block" src="../static/logo.png">
-                            <img class="max-h-10 hidden dark:inline-block" src="../static/logo.png">
+                            <img class="max-h-10 md:inline-block" src="../static/logo.png" alt="" width="40" height="40">
                         </span>
                         <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Keyframe Toolbox</span>
                     </a>
@@ -69,60 +76,48 @@
                     <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../buy/">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/>
                                 </svg>
                                 <span>Buy on Mac App Store</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/latenitefilms/KeyframeToolbox/issues" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"/>
                                 </svg>
                                 <span>Issues</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/latenitefilms/KeyframeToolbox/discussions" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                 </svg>
                                 <span>Discussions</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://ltnt.tv/discord" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                 </svg>
                                 <span>Discord</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/>
                                 </svg>
                                 <span>FCP Cafe</span>
                             </a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe/latenite/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                    <g fill="currentColor">
-                                        <path d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.751.751 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.751.751 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/>
                                 </svg>
                                 <span>LateNite</span>
                             </a>
@@ -172,60 +167,48 @@
                             <ul class="flex flex-wrap justify-center items-center">
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../buy/">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/>
                                         </svg>
                                         <span>Buy on Mac App Store</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/latenitefilms/KeyframeToolbox/issues" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"/>
                                         </svg>
                                         <span>Issues</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/latenitefilms/KeyframeToolbox/discussions" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                         </svg>
                                         <span>Discussions</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://ltnt.tv/discord" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
                                         </svg>
                                         <span>Discord</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/>
                                         </svg>
                                         <span>FCP Cafe</span>
                                     </a>
                                 </li>
                                 <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe/latenite/" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
-                                            <g fill="currentColor">
-                                                <path d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.751.751 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/>
-                                            </g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.751.751 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/>
                                         </svg>
                                         <span>LateNite</span>
                                     </a>
@@ -265,55 +248,32 @@
                 </nav>
 
                 <!-- Page content  -->
-<doc-anchor-target id="how-to-use" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-to-use">#</doc-anchor-trigger>
-        <span>How To Use</span>
-    </h1>
-</doc-anchor-target>
-<p>Keyframe Toolbox is currently in <strong>public beta</strong> - so we are actively making changes and improvements based on YOUR feedback.</p>
-<p>We will be constantly adding new builds to TestFlight as we add new features and fix any bugs reported.</p>
-<p>Please add any and all feedback to our <a href="https://github.com/latenitefilms/KeyframeToolbox/issues" class="outbound" target="_blank"><span>GitHub Issues page</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
-<p>We&#x27;ve prepared written and video tutorials. If you&#x27;d prefer to watch the videos, you can see them <a href="https://vimeo.com/user/1116072/folder/28575750" class="outbound" target="_blank"><span>all together here</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<h1 id="how-to-use">How To Use</h1>
+<p>This page contains all the information you need to get up-and-running with <strong>Keyframe Toolbox</strong>.</p>
+<p>We&#x27;ve prepared written and video tutorials.</p>
+<p>If you&#x27;d prefer to watch the videos, you can see them <a href="https://vimeo.com/user/1116072/folder/28575750" class="outbound" target="_blank"><span>all together here</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
 <hr>
-<doc-anchor-target id="installation">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
-        <span>Installation</span>
-    </h2>
-</doc-anchor-target>
-<p>You can download Keyframe Toolbox from <a href="https://testflight.apple.com/join/YwzGCS6a" class="outbound" target="_blank"><span>Apple&#x27;s TestFlight</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" role="presentation"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
-<p><figure class="content-center">
-    <img src="../static/test-flight-install.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="2200" height="1434" />
+<h2 id="installation">Installation</h2>
+<p>You can download <strong>Keyframe Toolbox</strong> from the <a href="https://apps.apple.com/app/keyframe-toolbox/id6759331578" class="outbound" target="_blank"><span>Mac App Store</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<p>Once purchased and downloaded run the <strong>Keyframe Toolbox</strong> application:</p>
+<figure class="content-center">
+    <img src="../static/keyframe-toolbox-installed.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1180" height="504" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
-<p>Click <strong>Install</strong> then run the Keyframe Toolbox application, where you&#x27;ll be prompted to install the <strong>Motion Template</strong>.</p>
-<p><figure class="content-center">
-    <img src="../static/wrapper-application.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1180" height="444" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>After the Motion Template is installed you can launch Final Cut Pro.</p>
+<p>This will automatically install the <strong>Keyframe Toolbox</strong> Motion Template.</p>
+<p>Once done, you can quit the <strong>Keyframe Toolbox</strong> application and launch Final Cut Pro.</p>
 <p>You&#x27;ll find Keyframe Toolbox in the <strong>Effects Browser</strong>.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/effects-browser.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="802" height="452" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <p>You can then apply Keyframe Toolbox to any effect and away you go! If you want to use it regularly, you can right-click it an choose Make Default Video Effect. To apply it, you can then use ⌥E.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/keyframe-toolbox-hero.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1352" height="1930" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <hr>
-<doc-anchor-target id="introducing-keyframe-toolbox">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introducing-keyframe-toolbox">#</doc-anchor-trigger>
-        <span>Introducing Keyframe Toolbox</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="introducing-keyframe-toolbox">Introducing Keyframe Toolbox</h2>
 <p>This effect is built to let you use familiar beziér keyframes and handles to control common properties in Final Cut Pro.</p>
 <p>In the Keyframe Toolbox interface you&#x27;ll see several graphs, each one controlling a separate parameter.</p>
 <p>In the current effect, graphs include <code translate="no" v-pre>Opacity</code>, <code translate="no" v-pre>Position X</code>, <code translate="no" v-pre>Position Y</code>, <code translate="no" v-pre>Scale</code>, <code translate="no" v-pre>Rotation Z</code>, <code translate="no" v-pre>Rotation X</code>, <code translate="no" v-pre>Rotation Y</code>, and <code translate="no" v-pre>Blur</code>.</p>
@@ -324,12 +284,7 @@
 <p>Right now, <code translate="no" v-pre>OPTION (⌥)</code>  and <code translate="no" v-pre>COMMAND (⌘)</code> are equivalent, to hopefully make it easier for users of both Motion and After Effects to work with handles. <code translate="no" v-pre>SHIFT (⇧)</code> is a constraining modifier, as usual, and <code translate="no" v-pre>CONTROL (⌃)</code>-clicking a keyframe or handle deletes it, while right-clicking pops up a menu. (This means that <code translate="no" v-pre>CONTROL (⌃)</code>-clicking does not pop up the right-click menu. If you don&#x27;t have right-click behavior set up on your pointing device (such as a two-finger click on a trackpad) you can use the menu above each graph instead of right-clicking.)</p>
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533501?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 1 — Introducing Keyframe Toolbox"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="preparing-still-images">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#preparing-still-images">#</doc-anchor-trigger>
-        <span>Preparing still images</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="preparing-still-images">Preparing still images</h2>
 <p>If you&#x27;re working with regular video clips in the same aspect ratio as your canvas, you won&#x27;t have any problems. You also probably won&#x27;t have any problems if you&#x27;re working in a different aspect ratio, and have set Spatial Conform to Fill. If that&#x27;s your plan, skip straight to the next section!</p>
 <p>However, there&#x27;s a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they&#x27;ve been applied to, they are limited to the size of the frame the image takes up. It&#x27;s not possible to move an image outside that area — it just clips off at the original border. Setting Spatial Conform to Fill does solve this problem, but can cause quality issues, as it can mean the image is scaled down and then scaled back up in some contexts.</p>
 <p>To deal with this, the standard workflow for many animation plug-ins based on effects is to place each element in a compound clip, and that works here too. You can select any smaller elements and place them in a compound clip before applying Keyframe Toolbox. However, this can introduce some complexity around the sizing of compound clips and also timing.</p>
@@ -338,18 +293,12 @@
 <p>Keyframe Toolbox will then send the new image back to a new event called &quot;images with padding&quot;. The new image also has its new resolution as part of its name. You can now add this image to your timeline instead of your original image.</p>
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533494?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 2 — Preparing Still Images"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="keyframe-graph-basics">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#keyframe-graph-basics">#</doc-anchor-trigger>
-        <span>Keyframe graph basics</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="keyframe-graph-basics">Keyframe graph basics</h2>
 <p>Keyframes remembers values at points in time.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/basic-graph.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1344" height="302" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li>Each graph starts with has a keyframe at the start (left) and end (right) and a line connecting them.</li>
 <li><strong>The graph width maps to the clip width</strong>, while the <strong>graph height maps to the values of the property</strong>, within the limits shown to the right of that graph.</li>
@@ -365,18 +314,12 @@
 </ul>
 <div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533437?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 <hr>
-<doc-anchor-target id="resetting-and-scaling-the-graphs">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#resetting-and-scaling-the-graphs">#</doc-anchor-trigger>
-        <span>Resetting and scaling the graphs</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="resetting-and-scaling-the-graphs">Resetting and scaling the graphs</h2>
 <p>Each graph can be reset, and shown in one of three sizes.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/graph-sizes.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1352" height="1234" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li><strong>Each property graph can be reset</strong> using the reset button next to its name.</li>
 <li><strong><code translate="no" v-pre>SHIFT</code>-click any graph&#x27;s reset button</strong> to reset all graphs at once.</li>
@@ -391,18 +334,12 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533381?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 4 — Resetting and scaling the graphs"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="adding-and-moving-keyframes">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#adding-and-moving-keyframes">#</doc-anchor-trigger>
-        <span>Adding and moving keyframes</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="adding-and-moving-keyframes">Adding and moving keyframes</h2>
 <p>Keyframes can be moved and new keyframes can be added.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/dragging-snapping-crop.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1349" height="294" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li><strong>Double-click</strong> on a graph line to add a linear keyframe and remember a value at a point in time.</li>
 <li><strong>Click and drag on a keyframe</strong> to move it.</li>
@@ -415,18 +352,12 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533425?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 5 — Adding and moving keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="non-linear-smooth-keyframes">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#non-linear-smooth-keyframes">#</doc-anchor-trigger>
-        <span>Non-linear (smooth) keyframes</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="non-linear-smooth-keyframes">Non-linear (smooth) keyframes</h2>
 <p>Handles connected to keyframes control the graph curve that controls how one value changes into another.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/simple-keyframes.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="332" height="174" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-drag on a line</strong> to add a non-linear keyframe, dragging out two symmetric handles to create a bezier curve.</li>
 <li><strong><code translate="no" v-pre>OPTION</code>- or <code translate="no" v-pre>COMMAND</code>-drag on a keyframe</strong> to add handles to a linear keyframe, or reset and redraw the handles on an existing non-linear keyframe.</li>
@@ -437,18 +368,12 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533389?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 6 — Non-linear keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="deleting-keyframes-and-handles">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#deleting-keyframes-and-handles">#</doc-anchor-trigger>
-        <span>Deleting keyframes and handles</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="deleting-keyframes-and-handles">Deleting keyframes and handles</h2>
 <p>Keyframes and handles can be deleted.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/delete-keyframes.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="626" height="664" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li><strong><code translate="no" v-pre>CONTROL</code>-click on a keyframe</strong> to delete it.</li>
 <li><strong>Right-click on one or more selected keyframe and select Delete Keyframe(s)</strong> to delete them.</li>
@@ -458,18 +383,12 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533379?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 7 — Deleting keyframes and handles"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="working-with-precision">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#working-with-precision">#</doc-anchor-trigger>
-        <span>Working with precision</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="working-with-precision">Working with precision</h2>
 <p>Exact numbers can be entered for keyframes and handles.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/precision.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="519" height="189" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li><strong>Double-click on any keyframe</strong> to see its value (above) and time (below).</li>
 <li><strong>Double-click on any handle</strong> to see its distance (above) and angle (below).</li>
@@ -478,18 +397,12 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533372?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 8 — Working with precision"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="selecting-moving-and-scaling-keyframes">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#selecting-moving-and-scaling-keyframes">#</doc-anchor-trigger>
-        <span>Selecting, moving and scaling keyframes</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="selecting-moving-and-scaling-keyframes">Selecting, moving and scaling keyframes</h2>
 <p>Multiple keyframes can be selected and manipulated.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/multi-select.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="476" height="198" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li><strong>Clicking a keyframe selects it</strong>.</li>
 <li><strong><code translate="no" v-pre>SHIFT</code>-clicking</strong> additional keyframes selects additional keyframes.</li>
@@ -503,18 +416,12 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533395?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 9 — Selecting, moving and scaling keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="using-the-graph-menu">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#using-the-graph-menu">#</doc-anchor-trigger>
-        <span>Using the graph menu</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="using-the-graph-menu">Using the graph menu</h2>
 <p>Each graph has a menu that enables some advanced features.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/opacity-graph-menu.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1350" height="728" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li>The graph menu can be accessed by the menu to the right of the toggle buttons, or by right-clicking on the graph.</li>
 <li>Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.</li>
@@ -528,29 +435,22 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533427?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 10 — Using the graph menu"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="presets">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#presets">#</doc-anchor-trigger>
-        <span>Presets</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="presets">Presets</h2>
 <p>To create flexible keyframe graphs based on common animation patterns.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/opacity-expanded-graph.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1248" height="528" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li>The graph menu and the right-click menu both contain a <strong>Presets</strong> submenu.</li>
 <li>Adjusting the controls on these presets allows many common animation patterns to be created, including bounces, fades up and down moves in and out, and more.</li>
 <li>If no keyframes are selected, these presets replace the entire graph.</li>
 <li>If two or more contiguous keyframes are selected, these presets apply within the selected keyframe range, using the width and height of the selected keyframes. This allows more than one preset to be used in the same graph.</li>
 </ul>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/pos-y-oscillate-bounce.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1252" height="488" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li>The presets include:
 <ul>
@@ -576,11 +476,10 @@
 </li>
 <li>A preset&#x27;s options can be repeatedly changed <strong>until a keyframe is moved</strong> or the clip selection in FCP is changed.</li>
 </ul>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/pos-x-oscillate-graph.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1250" height="530" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li>In <strong>Oscillate</strong>, the options are:
 <ul>
@@ -614,18 +513,12 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533497?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 11 — Presets"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
-<doc-anchor-target id="before-first-keyframe-and-after-last-keyframe">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#before-first-keyframe-and-after-last-keyframe">#</doc-anchor-trigger>
-        <span>Before First Keyframe and After Last Keyframe</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="before-first-keyframe-and-after-last-keyframe">Before First Keyframe and After Last Keyframe</h2>
 <p>To control a virtual keyframe graph beyond the first and last keyframes.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/before-first-after-last.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1232" height="244" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li>If the first keyframe is moved to the right or the last keyframe is moved to the left, a dashed line displays the <em>virtual</em> graph beyond the bounds of the <em>real</em> graph.</li>
 <li>This strategy allows an animation to be repeated many times, if desired.</li>
@@ -639,18 +532,12 @@
 </ul>
 <div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533435?h=120310bc90&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 <hr>
-<doc-anchor-target id="settings">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#settings">#</doc-anchor-trigger>
-        <span>Settings</span>
-    </h2>
-</doc-anchor-target>
+<h2 id="settings">Settings</h2>
 <p>Settings gives access to advanced features.</p>
-<p><figure class="content-center">
+<figure class="content-center">
     <img src="../static/settings.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="764" height="1462" />
     <figcaption class="caption"></figcaption>
 </figure>
-</p>
 <ul>
 <li>Click the Settings button to pop up a panel with two sections: <strong>Properties</strong> and <strong>Motion Blur</strong>.</li>
 <li><strong>Properties</strong> allows some graphs to be hidden by unchecking them. At least one graph must remain active.
