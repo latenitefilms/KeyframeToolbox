@@ -1,26 +1,24 @@
 # How To Use
 
-Keyframe Toolbox is currently in **public beta** - so we are actively making changes and improvements based on YOUR feedback.
+This page contains all the information you need to get up-and-running with **Keyframe Toolbox**.
 
-We will be constantly adding new builds to TestFlight as we add new features and fix any bugs reported.
+We've prepared written and video tutorials.
 
-Please add any and all feedback to our [GitHub Issues page](https://github.com/latenitefilms/KeyframeToolbox/issues).
-
-We've prepared written and video tutorials. If you'd prefer to watch the videos, you can see them [all together here](https://vimeo.com/user/1116072/folder/28575750).
+If you'd prefer to watch the videos, you can see them [all together here](https://vimeo.com/user/1116072/folder/28575750).
 
 ---
 
 ## Installation
 
-You can download Keyframe Toolbox from [Apple's TestFlight](https://testflight.apple.com/join/YwzGCS6a).
+You can download **Keyframe Toolbox** from the [Mac App Store](https://apps.apple.com/app/keyframe-toolbox/id6759331578).
 
-![](/static/test-flight-install.png)
+Once purchased and downloaded run the **Keyframe Toolbox** application:
 
-Click **Install** then run the Keyframe Toolbox application, where you'll be prompted to install the **Motion Template**.
+![](/static/keyframe-toolbox-installed.png)
 
-![](/static/wrapper-application.png)
+This will automatically install the **Keyframe Toolbox** Motion Template.
 
-After the Motion Template is installed you can launch Final Cut Pro.
+Once done, you can quit the **Keyframe Toolbox** application and launch Final Cut Pro.
 
 You'll find Keyframe Toolbox in the **Effects Browser**.
 
