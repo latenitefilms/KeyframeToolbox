@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.4.0.828311209693">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830131651094">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.4.0">
+    <meta name="generator" content="Retype 4.5.3">
 
     <!-- Primary Meta Tags -->
     <title>How To Use</title>
@@ -16,6 +16,7 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://keyframetoolbox.fcp.cafe/how-to-use/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://keyframetoolbox.fcp.cafe/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -37,14 +38,17 @@
     <meta name="twitter:image" content="https://keyframetoolbox.fcp.cafe/static/keyframe-toolbox-installed.png">
     <meta name="twitter:image:alt" content="How To Use">
 
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://keyframetoolbox.fcp.cafe/how-to-use.md">
+
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.4.0.828311209693" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.5.3.830131651094" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.4.0.828311209693" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=4.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.4.0.828311209693" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.5.3.830131651094" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.5.3.830131651094" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -226,7 +230,7 @@
 <div class="flex">
     <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
         <main class="relative pb-12 lg:pt-2">
-            <div class="retype-markdown" id="retype-content">
+            <div class="relative retype-markdown" id="retype-content">
                 <!-- Rendered if sidebar right is enabled -->
                 <div id="retype-sidebar-right-toggle"></div>
                 <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
@@ -246,6 +250,8 @@
                         </li>
                     </ol>
                 </nav>
+
+                <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
 <h1 id="how-to-use">How To Use</h1>
@@ -267,7 +273,7 @@
     <img src="../static/effects-browser.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="802" height="452" />
     <figcaption class="caption"></figcaption>
 </figure>
-<p>You can then apply Keyframe Toolbox to any effect and away you go! If you want to use it regularly, you can right-click it an choose Make Default Video Effect. To apply it, you can then use ⌥E.</p>
+<p>You can then apply Keyframe Toolbox to any effect and away you go! If you want to use it regularly, you can right-click it an choose Make Default Video Effect. To apply it, you can then use <code translate="no" v-pre>OPTION (⌥)</code>-E.</p>
 <figure class="content-center">
     <img src="../static/keyframe-toolbox-hero.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1352" height="1930" />
     <figcaption class="caption"></figcaption>
@@ -306,6 +312,8 @@
 <li>At least two keyframes must remain in the graph, so the first and last keyframes cannot be deleted until other keyframes are added.</li>
 <li>However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.</li>
 <li>If the playhead is over the clip, <strong>a line briefly indicates the position of the timeline playhead</strong> in relation to the clip. The line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead.</li>
+<li>This <strong>&quot;mini playhead&quot; can be moved by using the scroll wheel as you hold <code translate="no" v-pre>COMMAND</code></strong> while the pointer is over a graph. You can also hold <code translate="no" v-pre>COMMAND</code> while moving two fingers on a trackpad. <code translate="no" v-pre>New in v1.1</code></li>
+<li>Alternatively, activate <strong>Live Scrubbing</strong> with the button at the top, or press <code translate="no" v-pre>CAPS LOCK</code> to toggle it. When Live Scrubbing is active, moving the mouse over a graph moves the playhead.</li>
 <li>As you drag a keyframe, hold <code translate="no" v-pre>SHIFT</code> to enable snapping to the playhead.</li>
 <li><strong>Opacity has a fixed 0..100 range</strong>, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.</li>
 <li><strong>All other limits can be changed by dragging them</strong>, horizontally or vertically. Hold <code translate="no" v-pre>OPTION</code> as you drag to change both sides in opposite directions.</li>
@@ -315,7 +323,7 @@
 <div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533437?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
 <hr>
 <h2 id="resetting-and-scaling-the-graphs">Resetting and scaling the graphs</h2>
-<p>Each graph can be reset, and shown in one of three sizes.</p>
+<p>Each graph can be reset, zoomed horizontally, and shown in one of three vertical sizes.</p>
 <figure class="content-center">
     <img src="../static/graph-sizes.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1352" height="1234" />
     <figcaption class="caption"></figcaption>
@@ -329,6 +337,25 @@
 <li><strong><code translate="no" v-pre>OPTION</code>-click on a toggle</strong> to set that graph to the chosen size and minimize all other graphs.
 <ul>
 <li>As it&#x27;s not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.</li>
+</ul>
+</li>
+<li>Graphs can be zoomed horizontally. When zoomed in, a scroll bar appears below all graphs, and the tick marks reflect the new zoom state.  <code translate="no" v-pre>New in v1.1</code>
+<ul>
+<li>To zoom all graphs in or out, while the pointer is over a graph:
+<ul>
+<li>Spread two fingers together or apart on a trackpad.</li>
+<li>Hold <code translate="no" v-pre>OPTION</code> as you scroll with a mouse wheel.</li>
+<li>Hold <code translate="no" v-pre>OPTION</code> as you scroll by moving two fingers together vertically on a trackpad.</li>
+<li>Double-click in empty space, to show 25% of the width of the full graph. Double-click again to zoom out.</li>
+</ul>
+</li>
+<li>To scroll all graphs, while zoomed in with the pointer over a graph:
+<ul>
+<li>Move two fingers on a trackpad horizontall</li>
+<li>Hold <code translate="no" v-pre>SHIFT</code> as you scroll with a mouse wheel.</li>
+<li>Hold <code translate="no" v-pre>SHIFT</code> as you scroll by moving two fingers together vertically on a trackpad.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -348,7 +375,10 @@
 <li>If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.</li>
 <li>If <code translate="no" v-pre>SHIFT</code> is now held down, the keyframe will snap to this line to align with keyframes on other properties.</li>
 <li><strong>Dragging a keyframe and adding <code translate="no" v-pre>SHIFT</code> while dragging</strong> will also snap to the line that indicates the playhead position, if present. This allows you to snap a keyframe to the current playhead position.</li>
-<li>Dragging a line connnecting two keyframes will move both keyframes together.</li>
+<li><strong>Drag a line</strong> connnecting two keyframes to move both keyframes together.</li>
+<li><strong>Click a line</strong> connnecting two keyframes to select both keyframes. <code translate="no" v-pre>New in v1.1</code></li>
+<li><strong>Click on the name of a property</strong> at the top of a graph to create a new keyframe at the current time. <code translate="no" v-pre>New in v1.1</code></li>
+<li><strong><code translate="no" v-pre>SHIFT</code>-click on the name of a property</strong> at the top of a graph to create a new keyframe at the current time on all graphs. <code translate="no" v-pre>New in v1.1</code></li>
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533425?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 5 — Adding and moving keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
@@ -390,10 +420,17 @@
     <figcaption class="caption"></figcaption>
 </figure>
 <ul>
-<li><strong>Double-click on any keyframe</strong> to see its value (above) and time (below).</li>
+<li><strong>Double-click on any keyframe</strong> to see its value (above) and time (below).
+<ul>
+<li>If Absolute Timing is active in Settings, the time value will be shown as a number of frames (editable) and also below that field as abbreviated timecode.  <code translate="no" v-pre>New in v1.1</code></li>
+</ul>
+</li>
 <li><strong>Double-click on any handle</strong> to see its distance (above) and angle (below).</li>
 <li>In both these cases, <strong>type in new values</strong> to change them, then approve the change by presing <code translate="no" v-pre>RETURN</code> or <code translate="no" v-pre>ENTER</code>, or cancel the change with <code translate="no" v-pre>ESCAPE</code>.</li>
-<li>Alternatively, use <strong>up and down arrows</strong> to change the values by 1, and <strong><code translate="no" v-pre>SHIFT</code>-up and <code translate="no" v-pre>SHIFT</code>-down arrows</strong> to change the values by 10.</li>
+<li>Alternatively, use <strong>up and down arrows</strong> to change the values by 1, <strong><code translate="no" v-pre>SHIFT</code>-up and <code translate="no" v-pre>SHIFT</code>-down arrows</strong> to change the values by 10, and <code translate="no" v-pre>New in v1.1</code> <strong><code translate="no" v-pre>OPTION</code>-up and <code translate="no" v-pre>OPTION</code>-down arrows</strong> to change the values by 100.</li>
+<li>When using up and down arrows to change values, changes are immediately visible. <code translate="no" v-pre>New in v1.1</code></li>
+<li>When numeric entry is active, use <strong>left and right arrows</strong> to move to the previous or next keyframe or handle. <code translate="no" v-pre>New in v1.1</code></li>
+<li>If the playhead is over a keyframe (for example if the graph name has just been clicked to create a new keyframe) then clicking the property name activates numeric entry.  <code translate="no" v-pre>New in v1.1</code></li>
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533372?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 8 — Working with precision"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
@@ -410,6 +447,7 @@
 <li><strong>Hold <code translate="no" v-pre>SHIFT</code> as you drag a selection box</strong> to select additional keyframes.</li>
 <li>When multiple keyframes have been selected, a bounding box appears that allows the selected keyframes to be scaled and/or moved.</li>
 <li><strong>Drag one of the selected keyframes</strong> to move them, or <strong>drag the sides or corners of the bounding box</strong> to move the contained keyframes proportionally to one another.</li>
+<li>When resizing a group of keyframes, handles also resize proportionally. <code translate="no" v-pre>New in v1.1</code></li>
 <li><strong>Hold <code translate="no" v-pre>SHIFT</code> as you drag</strong> one of multiple selected keyframes to constrain to horizontal or vertical movement.</li>
 <li>Right-click to delete, copy, or perform other operations on multiple keyframes at once.</li>
 <li>Click elsewhere in the graph to dismiss the bounding box.</li>
@@ -423,15 +461,33 @@
     <figcaption class="caption"></figcaption>
 </figure>
 <ul>
-<li>The graph menu can be accessed by the menu to the right of the toggle buttons, or by right-clicking on the graph.</li>
-<li>Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.</li>
-<li>When a single keyframe is selected, use <code translate="no" v-pre>Clone Value from Previous Keyframe</code> or <code translate="no" v-pre>Clone Value from Next Keyframe</code> to simulate a Hold keyframe.</li>
-<li>If no keyframes are selected, an entire graph can be reversed in time by choosing <code translate="no" v-pre>Time-Reverse Graph</code>, or flipped vertically by choosing <code translate="no" v-pre>Invert Graph</code>.</li>
-<li>If two or more contiguous keyframes are selected, they can be reversed by choosing <code translate="no" v-pre>Time-Reverse Keyframes</code>, or flipped vertically by choosing <code translate="no" v-pre>Invert Keyframes</code>.</li>
-<li>Use <code translate="no" v-pre>Copy Keyframes</code> or <code translate="no" v-pre>Copy Graph</code> to copy keyframes from a graph.</li>
-<li>Use <code translate="no" v-pre>Paste Keyframes</code> or <code translate="no" v-pre>Paste Graph</code> to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.</li>
-<li><code translate="no" v-pre>Clone Value from Previous Keyframe</code> and <code translate="no" v-pre>Clone Value from Next Keyframe</code> change the value of the selected keyframe to a the value or a neighbouring keyframe.</li>
-<li><strong>Presets</strong> and <strong>Before First Keyframe and After Last Keyframe</strong> are discussed in the following sections.</li>
+<li>
+<p>The graph menu can be accessed by the menu to the right of the toggle buttons, or by right-clicking on the graph.</p>
+</li>
+<li>
+<p>Many of these menu options are context-sensitive. If you select one or more keyframes, those keyframes will be affected. If no keyframes are selected, the entire graph is affected.</p>
+</li>
+<li>
+<p>When a single keyframe is selected, use <code translate="no" v-pre>Clone Value from Previous Keyframe</code> or <code translate="no" v-pre>Clone Value from Next Keyframe</code> to simulate a Hold keyframe.</p>
+</li>
+<li>
+<p>If no keyframes are selected, an entire graph can be reversed in time by choosing <code translate="no" v-pre>Time-Reverse Graph</code>, or flipped vertically by choosing <code translate="no" v-pre>Invert Graph</code>.</p>
+</li>
+<li>
+<p>If two or more contiguous keyframes are selected, they can be reversed by choosing <code translate="no" v-pre>Time-Reverse Keyframes</code>, or flipped vertically by choosing <code translate="no" v-pre>Invert Keyframes</code>.</p>
+</li>
+<li>
+<p>Use <code translate="no" v-pre>Copy Keyframes</code> or <code translate="no" v-pre>Copy Graph</code> to copy keyframes from a graph.</p>
+</li>
+<li>
+<p>Use <code translate="no" v-pre>Paste Keyframes</code> or <code translate="no" v-pre>Paste Graph</code> to paste copied keyframes from one graph into another graph. One or more keyframes must be selected for Paste Keyframes to be available.</p>
+</li>
+<li>
+<p><code translate="no" v-pre>Clone Value from Previous Keyframe</code> and <code translate="no" v-pre>Clone Value from Next Keyframe</code> change the value of the selected keyframe to a the value or a neighbouring keyframe.</p>
+</li>
+<li>
+<p><strong>Presets</strong> and <strong>Before First Keyframe and After Last Keyframe</strong> are discussed in the following sections.</p>
+</li>
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533427?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 10 — Using the graph menu"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
@@ -513,6 +569,64 @@
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533497?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 11 — Presets"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <hr>
+<h2 id="custom-presets">Custom Presets</h2>
+<ul>
+<li>Custom presets can be saved. <code translate="no" v-pre>New in v1.1</code>
+<ul>
+<li>With no keyframes selected, or with two or more keyframes selected, choose Save Preset and give it a name.</li>
+<li>These presets appear in the menu below the built-in presets, and when applied, you’ll be able to control limits, scale handles up or down, and flip it, as you can with the other presets.</li>
+<li>Similar to other presets, selecting multiple keyframes before choosing a preset sets the horizontal and vertical limits from keyframe values.</li>
+<li>Choose Manage Presets, in the same submenu, to reveal a folder containing all your presets.
+<ul>
+<li>You can rename your presets by renaming these files.</li>
+<li>You can organise your presets by creating new subfolders.</li>
+<li>Presets are small plain text files, and can be easily shared between users.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="easing">Easing</h2>
+<p>Allowing predictable curve patterns to be used across one or more keyframes. <code translate="no" v-pre>New in v1.1</code></p>
+<figure class="content-center">
+    <img src="/static/easing.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<ul>
+<li>The graph menu and the right-click menu both contain an <strong>Easing</strong> submenu. <code translate="no" v-pre>New in v1.1</code></li>
+<li>The Easing submenu can be used in two contexts: <strong>referring to curves</strong>, and <strong>referring to handles on a keyframe</strong>. To refer to curves, select two or more keyframes before choosing the Easing submenu; to refer to handles on a keyframe, select just one keyframe before choosing the Easing submenu.</li>
+<li>If two or more keyframes are selected, easing affects the <strong>curves between the selected keyframes</strong>, so any handle before the first selected keyframe or after the last selected keyframe will be ignored.</li>
+<li>In this mode, options include <strong>Ease In+Out</strong>, <strong>Ease In</strong> and <strong>Ease Out</strong>.
+<ul>
+<li>All options here affect the handles on both sides of each selected curve.</li>
+</ul>
+</li>
+<li>However, if a single keyframe is selected, these menu items now refer to the handles around that keyframe. The submenu items change to reflect this, and now read <strong>Ease Left+Right</strong>, <strong>Ease Left</strong> and <strong>Ease Right</strong>.
+<ul>
+<li>Ease Left means the handle to the left of the keyframe and Ease Right means the handle to the right of the keyframe.</li>
+</ul>
+</li>
+<li>Each submenu contains:
+<ul>
+<li>Linear</li>
+<li>Sine</li>
+<li>Quad</li>
+<li>Cubic</li>
+<li>Quart</li>
+<li>Quint</li>
+<li>Circ</li>
+<li>Expo</li>
+<li>Back</li>
+</ul>
+</li>
+<li>For an illustration of how these graphs should appear, refer to <a href="https://easings.net" class="outbound" target="_blank"><span>https://easings.net</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.
+<ul>
+<li>Important: The easing curves shown here refers to the curve between two keyframes, not to the handles on a keyframe.</li>
+</ul>
+</li>
+</ul>
+<hr>
 <h2 id="before-first-keyframe-and-after-last-keyframe">Before First Keyframe and After Last Keyframe</h2>
 <p>To control a virtual keyframe graph beyond the first and last keyframes.</p>
 <figure class="content-center">
@@ -549,11 +663,16 @@
 <li><strong>Timing Mode</strong>, which allows:
 <ul>
 <li><code translate="no" v-pre>Relative Timing (graph maps to clip)</code> which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.</li>
-<li><code translate="no" v-pre>Absolute Timing (graph maps to time)</code> which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.</li>
+<li><code translate="no" v-pre>Absolute Timing (graph maps to time)</code> which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
+<ul>
+<li>In Absolute Timing mode, time values are shown in frames and timecode. (If a clip is less than a minute long, only seconds and frames are shown.)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><strong>Motion Blur</strong>, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.</li>
 <li><strong>Help</strong>, which includes a global setting to disable tooltips, if they&#x27;re bothering you.</li>
+<li>To save the currently chosen settings as the default for new instances of Keyframe Toolbox, press the button at the bottom of the panel: <strong>Save Current Settings as Default</strong>. <code translate="no" v-pre>New in v1.1</code></li>
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533429?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 13 — Settings"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -622,6 +741,6 @@
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "How To Use", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "How To Use", level: 1, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/how-to-use.md" }</script>
 </body>
 </html>

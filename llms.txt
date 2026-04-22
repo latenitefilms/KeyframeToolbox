@@ -1,0 +1,14 @@
+﻿# Keyframe Toolbox
+
+> Keyframe Toolbox finally brings advanced keyframe animation to Final Cut Pro.
+
+- [Keyframe Toolbox](https://keyframetoolbox.fcp.cafe/readme.md): Keyframe Toolbox
+- [Buy on Mac App Store](https://keyframetoolbox.fcp.cafe/buy.md): Keyframe Toolbox is a one-time payment of USD$19.99 on the Mac App Store.
+- [Educational Pricing](https://keyframetoolbox.fcp.cafe/educational.md): Educational institutions can get a 50% discount when they purchase 20 or more copies through Apple School Manager.
+- [System Requirements](https://keyframetoolbox.fcp.cafe/system-requirements.md): ScriptStar requires Final Cut Pro 10.6.5 or later.
+- [How To Use](https://keyframetoolbox.fcp.cafe/how-to-use.md): This page contains all the information you need to get up-and-running with Keyframe Toolbox.
+- [Support](https://keyframetoolbox.fcp.cafe/support.md): If you run into any bugs, crashes, or you have a feature request, you can post an issue here.
+- [Release Notes](https://keyframetoolbox.fcp.cafe/release-notes.md): 🎉 Released:
+- [Uninstall](https://keyframetoolbox.fcp.cafe/uninstall.md): To uninstall Keyframe Toolbox, simply drag the application to the trash/bin.
+- [Credits](https://keyframetoolbox.fcp.cafe/credits.md): Keyframe Toolbox has been created by Iain Anderson and Chris Hocking.
+- [Privacy Policy](https://keyframetoolbox.fcp.cafe/privacy.md): This is the privacy policy for the Keyframe Toolbox, macOS Application that is available on the macOS App Store and TestFlight.
