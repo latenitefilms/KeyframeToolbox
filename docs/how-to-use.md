@@ -24,7 +24,7 @@ You'll find Keyframe Toolbox in the **Effects Browser**.
 
 ![](/static/effects-browser.png)
 
-You can then apply Keyframe Toolbox to any effect and away you go! If you want to use it regularly, you can right-click it an choose Make Default Video Effect. To apply it, you can then use ⌥E.
+You can then apply Keyframe Toolbox to any effect and away you go! If you want to use it regularly, you can right-click it an choose Make Default Video Effect. To apply it, you can then use `OPTION (⌥)`-E.
 
 ![](/static/keyframe-toolbox-hero.png)
 
@@ -77,6 +77,8 @@ Keyframes remembers values at points in time.
 - At least two keyframes must remain in the graph, so the first and last keyframes cannot be deleted until other keyframes are added.
 - However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
 - If the playhead is over the clip, **a line briefly indicates the position of the timeline playhead** in relation to the clip. The line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead.
+- This **"mini playhead" can be moved by using the scroll wheel as you hold `COMMAND`** while the pointer is over a graph. You can also hold `COMMAND` while moving two fingers on a trackpad. `New in v1.1`
+- Alternatively, activate **Live Scrubbing** with the button at the top, or press `CAPS LOCK` to toggle it. When Live Scrubbing is active, moving the mouse over a graph moves the playhead.
 - As you drag a keyframe, hold `SHIFT` to enable snapping to the playhead.
 - **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.
 - **All other limits can be changed by dragging them**, horizontally or vertically. Hold `OPTION` as you drag to change both sides in opposite directions.
@@ -89,7 +91,7 @@ Keyframes remembers values at points in time.
 
 ## Resetting and scaling the graphs
 
-Each graph can be reset, and shown in one of three sizes.
+Each graph can be reset, zoomed horizontally, and shown in one of three vertical sizes.
 
 ![](/static/graph-sizes.png)
 
@@ -100,6 +102,16 @@ Each graph can be reset, and shown in one of three sizes.
 - **`SHIFT`-click on a toggle** to force all graphs to that size.
 - **`OPTION`-click on a toggle** to set that graph to the chosen size and minimize all other graphs.
   - As it's not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.
+- Graphs can be zoomed horizontally. When zoomed in, a scroll bar appears below all graphs, and the tick marks reflect the new zoom state.  `New in v1.1`
+  - To zoom all graphs in or out, while the pointer is over a graph:
+    - Spread two fingers together or apart on a trackpad.
+    - Hold `OPTION` as you scroll with a mouse wheel.
+    - Hold `OPTION` as you scroll by moving two fingers together vertically on a trackpad.
+    - Double-click in empty space, to show 25% of the width of the full graph. Double-click again to zoom out.
+  - To scroll all graphs, while zoomed in with the pointer over a graph:
+    - Move two fingers on a trackpad horizontall
+    - Hold `SHIFT` as you scroll with a mouse wheel.
+    - Hold `SHIFT` as you scroll by moving two fingers together vertically on a trackpad.
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533381?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 4 — Resetting and scaling the graphs"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -118,7 +130,10 @@ Keyframes can be moved and new keyframes can be added.
 - If you move a keyframe on one graph to a position near a keyframe on another graph, a vertical line will appear.
 - If `SHIFT` is now held down, the keyframe will snap to this line to align with keyframes on other properties.
 - **Dragging a keyframe and adding `SHIFT` while dragging** will also snap to the line that indicates the playhead position, if present. This allows you to snap a keyframe to the current playhead position.
-- Dragging a line connnecting two keyframes will move both keyframes together.
+- **Drag a line** connnecting two keyframes to move both keyframes together.
+- **Click a line** connnecting two keyframes to select both keyframes. `New in v1.1`
+- **Click on the name of a property** at the top of a graph to create a new keyframe at the current time. `New in v1.1`
+- **`SHIFT`-click on the name of a property** at the top of a graph to create a new keyframe at the current time on all graphs. `New in v1.1`
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533425?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 5 — Adding and moving keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -164,9 +179,13 @@ Exact numbers can be entered for keyframes and handles.
 ![](/static/precision.png)
 
 - **Double-click on any keyframe** to see its value (above) and time (below).
+  - If Absolute Timing is active in Settings, the time value will be shown as a number of frames (editable) and also below that field as abbreviated timecode.  `New in v1.1`
 - **Double-click on any handle** to see its distance (above) and angle (below).
 - In both these cases, **type in new values** to change them, then approve the change by presing `RETURN` or `ENTER`, or cancel the change with `ESCAPE`.
-- Alternatively, use **up and down arrows** to change the values by 1, and **`SHIFT`-up and `SHIFT`-down arrows** to change the values by 10.
+- Alternatively, use **up and down arrows** to change the values by 1, **`SHIFT`-up and `SHIFT`-down arrows** to change the values by 10, and `New in v1.1` **`OPTION`-up and `OPTION`-down arrows** to change the values by 100. 
+- When using up and down arrows to change values, changes are immediately visible. `New in v1.1`
+- When numeric entry is active, use **left and right arrows** to move to the previous or next keyframe or handle. `New in v1.1`
+- If the playhead is over a keyframe (for example if the graph name has just been clicked to create a new keyframe) then clicking the property name activates numeric entry.  `New in v1.1`
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533372?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 8 — Working with precision"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -184,6 +203,7 @@ Multiple keyframes can be selected and manipulated.
 - **Hold `SHIFT` as you drag a selection box** to select additional keyframes.
 - When multiple keyframes have been selected, a bounding box appears that allows the selected keyframes to be scaled and/or moved.
 - **Drag one of the selected keyframes** to move them, or **drag the sides or corners of the bounding box** to move the contained keyframes proportionally to one another.
+- When resizing a group of keyframes, handles also resize proportionally. `New in v1.1`
 - **Hold `SHIFT` as you drag** one of multiple selected keyframes to constrain to horizontal or vertical movement.
 - Right-click to delete, copy, or perform other operations on multiple keyframes at once.
 - Click elsewhere in the graph to dismiss the bounding box.
@@ -272,6 +292,51 @@ To create flexible keyframe graphs based on common animation patterns.
 
 ---
 
+## Custom Presets
+
+- Custom presets can be saved. `New in v1.1`
+  - With no keyframes selected, or with two or more keyframes selected, choose Save Preset and give it a name.
+  - These presets appear in the menu below the built-in presets, and when applied, you’ll be able to control limits, scale handles up or down, and flip it, as you can with the other presets.
+  - Similar to other presets, selecting multiple keyframes before choosing a preset sets the horizontal and vertical limits from keyframe values.
+  - Choose Manage Presets, in the same submenu, to reveal a folder containing all your presets.
+    - You can rename your presets by renaming these files.
+    - You can organise your presets by creating new subfolders.
+    - Presets are small plain text files, and can be easily shared between users.
+
+---
+
+## Easing 
+
+Allowing predictable curve patterns to be used across one or more keyframes. `New in v1.1`
+
+![](/static/easing.png)
+
+- The graph menu and the right-click menu both contain an **Easing** submenu. `New in v1.1`
+- The Easing submenu can be used in two contexts: **referring to curves**, and **referring to handles on a keyframe**. To refer to curves, select two or more keyframes before choosing the Easing submenu; to refer to handles on a keyframe, select just one keyframe before choosing the Easing submenu.
+- If two or more keyframes are selected, easing affects the **curves between the selected keyframes**, so any handle before the first selected keyframe or after the last selected keyframe will be ignored.
+- In this mode, options include **Ease In+Out**, **Ease In** and **Ease Out**.
+  - All options here affect the handles on both sides of each selected curve.
+- However, if a single keyframe is selected, these menu items now refer to the handles around that keyframe. The submenu items change to reflect this, and now read **Ease Left+Right**, **Ease Left** and **Ease Right**.
+  - Ease Left means the handle to the left of the keyframe and Ease Right means the handle to the right of the keyframe.
+- Each submenu contains:
+  - Linear
+  - Sine
+  - Quad
+  - Cubic
+  - Quart
+  - Quint
+  - Circ
+  - Expo
+  - Back
+- For an illustration of how these graphs should appear, refer to https://easings.net.
+  - Important: The easing curves shown here refers to the curve between two keyframes, not to the handles on a keyframe.
+
+
+
+
+
+---
+
 ## Before First Keyframe and After Last Keyframe
 
 To control a virtual keyframe graph beyond the first and last keyframes.
@@ -302,7 +367,9 @@ Settings gives access to advanced features.
 - **Timing Mode**, which allows:
   - `Relative Timing (graph maps to clip)` which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.
   - `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
+    - In Absolute Timing mode, time values are shown in frames and timecode. (If a clip is less than a minute long, only seconds and frames are shown.)
 - **Motion Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
 - **Help**, which includes a global setting to disable tooltips, if they're bothering you.
+- To save the currently chosen settings as the default for new instances of Keyframe Toolbox, press the button at the bottom of the panel: **Save Current Settings as Default**. `New in v1.1`
 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533429?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 13 — Settings"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
