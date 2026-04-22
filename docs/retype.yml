@@ -15,19 +15,14 @@ links:
   link: /buy/
   icon: desktop-download
 
-- text: Issues
-  link: https://github.com/latenitefilms/KeyframeToolbox/issues
-  icon: issue-opened
-  target: blank
-
-- text: Discussions
-  link: https://github.com/latenitefilms/KeyframeToolbox/discussions
-  icon: comment-discussion
-  target: blank
-
 - text: Discord
   link: https://ltnt.tv/discord
   icon: comment-discussion
+  target: blank
+
+- text: Bugs & Feature Requests
+  link: https://github.com/latenitefilms/KeyframeToolbox/issues
+  icon: issue-opened
   target: blank
 
 - text: FCP Cafe
