@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830171655964">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.830207607579">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -38,11 +38,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
-    <link href="../resources/css/retype.css?v=4.5.3.830171655964" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.5.3.830207607579" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.5.3.830171655964" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.5.3.830207607579" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.5.3.830171655964" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.5.3.830207607579" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -249,6 +249,47 @@
 
                 <!-- Page content  -->
 <h1 id="release-notes">Release Notes</h1>
+<h3 id="110-build-39">1.1.0 (Build 39)</h3>
+<p><strong><span class="docs-emoji">&#x1F389;</span> Released:</strong></p>
+<ul>
+<li>23rd April 2026</li>
+</ul>
+<p><strong><span class="docs-emoji">&#x1F528;</span> Improvements:</strong></p>
+<ul>
+<li><strong>Clicking the name of a property creates a keyframe at the current time</strong>, maintaining the current graph shape.</li>
+<li><strong>Shift-clicking a property name creates a keyframe on all graphs.</strong> Thanks for requesting, Honusan and others!
+<ul>
+<li>Related — clicking the name of a property while over a keyframe (or double-clicking the keyframe property name) opens that keyframe for numeric editing. Thanks for requesting, Honusan and others!</li>
+</ul>
+</li>
+<li><strong>Graphs can now be zoomed horizontally.</strong> Use two fingers on a trackpad or hold option while scrolling. Alternatively, double-click in empty space to zoom in to show just 25% of the graph width. When zoomed in, a scroll indicator at the bottom shows the visible part of the total graph. This can be dragged manually. Alternatively, you can scroll with a horizontal scroll on a trackpad or by holding shift while using a scroll wheel. Thanks for requesting, Jake, Honusan and others!</li>
+<li><strong>Presets can be saved</strong>, using the new Save Preset option at the end of the Presets menu. When you apply one of your own presets, you’ll be able to control limits, scale handles up or down, and flip the preset as you can with the other presets. Thanks for requesting, cinestillsamurai, Honusan and others!
+<ul>
+<li>Use <strong>Manage Presets</strong>, in the same menu, to reveal a folder containing all your presets. Share presets with your friends if you wish!</li>
+<li>Renaming presets renames them in the menu; deleting them removes them.</li>
+</ul>
+</li>
+<li><strong>Easing has been added</strong> to the graph menu and right-click menu, for Ease In, Ease Out, or Ease In+Out, for many common curve types (Linear, Sine, Quad, Cubic, Quart, Quint, Circ, Expo, Back). If you’re a fan of Easy Ease in After Effects, try Sine here. Note that selecting two or more keyframes applies easing to the curves between the presets, while selecting a single keyframe applies easing to the handles around that keyframe. Thanks for requesting something like this, Alex Gollner!</li>
+<li><strong>Clicking on a line connecting two keyframes selects both keyframes.</strong> This makes it easier to apply easing to the graph between two keyframes. (Note that double-clicking on a line still creates a new linear keyframe.)</li>
+<li><strong>Settings can now be saved as default.</strong> If you always want to use Motion Blur and Absolute Timing, set your preferred options, then press the new button at the bottom of the Settings panel. This affects new instances of Keyframe Toolbox. Thanks for requesting, Honusan!</li>
+<li><strong>In Absolute Timing mode, time is now shown in frames and timecode.</strong> If a clip is less than a minute long, only seconds and frames are shown. Thanks for requesting, Honusan!</li>
+<li>Several improvements to numeric editing.
+<ul>
+<li><strong>When you double-click a keyframe, the playhead moves to that frame</strong> so you can see your changes directly.</li>
+<li>When editing values numerically, use up/down to change by 1, ⇧-up/down to change by 10, and (new!) ⌥-up/down to change by 100.</li>
+<li><strong>Changing values with arrow keys now immediately updates</strong> a keyframe or handle.</li>
+<li><strong>Left and right arrow keys now switch to editing neighbouring keyframes</strong> (and move the playhead) so you can easily edit all values in a graph numerically if you wish.</li>
+</ul>
+</li>
+<li>If you wish, hold Command while using the scroll wheel to move the playhead.</li>
+</ul>
+<p><strong><span class="docs-emoji">&#x1F41E;</span> Bug Fixes:</strong></p>
+<ul>
+<li>Important: property changes now more closely follow extreme graph curves. Please check any existing animations to make sure they&#x27;re still doing what you want; very minor tweaks may be needed.</li>
+<li>Scrolling behavior is more consistent.</li>
+<li>It&#x27;s easier to select groups of keyframes.</li>
+</ul>
+<hr>
 <h3 id="100-build-31">1.0.0 (Build 31)</h3>
 <p><strong><span class="docs-emoji">&#x1F389;</span> Released:</strong></p>
 <ul>
