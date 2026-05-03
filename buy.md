@@ -4,7 +4,7 @@
 
 > [:icon-desktop-download: Click here to **buy** on the **Mac App Store**](https://apps.apple.com/app/keyframe-toolbox/id6759331578)
 
-There is no free trial.
+Though there is no free trial with the Mac App Store, you can try out the TestFlight version (below) for free.
 
 You can find information about Educational Pricing [here](/educational/).
 
