@@ -24,6 +24,8 @@ Here's an example of how you might animate Position X and Position Y to move an 
 
 Crucially, each property can be animated separately — because you often need to control opacity or blur in a different way to position or scale. We don't know of another tool that gives you this much control over animation in Final Cut Pro.
 
+For many more examples of how you can use keyframe graphs to create animation, head to [our Sample Animations page](/how-to-use/sample-animations).
+
 ---
 
 ## Key Features
