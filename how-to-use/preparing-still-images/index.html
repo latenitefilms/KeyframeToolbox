@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831111256077">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.831174243027">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.5.3">
@@ -23,6 +23,10 @@
     <meta property="og:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images/">
     <meta property="og:title" content="Preparing still images">
     <meta property="og:description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.">
+    <meta property="og:image" content="https://keyframetoolbox.fcp.cafe/static/ps-export-layers-to-files.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Preparing still images">
     <meta property="og:site_name" content="Keyframe Toolbox">
     <meta property="og:locale" content="en_US">
 
@@ -31,6 +35,8 @@
     <meta name="twitter:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images/">
     <meta name="twitter:title" content="Preparing still images">
     <meta name="twitter:description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.">
+    <meta name="twitter:image" content="https://keyframetoolbox.fcp.cafe/static/ps-export-layers-to-files.png">
+    <meta name="twitter:image:alt" content="Preparing still images">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images.md">
@@ -38,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.5.3.831111256077" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.5.3.831174243027" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.831111256077" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.831174243027" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.831111256077" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.831174243027" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -243,10 +249,28 @@
 <h1 id="preparing-still-images">Preparing still images</h1>
 <p>If you&#x27;re working with regular video clips in the same aspect ratio as your canvas, you won&#x27;t have any problems. You also probably won&#x27;t have any problems if you&#x27;re working in a different aspect ratio, and have set Spatial Conform to Fill. If that&#x27;s your plan, skip straight to the next section!</p>
 <p>However, there&#x27;s a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they&#x27;ve been applied to, they are limited to the size of the frame the image takes up. It&#x27;s not possible to move an image outside that area — it just clips off at the original border. Setting Spatial Conform to Fill does solve this problem, but can cause quality issues, as it can mean the image is scaled down and then scaled back up in some contexts.</p>
-<p>To deal with this, the standard workflow for many animation plug-ins based on effects is to place each element in a compound clip, and that works here too. You can select any smaller elements and place them in a compound clip before applying Keyframe Toolbox. However, this can introduce some complexity around the sizing of compound clips and also timing.</p>
-<p>As a better solution, we&#x27;ve added a feature to pad any still image with extra space, making it the same aspect ratio as the timeline the effect is placed in. This means you won&#x27;t need to change Spatial Conform before applying Keyframe Toolbox, and you won&#x27;t hit any scaling quality problems.</p>
-<p>To use it, you&#x27;ll need to have applied Keyframe Toolbox to a clip in your timeline — even on a temporary clip. With that in place, drag an image from the Browser to the logo at the top of the effect. (This image will need to be in the same Event as your current Project, due to how FCP works.)</p>
+<p><strong>All effects, even built-in FCP effects like Radial Blur, have this issue.</strong></p>
+<p>To avoid issues, make you to work with clips that:</p>
+<ol>
+<li>Match the size of the canvas</li>
+<li>Have transparent areas around the actual image data</li>
+</ol>
+<p>There are a few easy ways to do this.</p>
+<p>The standard workflow for many animation effects is to <strong>place each element in a compound clip</strong>, and that works here too. You can select any smaller elements and place them in a compound clip before applying Keyframe Toolbox. However, this can introduce some complexity around the sizing of compound clips and can get messy if you ever need to change the duration of a compound clip.</p>
+<p>Alternatively, <strong>If you use Adobe Photoshop</strong> to prepare your images:</p>
+<ol>
+<li>Set your image size to match your FCP timeline size.</li>
+<li>Use File &gt; Export &gt; Export Layers to Files, choosing PNG-24 as the format, checking Transparency, and  unchecking &quot;Trim Layers&quot;.</li>
+</ol>
+<figure class="content-center">
+    <img src="../../static/ps-export-layers-to-files.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="968" height="938" />
+    <figcaption class="caption"></figcaption>
+</figure>
+<p>You can now bring in all the exported PNG files and animate them safely.</p>
+<p>If you don&#x27;t use Photoshop, we&#x27;ve added a feature into Keyframe Toolbox itself. It pads any still image with extra space, making it the same aspect ratio as the timeline the effect is placed in. This means you won&#x27;t need to change Spatial Conform before applying Keyframe Toolbox, and you won&#x27;t hit any scaling quality problems.</p>
+<p>To use it, you&#x27;ll need to have applied Keyframe Toolbox to a clip in your timeline — even on a temporary clip. With that in place, drag an image from the Browser to the logo at the top of the effect. (This image will need to be in the same Event as your current Project, due to how FCP works. Also note that if you have multiple versions of FCP installed, this process can unfortunately fail.)</p>
 <p>Keyframe Toolbox will then send the new image back to a new event called &quot;images with padding&quot;. The new image also has its new resolution as part of its name. You can now add this image to your timeline instead of your original image.</p>
+<p>Here&#x27;s a video explaining how this (optional) feature works.</p>
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533494?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 2 — Preparing Still Images"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <div id="retype-backlinks">
     <h2>See also</h2>
