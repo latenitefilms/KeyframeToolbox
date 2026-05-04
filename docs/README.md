@@ -21,7 +21,7 @@ Final Cut Pro only includes basic keyframe controls — in many contexts, only l
 
 ![](/static/fcp-sample-graphs.png)
 
-With Keyframe Toolbox, here are the same keyframes with smoothing applied, showing exactly what's happening:
+With Keyframe Toolbox, you can create exactly the movement you're looking for. Here are the same movements, but with custom smoothing curves:
 
 ![](/static/kt-sample-graphs.png)
 
