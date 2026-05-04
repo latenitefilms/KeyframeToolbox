@@ -88,7 +88,7 @@ Ready to go? [Buy it from the Mac App Store or check out the TestFlight version 
 
 Users say:
 
-- "AWESOME  
+- "**AWESOME**  
 My. Favorite. Plug-in. Period.  
 The way keyframe application **SHOULD BE**.  
 Thank you for developing this."
