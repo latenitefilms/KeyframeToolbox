@@ -17,7 +17,9 @@ Here are the same keyframes in FCP, and with custom smoothing curves applied in 
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1188923236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Keyframe Toolbox vs native linear keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
   
-Final Cut Pro only includes basic keyframe controls — in many contexts, only linear keyframes can be created. FCP shows you where the keyframes are, but that's all. With Keyframe Toolbox, you can create exactly the movement you're looking for. Here are the same movements, but with custom smoothing curves:
+Final Cut Pro only includes basic keyframe controls — in many contexts, only linear keyframes can be created.  
+
+With Keyframe Toolbox, you can create exactly the movement you're looking for. Here are the same movements, but with custom smoothing curves:
 
 ![](/static/kt-sample-graphs.png)
 
