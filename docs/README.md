@@ -1,16 +1,32 @@
 # Keyframe Toolbox
 
-**Keyframe Toolbox** finally brings advanced keyframe animation to Final Cut Pro, giving you full control over opacity, position, scale, all kinds of rotation, and blur.
+**Keyframe Toolbox** finally brings a true graph editor with advanced animation controls to Final Cut Pro.
 
-> [:icon-desktop-download: Click here to **buy** on the **Mac App Store**](/buy/)
+> [:icon-desktop-download: Click here to **buy** on the **Mac App Store**. US$20 once. Not a subscription.](/buy/)
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173474364?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Keyframe Toolbox Launch"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ---
 
-## Understanding Keyframe Graphs
+## Why do you need this?
 
-Never used a keyframe graph? No problem.
+Because linear keyframes create clunky animations. Here are the same keyframes in FCP, and with smoothing applied in Keyframe Toolbox:
+
+<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1188923236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Keyframe Toolbox vs native linear keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+Final Cut Pro only includes basic keyframe controls — in many contexts, only linear keyframes can be created. FCP shows you where the keyframes are, but that's all — here's the animation above:
+
+![](/static/fcp-sample-graphs.png)
+
+With Keyframe Toolbox, here are the same keyframes with smoothing applied, showing exactly what's happening:
+
+![](/static/kt-sample-graphs.png)
+
+---
+
+## How does this work?
+
+With the Keyframe Toolbox effect applied, the Inspector shows separate graphs to control opacity, position, scale, 3D rotation, and blur. They're easy to understand:
 
 1. In a keyframe graph, time moves forward horizontally, while each value changes vertically.
 
@@ -50,12 +66,7 @@ But... you can animate all the graphs at once if you wish:
 
 ![](/static/keyframe-toolbox-01.png)
 
-
-## Why do you need this?
-
-Whilst Final Cut Pro has some basic keyframe controls for Opacity, Position, Scale, Rotation, it includes only limited control over how keyframes transition into one another. In many contexts, only linear keyframes can be created, leading to clunky animations. Though the classic Final Cut Pro included basic keyframe graphs, no version of the modern Final Cut Pro has ever offered a complete set of integrated keyframe controls.
-
-Built directly into the Final Cut Pro Inspector, Keyframe Toolbox gives you complete control, so you can really refine your movements, rotations, scales, fades and virtual focus pulls. This is a power-user’s tool to help editors and animators create complex, precise animations on the Final Cut Pro timeline — but it's quick and easy to make simple animations too.
+This is a power-user’s tool to help editors and animators create great animation on the Final Cut Pro timeline.
 
 Keyframe Toolbox integrates all the very best features from other apps:
 
@@ -69,4 +80,35 @@ We've made our graphs as easy to edit as curves in a vector drawing program, and
 
 Keyframe Toolbox is a one-time purchase, not a subscription, and we hope you love it.
 
-To find out more, please visit our [How To Use](/how-to-use) section, which includes many examples of animation curves you could employ, and detailed help on every included feature. You can [buy it from the Mac App Store or check out the TestFlight version here](/buy).
+To find out more, please visit our [How To Use](/how-to-use) section, which includes many examples of animation curves you could employ, and detailed help on every included feature.
+
+Ready to go? [Buy it from the Mac App Store or check out the TestFlight version here](/buy).
+
+---
+
+## Testimonials
+
+Users say:
+
+- "AWESOME  
+My. Favorite. Plug-in. Period.  
+The way keyframe application **SHOULD BE**.  
+Thank you for developing this."
+- "One of the best plugins I have ever used, great job!"
+- "This is an incredible tool. First day purchase for me but I'll test it out over the coming days. Nice work!"
+- "Just bought it. What a gorgeous interface. Love it."
+- "Have to get this tool for my FCP as it makes it really easy to move objects!"
+- "Just wanted to say I bought this a couple of weeks ago and it's truly unlocked so much potential for the kind of video work I do with orchestras and ensembles. Thank you!"
+
+---
+
+## System Requirements
+
+- Final Cut Pro 11+ (FCP 12 recommended, Apple Creator Studio or standalone version)
+- Apple Silicon recomended
+
+---
+
+## Who made this?
+
+Created by Iain Anderson, author of [Final Cut Pro Efficient Editing](https://fcpefficientediting.com), and Chris Hocking, developer of [CommandPost](https://commandpost.fcp.cafe) and many other apps. [More about us here](/credits).
