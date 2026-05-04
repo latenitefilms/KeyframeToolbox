@@ -1,6 +1,6 @@
 ﻿# Keyframe Toolbox
 
-> Keyframe Toolbox finally brings advanced keyframe animation to Final Cut Pro, giving you full control over opacity, position, scale, all kinds of rotation, and blur.
+> Keyframe Toolbox finally brings a true graph editor with advanced animation controls to Final Cut Pro.
 
 - [Keyframe Toolbox](https://keyframetoolbox.fcp.cafe/readme.md): Keyframe Toolbox
 - [Buy on Mac App Store](https://keyframetoolbox.fcp.cafe/buy.md): Keyframe Toolbox is a one-time payment of USD$19.99 on the Mac App Store.
