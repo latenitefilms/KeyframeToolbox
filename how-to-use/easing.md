@@ -25,3 +25,7 @@ Allowing predictable curve patterns to be used across one or more keyframes. `Ne
   - Important: The easing curves shown here refer to the curve between two keyframes, not to the handles on a keyframe.
 
 <div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1185344571?h=d20889ee60&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+
+To help you visualise thes options, here's an example of all these easings (plus a custom example made by hand) applied to Position X.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1189684809?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Keyframe Toolbox Easing - HD 1080p"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
