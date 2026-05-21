@@ -1,42 +1,43 @@
 # Release Notes
 
+### 1.3.0 (Build 48)
+
 **🎉 Released:**
-- TBA!
-  
+- Coming soon...
+
 **🔨 Improvements:**
 - **On-Screen Controls (OSC) have been added.** Thanks for requesting, Dylan Bates and others!
-  - Labels appear while the diamonds are dragged.
-  - Position is in the centre, Rotation Z/X/Y are on spokes, Scale has a circle, Opacity is above and Blur is below.
-  - Click or drag the colour-matched diamonds for any of the existing properties to create a new linear keyframe at the current time.
-  - Command-click or drag an OSC diamond to create a new keyframe with easing handles applied.
-  - Keyframe diamonds are now filled in if they are at the current playhead position, in the OSC and in the graphs.
-  - Clicking a filled keyframe diamond in the OSC will delete that keyframe. (This doesn’t happen in the graph.)
-  - Use the previous/next buttons around each keyframe to jump to the neighbouring keyframe on that property.
-  - If you hold Shift while adjusting Position keyframes, you’ll constrain movement to only one dimension and only create a keyframe on that graph.
-  - Motion paths are shown, using diamonds to indicate keyframe positions (on X, Y, or both) and white dots to indicate tweened frames.
-  - On-screen controls can be instantly hidden by activating the Live/OSC mode, using Caps Lock. (Note that the Live Scrubbing button in the Inspector has been renamed.)
-  - If you prefer not to see the OSC at all, it can be disabled in Settings.
-  
-- **Keyframes on different property graphs can be linked.** Thanks for requesting, Dylan Bates!
-  - Two or more keyframes positioned at the same point in time can now be linked with the Link Keyframes command in the right-click or graph menus.
-  - Linked keyframes are drawn with a thicker outline.
-  - Handle direction, handle length and keyframe time positions are synced between linked keyframes.
-  - Keyframes can be unlinked manually. Select one or more keyframes and choose “Unlink Keyframe(s)” in the menu. (When only one keyframe would remain linked, it is also unlinked.)
-  - Keyframes are also unlinked if a preset or paste operation would affect a linked keyframe.
+ - Labels appear while the diamonds are dragged.
+ - Position is in the centre, Rotation Z/X/Y are on spokes, Scale has a circle, Opacity is above and Blur is below.
+ - Click or drag the colour-matched diamonds for any of the existing properties to create a new linear keyframe at the current time.
+ - Command-click or drag an OSC diamond to create a new keyframe with easing handles applied.
+ - Keyframe diamonds are now filled in if they are at the current playhead position, in the OSC and in the graphs.
+ - Clicking a filled keyframe diamond in the OSC will delete that keyframe. (This doesn’t happen in the graph.)
+ - Use the previous/next buttons around each keyframe to jump to the neighbouring keyframe on that property.
+ - If you hold Shift while adjusting Position keyframes, you’ll constrain movement to only one dimension and only create a keyframe on that graph.
+ - Motion paths are shown, using diamonds to indicate keyframe positions (on X, Y, or both) and white dots to indicate tweened frames.
+ - On-screen controls can be instantly hidden by activating the Live/OSC mode, using Caps Lock. (Note that the Live Scrubbing button in the Inspector has been renamed.)
+ - If you prefer not to see the OSC at all, it can be disabled in Settings.
 
-**  Keyframe timing is now frame-accurate in Absolute Mode.**
-  - Previously, if you added an Oscillate preset to Position Y to create a bouncing animation, the lowest point of each bounce might not have been visible, because keyframes in the graph might not have landed exactly on real frames in the clip. This is only visible in moments where a very quick direction change occurs (like a bounce) but it’s been seen in Apple Motion and Adobe Animate too.
-  - In Absolute Timing mode, keyframes are now snapped to real frames, so every keyframe in the graphs represents a real frame on-screen. Every bounce will land.
-  - In Relative Timing mode, not every keyframe will end up exactly on a frame, because the graph needs to stretch to match any clip length. While this is rarely visible, switching to Absolute Timing mode will fix any issues. Alternatively, fix these issues manually with the OSC, by Shift-dragging the visible object position to the desired position.
+- **Keyframes on different property graphs can be linked.** Thanks for requesting, Dylan Bates!
+ - Two or more keyframes positioned at the same point in time can now be linked with the Link Keyframes command in the right-click or graph menus.
+ - Linked keyframes are drawn with a thicker outline.
+ - Handle direction, handle length and keyframe time positions are synced between linked keyframes.
+ - Keyframes can be unlinked manually. Select one or more keyframes and choose “Unlink Keyframe(s)” in the menu. (When only one keyframe would remain linked, it is also unlinked.)
+ - Keyframes are also unlinked if a preset or paste operation would affect a linked keyframe.
+
+- **Keyframe timing is now frame-accurate in Absolute Mode.**
+ - Previously, if you added an Oscillate preset to Position Y to create a bouncing animation, the lowest point of each bounce might not have been visible, because keyframes in the graph might not have landed exactly on real frames in the clip. This is only visible in moments where a very quick direction change occurs (like a bounce) but it’s been seen in Apple Motion and Adobe Animate too.
+ - In Absolute Timing mode, keyframes are now snapped to real frames, so every keyframe in the graphs represents a real frame on-screen. Every bounce will land.
+ - In Relative Timing mode, not every keyframe will end up exactly on a frame, because the graph needs to stretch to match any clip length. While this is rarely visible, switching to Absolute Timing mode will fix any issues. Alternatively, fix these issues manually with the OSC, by Shift-dragging the visible object position to the desired position.
 
 - **Playhead Movement can be disabled in Settings to work around a storyline bug in FCP.**
-  - **If possible, avoid using Keyframe Toolbox on clips in storylines.**
-  - In a storyline, we recommend to uncheck Playhead Movement in Settings. This lets you use Keyframe Toolbox in storylines without unwanted playhead jumps. Why?
-      - In a secondary storyline, the playhead cannot be moved reliably, as the clip's timecode is not accurately reported. We also can't reliably detect that a clip is in a secondary storyline and disable these features automatically. As a result, the playhead is likely to jump to near the start of your timeline instead of the correct position.
-      - Playhead movement includes clicking in the graphs to move the playhead to a specific position, jumping to a keyframe position when editing a keyframe numerically, moving the playhead in the graphs when Live Scrubbing is active, and using the previous/next keyframe buttons in the OSC.
-  
+ - **If possible, avoid using Keyframe Toolbox on clips in storylines.**
+ - In a storyline, we recommend to uncheck Playhead Movement in Settings. This lets you use Keyframe Toolbox in storylines without unwanted playhead jumps. Why?
+  - In a secondary storyline, the playhead cannot be moved reliably, as the clip's timecode is not accurately reported. We also can't reliably detect that a clip is in a secondary storyline and disable these features automatically. As a result, the playhead is likely to jump to near the start of your timeline instead of the correct position.
+  - Playhead movement includes clicking in the graphs to move the playhead to a specific position, jumping to a keyframe position when editing a keyframe numerically, moving the playhead in the graphs when Live Scrubbing is active, and using the previous/next keyframe buttons in the OSC.
 
-
+---
 
 ### 1.1.0 (Build 39)
 
