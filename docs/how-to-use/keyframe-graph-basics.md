@@ -11,7 +11,7 @@ Keyframes remember values at points in time.
 - However, the first and last keyframes can be moved horizontally, so the first keyframe can start later than 0% and the last keyframe can end before 100%.
 - If the playhead is over the clip, **a line briefly indicates the position of the timeline playhead** in relation to the clip. The line will update to the correct position as you move keyframes around, to allow you to snap keyframes to the playhead.
 - This **"mini playhead" can be moved by using the scroll wheel as you hold `COMMAND`** while the pointer is over a graph. You can also hold `COMMAND` while moving two fingers on a trackpad. `New in v1.1`
-- Alternatively, activate **Live Scrubbing** with the button at the top, or press `CAPS LOCK` to toggle it. When Live Scrubbing is active, moving the mouse over a graph moves the playhead.
+- Alternatively, activate **Live Scrubbing** with the Live/OSC button at the top, or press `CAPS LOCK` to toggle it. When Live Scrubbing is active, moving the mouse over a graph moves the playhead.
 - As you drag a keyframe, hold `SHIFT` to enable snapping to the playhead.
 - **Opacity has a fixed 0..100 range**, while the other properties use defaults that should make sense, based on the clip properties. (Note that Position values are calculated based on the clip resolution, not the timeline resolution.)
 - **All other limits can be changed by dragging them**, horizontally or vertically. Hold `OPTION` as you drag to change both sides in opposite directions.
@@ -19,3 +19,13 @@ Keyframes remember values at points in time.
 - Tick marks underneath each graph indicate seconds, with an extra indication 5-second and 10-second intervals.
 
 <div style="padding:100.00% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533437?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479%2Fembed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe></div>
+
+- Lastly, please note that due to a bug, playhead movement can be unreliable in secondary storylines.
+- **If possible, avoid using Keyframe Toolbox on clips in storylines.**
+- In a storyline, we recommend to uncheck Playhead Movement in Settings. This lets you use Keyframe Toolbox in storylines without unwanted playhead jumps. Why?
+    - In a secondary storyline, the playhead cannot be moved reliably, as the clip's timecode is not accurately reported. We also can't reliably detect that a clip is in a secondary storyline and disable these features automatically. As a result, the playhead is likely to jump to near the start of your timeline instead of the correct position.
+    - Playhead movement includes clicking in the graphs to move the playhead to a specific position, jumping to a keyframe position when editing a keyframe numerically, moving the playhead in the graphs when Live Scrubbing is active, and using the previous/next keyframe buttons in the OSC.
+
+
+
+

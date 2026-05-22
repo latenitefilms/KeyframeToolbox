@@ -10,8 +10,10 @@ Settings gives access to advanced features.
   - Currently, all graphs are activated by default.
 - **Timing Mode**, which allows:
   - `Relative Timing (graph maps to clip)` which is appropriate when working with still images, or you want to create a movement that spans the clip length, with that animation automatically retiming if the clip length is adjusted.
+    - In Relative Timing mode, not every keyframe created will be positioned exactly on a frame, because the graph needs to stretch to match any clip length. While this rarely causes visible issues, switching to Absolute Timing mode will snap all keyframes to actual frames. Alternatively, you can move the keyframed positions manually using with the on-screen control, which displays the object at its actual position but the position graph at an idealised position. If a discrepancy is visible, Shift-dragging the visible object position to the desired position will fix it. `New in v1.3`
   - `Absolute Timing (graph maps to time)` which is appropriate when specific animation moments must happen at particular moments in the video. If the source clip is trimmed in this mode, the graphs will be cropped, or extra space will be added around the first or last keyframes.
     - In Absolute Timing mode, time values are shown in frames and timecode. (If a clip is less than a minute long, only seconds and frames are shown.)
+    - Keyframe placement is snapped to actual frames in Absolute Timing mode. `New in v1.3` This means that when a preset such as an oscillation is set to bounce, the lowest point of each bounce will be a visible keyframe. 
 - **Motion Blur**, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.
 - **Help**, which includes a global setting to disable tooltips, if they're bothering you.
 - To save the currently chosen settings as the default for new instances of Keyframe Toolbox, press the button at the bottom of the panel: **Save Current Settings as Default**. `New in v1.1`
