@@ -25,10 +25,12 @@
 - [Deleting keyframes and handles](https://keyframetoolbox.fcp.cafe/how-to-use/deleting-keyframes-and-handles.md): Keyframes and handles can be deleted.
 - [Working with precision](https://keyframetoolbox.fcp.cafe/how-to-use/working-with-precision.md): Exact numbers can be entered for keyframes and handles.
 - [Selecting, moving and scaling keyframes](https://keyframetoolbox.fcp.cafe/how-to-use/selecting-moving-and-scaling-keyframes.md): Multiple keyframes can be selected and manipulated.
+- [Linked keyframes](https://keyframetoolbox.fcp.cafe/how-to-use/linked-keyframes.md): Multiple keyframes on separate properties can be linked to keep time and handles in sync. New in v1.3
 - [Using the graph menu](https://keyframetoolbox.fcp.cafe/how-to-use/using-the-graph-menu.md): Each graph has a menu that enables some advanced features.
 - [Presets](https://keyframetoolbox.fcp.cafe/how-to-use/presets.md): To create flexible keyframe graphs based on common animation patterns.
 - [Custom Presets](https://keyframetoolbox.fcp.cafe/how-to-use/custom-presets.md): To store, re-use and share any graph. New in v1.1
 - [Easing](https://keyframetoolbox.fcp.cafe/how-to-use/easing.md): Allowing predictable curve patterns to be used across one or more keyframes. New in v1.1
 - [Before First Keyframe and After Last Keyframe](https://keyframetoolbox.fcp.cafe/how-to-use/before-first-keyframe-and-after-last-keyframe.md): To control a virtual keyframe graph beyond the first and last keyframes.
+- [On-screen controls](https://keyframetoolbox.fcp.cafe/how-to-use/on-screen-controls.md): On-screen controls (OSC) allow you to click on drag in the viewer to create or delete keyframes. New in v1.3
 - [Settings](https://keyframetoolbox.fcp.cafe/how-to-use/settings.md): Settings gives access to advanced features.
 - [Sample Animations](https://keyframetoolbox.fcp.cafe/how-to-use/sample-animations.md): Some examples of the kinds of animations you can create with Keyframe Toolbox. Think of this is a cheat sheet that links the kinds of instructions you might get from a client with the kinds of curves you'd need to make it happen.
