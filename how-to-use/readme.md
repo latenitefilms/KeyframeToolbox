@@ -42,6 +42,9 @@ However, if that's too much detail — read on for a Quick Start with a brief s
 - [Selecting, moving and scaling keyframes](selecting-moving-and-scaling-keyframes)
   - Shift-click additional keyframes or drag a selection to select multiple keyframes. Move or resize together. 
 
+- [Linked keyframes](linked-keyframes)
+  - Multiple keyframes on separate properties can be linked to keep time and handles in sync. `New in v1.3` 
+
 - [Using the graph menu](using-the-graph-menu)
   - Select keyframes first or affect a whole graph. Flip times or values, copy and paste, clone nearby values.
 
@@ -56,6 +59,9 @@ However, if that's too much detail — read on for a Quick Start with a brief s
 
 - [Before First Keyframe and After Last Keyframe](before-first-keyframe-and-after-last-keyframe)
   - Repeat or reflect the current graph before the first and/or after the last keyframe.
+
+- [On-screen controls](on-screen-controls)
+  - On-screen controls (OSC) allow you to click on drag in the viewer to create or delete keyframes. `New in v1.3`
 
 - [Settings](settings)
   - Enable Motion Blur, select which graphs you want to see, control UI options, and set defaults.
