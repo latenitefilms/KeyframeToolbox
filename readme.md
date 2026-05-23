@@ -49,8 +49,9 @@ For many more examples of how you can use keyframe graphs to create animation, h
 ## Key Features
 
 - **Separate keyframe graphs** for Opacity, Position X, Position Y, Scale, Rotation Z, Rotation X, Rotation Y and Blur, including intuitive control over keyframes, handles and curves
-  - Keyframes can snap to one another, to sync animations
+  - Keyframes can snap to one another, to sync animations, and can be linked
   - Multiple keyframes can be selected, then moved or resized together
+- **On-screen controls** to help you create, delete and jump between keyframes
 - **Full numeric entry** for total precision over keyframe and handle values 
 - **Zoomable, resizable graphs** to let you see your animations in detail
 - **Presets** to let you quickly create common movement patterns (fades, drifts, moves, oscillation, bounces)
@@ -99,6 +100,14 @@ Thank you for developing this."
 - "Just bought it. What a gorgeous interface. Love it."
 - "Have to get this tool for my FCP as it makes it really easy to move objects!"
 - "Just wanted to say I bought this a couple of weeks ago and it's truly unlocked so much potential for the kind of video work I do with orchestras and ensembles. Thank you!"
+
+---
+
+## Can I see how to use it?
+
+Sure — here's a live-recorded demo of how to punch in and out on a video, using the new features in v1.3.
+
+https://youtu.be/EqDaAUjYzS0
 
 ---
 
