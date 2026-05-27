@@ -17,7 +17,7 @@
 
 - [Installation](https://keyframetoolbox.fcp.cafe/how-to-use/installation.md): You can download Keyframe Toolbox from the Mac App Store.
 - [Introducing Keyframe Toolbox](https://keyframetoolbox.fcp.cafe/how-to-use/introducing-keyframe-toolbox.md): This effect is built to let you use familiar Bezier keyframes and handles to control common properties in Final Cut Pro.
-- [Preparing still images](https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images.md): If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.
+- [Preparing still images](https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images.md): If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, you're working with high-resolution media, and have set Spatial Conform to Fill.
 - [Keyframe graph basics](https://keyframetoolbox.fcp.cafe/how-to-use/keyframe-graph-basics.md): Keyframes remember values at points in time.
 - [Resetting and scaling the graphs](https://keyframetoolbox.fcp.cafe/how-to-use/resetting-and-scaling-the-graphs.md): Each graph can be reset, zoomed horizontally, and shown in one of three vertical sizes.
 - [Adding and moving keyframes](https://keyframetoolbox.fcp.cafe/how-to-use/adding-and-moving-keyframes.md): Keyframes can be moved and new keyframes can be added.

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.5.3.832826677594">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.833157053498">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 4.5.3">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
     <title>Preparing still images</title>
     <meta name="title" content="Preparing still images">
-    <meta name="description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.">
+    <meta name="description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, you're working with high-resolution media, and have set Spatial Conform to Fill.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images/">
     <meta property="og:title" content="Preparing still images">
-    <meta property="og:description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.">
+    <meta property="og:description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, you're working with high-resolution media, and have set Spatial Conform to Fill.">
     <meta property="og:image" content="https://keyframetoolbox.fcp.cafe/static/ps-export-layers-to-files.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/preparing-still-images/">
     <meta name="twitter:title" content="Preparing still images">
-    <meta name="twitter:description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill.">
+    <meta name="twitter:description" content="If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, you're working with high-resolution media, and have set Spatial Conform to Fill.">
     <meta name="twitter:image" content="https://keyframetoolbox.fcp.cafe/static/ps-export-layers-to-files.png">
     <meta name="twitter:image:alt" content="Preparing still images">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.5.3.832826677594" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.833157053498" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.5.3.832826677594" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.5.3" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.5.3.832826677594" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.833157053498" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.833157053498" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -247,10 +247,11 @@
 
                 <!-- Page content  -->
 <h1 id="preparing-still-images">Preparing still images</h1>
-<p>If you&#x27;re working with regular video clips in the same aspect ratio as your canvas, you won&#x27;t have any problems. You also probably won&#x27;t have any problems if you&#x27;re working in a different aspect ratio, and have set Spatial Conform to Fill. If that&#x27;s your plan, skip straight to the next section!</p>
-<p>However, there&#x27;s a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they&#x27;ve been applied to, they are limited to the size of the frame the image takes up. It&#x27;s not possible to move an image outside that area — it just clips off at the original border. Setting Spatial Conform to Fill does solve this problem, but can cause quality issues, as it can mean the image is scaled down and then scaled back up in some contexts.</p>
+<p>If you&#x27;re working with regular video clips in the same aspect ratio as your canvas, you won&#x27;t have any problems. You also probably won&#x27;t have any problems if you&#x27;re working in a different aspect ratio, you&#x27;re working with high-resolution media, and have set Spatial Conform to Fill. If that&#x27;s your plan, skip straight to the next section!</p>
+<p>However, there&#x27;s a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they&#x27;ve been applied to, they are limited to the size of the frame the image takes up. It&#x27;s not possible to move an image outside that area — it just crops off at the original border.</p>
 <p><strong>All effects, even built-in FCP effects like Radial Blur, have this issue.</strong></p>
-<p>To avoid issues, make you to work with clips that:</p>
+<p>So, why not just set Spatial Conform to Fill for everything? While Fill does avoid clipping problems, it cause quality issues with lower resolution media. A square or tall image in a widescreen timeline will be processed by Keyframe Toolbox (potentially made smaller) and then that low-resolution image is made much larger by Spatial Conform. If you&#x27;re working with low-resolution still images, using Fill will reduce quality.</p>
+<p>To avoid quality and cropping issues, make sure you work with clips that:</p>
 <ol>
 <li>Match the size of the canvas</li>
 <li>Have transparent areas around the actual image data</li>
