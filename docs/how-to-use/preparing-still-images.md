@@ -1,12 +1,14 @@
 # Preparing still images
 
-If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, and have set Spatial Conform to Fill. If that's your plan, skip straight to the next section!
+If you're working with regular video clips in the same aspect ratio as your canvas, you won't have any problems. You also probably won't have any problems if you're working in a different aspect ratio, you're working with high-resolution media, and have set Spatial Conform to Fill. If that's your plan, skip straight to the next section!
 
-However, there's a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they've been applied to, they are limited to the size of the frame the image takes up. It's not possible to move an image outside that area — it just clips off at the original border. Setting Spatial Conform to Fill does solve this problem, but can cause quality issues, as it can mean the image is scaled down and then scaled back up in some contexts.
+However, there's a specific situation, common in animation, which requires some special treatment. Because effects can only act on the clip they've been applied to, they are limited to the size of the frame the image takes up. It's not possible to move an image outside that area — it just crops off at the original border. 
 
 **All effects, even built-in FCP effects like Radial Blur, have this issue.**
 
-To avoid issues, make you to work with clips that:
+So, why not just set Spatial Conform to Fill for everything? While Fill does avoid clipping problems, it cause quality issues with lower resolution media. A square or tall image in a widescreen timeline will be processed by Keyframe Toolbox (potentially made smaller) and then that low-resolution image is made much larger by Spatial Conform. If you're working with low-resolution still images, using Fill will reduce quality.
+
+To avoid quality and cropping issues, make sure you work with clips that:
 
 1. Match the size of the canvas
 2. Have transparent areas around the actual image data
