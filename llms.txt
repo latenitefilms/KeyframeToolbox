@@ -34,3 +34,4 @@
 - [On-screen controls](https://keyframetoolbox.fcp.cafe/how-to-use/on-screen-controls.md): On-screen controls (OSC) allow you to click on drag in the viewer to create or delete keyframes. New in v1.3
 - [Settings](https://keyframetoolbox.fcp.cafe/how-to-use/settings.md): Settings gives access to advanced features.
 - [Sample Animations](https://keyframetoolbox.fcp.cafe/how-to-use/sample-animations.md): Some examples of the kinds of animations you can create with Keyframe Toolbox. Think of this is a cheat sheet that links the kinds of instructions you might get from a client with the kinds of curves you'd need to make it happen.
+- [360 Reframe](https://keyframetoolbox.fcp.cafe/how-to-use/360-reframe.md): You can reframe 360° footage with the same keyframe graphs as in the regular product. New in v1.4

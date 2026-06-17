@@ -7,7 +7,8 @@
 
 **🔨 Improvements:**
 - **Keyframe Toolbox 360 Reframe** has been added. Thanks for requesting, many people! Please read and follow the Quick Start instructions in the effect or shown below before using it.
-  - To reframe 360° footage, you'll apply the new, dedicated effect. If you don't see it, please run the Keyframe Toolbox app, then restart FCP.
+  - To reframe 360° footage, you'll apply the new, dedicated effect: **Keyframe Toolbox 360 Reframe**. If you don't see it, please run the Keyframe Toolbox app, then restart FCP.
+  
   - **QUICK START INSTRUCTIONS** — to work correctly, this effect needs to sidestep FCP's native 360° processing. To get started:
     1. Using your camera manufacturer's tools, process your original 360° camera footage into equirectangular (panoramic) format.
     2. Import the equirectangular clips into FCP, then select them in the Browser.
