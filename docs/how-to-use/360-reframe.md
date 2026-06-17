@@ -1,6 +1,6 @@
 # 360 Reframe
 
-You can reframe 360° footage with the same keyframe graphs as in the regular product.
+You can reframe 360° footage with the same keyframe graphs as in the regular product. `New in v1.4`
 
 ![](/static/360-reframe.png)
 
