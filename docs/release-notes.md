@@ -1,6 +1,6 @@
 # Release Notes
 
-### 1.4.0 (Build 5x)
+### 1.4.0 (Build 55)
 
 **🎉 Released:**
 - Coming soon...
