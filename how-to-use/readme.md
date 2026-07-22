@@ -68,3 +68,6 @@ However, if that's too much detail — read on for a Quick Start with a brief s
 
 - [Sample Animations](sample-animations)
   - Several examples of graphs you could use to create common animations.
+ 
+- [360 Reframe](360-reframe)
+  - How to use the separate Keyframe Toolbox 360 Reframe effect to reframe equirectangular footage from any 360° camera.
