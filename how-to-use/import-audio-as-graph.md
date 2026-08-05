@@ -2,7 +2,7 @@
 
 This feature links a parameter to the volume of specific frequencies in an audio file.  `New in v1.5`
 
-![](/static/on-screen-controls.png)
+![](/static/import-audio-as-graph.png)
 
 - To animate a parameter along to an audio track, you’ll need an audio file from the same part of your timeline as the clip you’re animating with Keyframe Toolbox. The audio file needs to be the same length as the clip to which Keyframe Toolbox has been applied. If you don’t have the audio file already, an easy way to create this file is to:
 1. Press R, to select the **Range Selection tool**.
