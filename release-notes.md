@@ -1,9 +1,48 @@
 # Release Notes
 
+### 1.5.0 (Build 56)
+
+**🎉 Released:**
+- xx August 2026
+
+**🔨 Improvements:**
+- **Audio can now be imported into keyframe graphs**.
+  - To animate a parameter along to an audio track, you’ll need an audio file from the same part of your timeline as the clip you’re animating with Keyframe Toolbox. The audio file needs to be the same length as the clip to which Keyframe Toolbox has been applied. If you don’t have the audio file already, an easy way to create this file is to:
+  1. Press R, to select the **Range Selection tool**.
+  2. **Click the clip you plan to animate**, to select it as a range.
+  3. Choose **File > Share > Export File (⌘E)** and save an **audio-only file** as a WAV.
+  - In Keyframe Toolbox, choose the parameter you want to animate, such as Scale, click the graph menu, then choose **Import Audio as Graph**.
+  - After processing, controls appear below the graph:
+    - **Upper limit** — the highest value produced.
+    - **Lower limit** — the lowest value produced.
+    - **Bend** — to smooth the transition between keyframes. This will not be visible with shorter clips, where one keyframe will be added for each video frame, but can be important for longer clips.
+    - **Number of keyframes** — lower numbers are faster to work with, but less precise. The maximum value is 1000, and it’s recommended to limit the duration of audio to about 5 minutes.
+    - **Lower Frequency** — the lowest frequency recognised.
+    - **Upper Frequency** — the highest frequency recognised.
+  - **Control the lower and upper frequency values** to reveal specific instruments or sounds from your exported file.
+  - **Important**: the Upper and Lower limit of the audio controls are set beyond the Upper and Lower limits of the graph, the audio graph will be clipped. This allows you to remove quieter parts of the graph by setting the audio lower limit to a lower value than the graph’s lower limit.
+  - As with the presets, the controls disappear if you move a keyframe manually.
+
+- **Optional Scale X and Scale Y graphs have been added.**  Thanks for requesting, yoggypap and many others!
+  - If you wish, enable "Scale X" and/or "Scale Y" graphs in Settings.
+  - You can use any combination of Scale, Scale X and Scale Y that you wish.
+
+- **Velocity graphs have been added.**  Thanks for requesting, Alex Lindsay!
+  - Enable "Velocity" in Settings to show a velocity graph behind each keyframe graph, instead of the default grid lines.
+  - The Velocity graph shows change in speed, is scaled automatically to fill the space available, and cannot be edited directly.
+  
+ - **Numeric editing for all below-graph controls and limits**, including the new Import Audio to Graph feature.
+   - Double-click any value or limit, then type a number, or use up+down arrows to change values by 1. Add Shift for ±10, Option for ±100.
+
+ - **Opacity can optionally fade to black**. This helps to avoid strange results when applying some third-party filters after Keyframe Toolbox is set to a low opacity. Note that this can also be an issue with FCP’s built-in opacity controls.
+
+**🐞 Bug Fixes:**
+- The Fit button to the right of the graph now expands to show handles on all keyframes.
+
 ### 1.4.0 (Build 55)
 
 **🎉 Released:**
-- Coming soon...
+- 27 June 2026
 
 **🔨 Improvements:**
 - **Keyframe Toolbox 360 Reframe** has been added. Thanks for requesting, many people! Please read and follow the Quick Start instructions in the effect or shown below before using it.
@@ -48,7 +87,7 @@
 ### 1.3.0 (Build 48)
 
 **🎉 Released:**
-- Coming soon...
+- 23 May 2026
 
 **🔨 Improvements:**
 - **On-Screen Controls (OSC) have been added.** Thanks for requesting, Dylan Bates and others!

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838020361969">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.839238938179">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -12,7 +12,7 @@
     <!-- Primary Meta Tags -->
     <title>Settings</title>
     <meta name="title" content="Settings">
-    <meta name="description" content="Settings gives access to advanced features.">
+    <meta name="description" content="Settings gives access to advanced features. Updated in v1.5">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://keyframetoolbox.fcp.cafe/how-to-use/settings/">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/settings/">
     <meta property="og:title" content="Settings">
-    <meta property="og:description" content="Settings gives access to advanced features.">
+    <meta property="og:description" content="Settings gives access to advanced features. Updated in v1.5">
     <meta property="og:image" content="https://keyframetoolbox.fcp.cafe/static/settings.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -34,7 +34,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://keyframetoolbox.fcp.cafe/how-to-use/settings/">
     <meta name="twitter:title" content="Settings">
-    <meta name="twitter:description" content="Settings gives access to advanced features.">
+    <meta name="twitter:description" content="Settings gives access to advanced features. Updated in v1.5">
     <meta name="twitter:image" content="https://keyframetoolbox.fcp.cafe/static/settings.png">
     <meta name="twitter:image:alt" content="Settings">
 
@@ -44,11 +44,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838020361969" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.839238938179" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838020361969" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.839238938179" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838020361969" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.839238938179" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -247,17 +247,26 @@
 
                 <!-- Page content  -->
 <h1 id="settings">Settings</h1>
-<p>Settings gives access to advanced features.</p>
+<p>Settings gives access to advanced features. <code translate="no" v-pre>Updated in v1.5</code></p>
 <figure class="content-center">
     <img src="../../static/settings.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="862" height="1368" />
     <figcaption class="caption"></figcaption>
 </figure>
 <ul>
-<li>Click the Settings button to pop up a panel with two sections: <strong>Properties</strong> and <strong>Motion Blur</strong>.</li>
+<li>Click the Settings button to pop up a panel with four sections: <strong>Properties</strong>, <strong>Timing Mode</strong>, <strong>Motion Blur</strong> and <strong>User Interface</strong>.</li>
 <li><strong>Properties</strong> allows some graphs to be hidden by unchecking them. At least one graph must remain active.
 <ul>
 <li>Note that those graphs, if keyframes have been changed, will still have an effect if deactivated.</li>
-<li>Currently, all graphs are activated by default.</li>
+<li>Currently, all graphs except <code translate="no" v-pre>Scale X</code> and <code translate="no" v-pre>Scale Y</code> are activated by default. <code translate="no" v-pre>New in v1.5</code></li>
+<li>The Opacity graph has a <strong>Solid</strong> checkbox after it, unchecked by default. <code translate="no" v-pre>New in v1.5</code>
+<ul>
+<li>When Solid is checked, the Opacity graph will fade to black instead of changing opacity.</li>
+<li>Only check the Solid checkbox if you&#x27;re experiencing issues with other effects in combination with Keyframe Toolbox.</li>
+<li>This setting lets you avoid a flash/flicker bug triggered when a low-opacity clip has one of a few specific effects applied later in the processing chain, for example, on an Adjustment Clip positioned above a Keyframe Toolbox clip that fades Opacity up.</li>
+<li>Known problematic effects include Dehancer Pro, Filmconvert Nitrate or Cinematch.</li>
+<li>This issue is rare, but can occur without Keyframe Toolbox if a clip&#x27;s native opacity control is set manually to a low level.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><strong>Timing Mode</strong>, which allows:
@@ -276,7 +285,23 @@
 </ul>
 </li>
 <li><strong>Motion Blur</strong>, when active, creates blur on moving objects. Adjust the settings here to adjust the blur parameters.</li>
-<li><strong>Help</strong>, which includes a global setting to disable tooltips, if they&#x27;re bothering you.</li>
+<li><strong>User Interface</strong>, which includes:
+<ul>
+<li>A checkbox to enable or disable <strong>tooltips</strong>.</li>
+<li>A checkbox to enable or disable <strong>on-screen controls</strong>.</li>
+<li>A checkbox to enable <strong>Velocity graphs</strong> behind each keyframe graph. When unchecked, grid lines are shown. <code translate="no" v-pre>New in v1.5</code>
+<ul>
+<li>The Velocity graph shows <strong>change in speed</strong>, is <strong>scaled automatically</strong> to fill the space available, and <strong>cannot be edited directly</strong>.</li>
+</ul>
+</li>
+<li>A checkbox to enable or disable <strong>Playhead Movement</strong>, which we recommend <strong>unchecking when working in storylines</strong> (also known as Secondary Storylines). <code translate="no" v-pre>New in v1.4</code>
+<ul>
+<li>Normally, when a graph is clicked or an on-screen control previous/next button is clicked, the timeline playhead is moved to that frame. However, when Keyframe Toolbox is applied to a clip in a storyline, Final Cut Pro gives us incorrect timecode information. This means that the playhead is moved to the wrong place.</li>
+<li>To prevent this, when working on a clip in a storyline, disable playhead movement.</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>To save the currently chosen settings as the default for new instances of Keyframe Toolbox, press the button at the bottom of the panel: <strong>Save Current Settings as Default</strong>. <code translate="no" v-pre>New in v1.1</code></li>
 </ul>
 <div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1173533429?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="KT 13 — Settings"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
