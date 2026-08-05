@@ -8,6 +8,8 @@ Each graph can be reset, zoomed horizontally, and shown in one of three vertical
 - **`SHIFT`-click any graph's reset button** to reset all graphs at once.
 - To the right of the reset button, you'll see a three-position toggle displaying the current graph height: Minimised, Standard or Expanded.
 - When Minimized, the "Fit" button within the upper and lower limits is not available. All other controls work in any size.
+- Graphs are only minimised temporarily, to create space for other graphs to be made larger. When a clip is reloaded in the Inspector, Keyframe Toolbox will resize to show all graphs in Standard or Expanded sizes. `New in v1.4`
+  - Remember: if you don't need to see a graph, you can hide it in Settings.
 - **`SHIFT`-click on a toggle** to force all graphs to that size.
 - **`OPTION`-click on a toggle** to set that graph to the chosen size and minimize all other graphs.
   - As it's not possible to show all graphs at larger sizes, when graphs move to Standard or Expanded size, other graphs may shrink.

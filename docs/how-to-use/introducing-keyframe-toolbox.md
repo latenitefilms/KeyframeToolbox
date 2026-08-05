@@ -1,11 +1,19 @@
 # Introducing Keyframe Toolbox
 
-This effect is built to let you use familiar Bezier keyframes and handles to control common properties in Final Cut Pro.
+This effect is built to let you use familiar Bezier keyframes and handles to control common properties in Final Cut Pro. `Updated in v1.5`
 
 In the Keyframe Toolbox interface you'll see several graphs, each one controlling a separate parameter.
 
-In the current effect, graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`, and `Blur`.
+In the current effect, active graphs include `Opacity`, `Position X`, `Position Y`, `Scale`, `Rotation Z`, `Rotation X`, `Rotation Y`, and `Blur`.
  - (Note that Rotation, in a 2D context, is actually Rotation around the Z axis.)
+ - Either or both of two additional graphs, `Scale X` and `Scale Y`, can be activated if needed. `New in v1.5`
+   - In most circumstances, a single scale value is easiest to manage. For more complex animations, you can use any combination of these three graphs:
+     - `Scale` with `Scale X` 
+     - `Scale` with `Scale Y`
+     - `Scale X` with `Scale Y`
+     - `Scale` with `Scale X` and `Scale Y`
+   - Note that `Scale X` and `Scale Y` are multiplied with the `Scale` value to produce a final value.
+   - Remember: graphs are not deactivated when they are hidden. If you've used a graph and later decide not to, reset it before hiding it.
 
 Because Final Cut Pro captures regular keystrokes before we can, we've made heavy use of modifier keys. Tooltips are present, so if you hover over an icon, menu or graph item, you'll be told what modifier keys do in that particular context.
 
