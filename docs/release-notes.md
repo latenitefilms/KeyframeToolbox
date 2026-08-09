@@ -1,9 +1,9 @@
 # Release Notes
 
-### 1.5.0 (Build 56)
+### 1.5.0 (Build 57)
 
 **🎉 Released:**
-- xx August 2026
+- 8th August 2026
 
 **🔨 Improvements:**
 - **Audio can now be imported into keyframe graphs**.
@@ -30,7 +30,7 @@
 - **Velocity graphs have been added.**  Thanks for requesting, Alex Lindsay!
   - Enable "Velocity" in Settings to show a velocity graph behind each keyframe graph, instead of the default grid lines.
   - The Velocity graph shows change in speed, is scaled automatically to fill the space available, and cannot be edited directly.
-  
+
  - **Numeric editing for all below-graph controls and limits**, including the new Import Audio to Graph feature.
    - Double-click any value or limit, then type a number, or use up+down arrows to change values by 1. Add Shift for ±10, Option for ±100.
 
@@ -39,6 +39,7 @@
 **🐞 Bug Fixes:**
 - The Fit button to the right of the graph now expands to show handles on all keyframes.
 
+---
 
 ### 1.4.0 (Build 55)
 
@@ -48,7 +49,7 @@
 **🔨 Improvements:**
 - **Keyframe Toolbox 360 Reframe** has been added. Thanks for requesting, many people! Please read and follow the Quick Start instructions in the effect or shown below before using it.
   - To reframe 360° footage, you'll apply the new, dedicated effect: **Keyframe Toolbox 360 Reframe**. If you don't see it, please run the Keyframe Toolbox app, then restart FCP.
-  
+
   - **QUICK START INSTRUCTIONS** — to work correctly, this effect needs to sidestep FCP's native 360° processing. To get started:
     1. Using your camera manufacturer's tools, process your original 360° camera footage into equirectangular (panoramic) format.
     2. Import the equirectangular clips into FCP, then select them in the Browser.
@@ -65,14 +66,14 @@
     - **Tiny Planet** is a stereographic projection with a Tilt and Field of View offset to make it easier to achieve this effect — it defaults to looking down, with a wider FOV.
     - In each Projection, Field of View is interpreted slightly differently, and each has different Distortion parameters behind the scenes too.
    - To animate smoothly between perspectives, choosing the Stereographic projection and recording keyframes on the Field of View property is usually enough. However, if you want more control, consider also animating the Distortion parameter. This graph is disabled by default, but can be enabled in Settings.
- 
+
  - **New keyframes now maintain existing curves more closely**.
    - Previously, newly added keyframes defaulted to linear, unless Command was held. Now, if the new keyframe is along a curve, it will be created with handles that maintain that curve.
    - While creating a new keyframe in the OSC, you can still hold Command or Option to force new flat handles to be created.
    - If you want a linear keyframe, it's still easy to Command- or Option-click on a keyframe to remove its handles.
 
 - **The Keyframe Toolbox effect now uses a more flexible height**.
-  - The Inspector will always maintain enough space for all visible graphs to be shown at standard size. 
+  - The Inspector will always maintain enough space for all visible graphs to be shown at standard size.
   - Graphs can still be minimized to make more room for larger graphs, but minimized graphs will be returned to standard size next time the effect is loaded. If any graphs are expanded, they will remain expanded.
   - To force the Inspector to update, simply select any other clip, then reselect a clip with Keyframe Toolbox.
   - In some rare situations, when most graphs were hidden and are then all made visible at once, there may not be enough space to show the header and the graphs in the limited space available. This is temporary. Simply select any other clip, then reselect the clip you want to work on, and the Inspector will return to normal.
@@ -85,6 +86,7 @@
 - Performance improvements have been made to the regular Keyframe Toolbox effect. If you ever experienced a delay when loading a timeline with multiple instances of Keyframe Toolbox, this has now been improved.
 - Potential issues with very large images have been resolved. Note that Keyframe Toolbox is now limited to images no larger than 8500px across.
 
+---
 
 ### 1.3.0 (Build 48)
 
