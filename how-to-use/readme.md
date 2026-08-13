@@ -71,6 +71,6 @@ However, if that's too much detail — read on for a Quick Start with a brief s
  
 - [360 Reframe](360-reframe)`New in v1.4` 
   - How to use the separate Keyframe Toolbox 360 Reframe effect to reframe equirectangular footage from any 360° camera.
-  - 
+ 
 - [Import Audio as Graph](import-audio-as-graph)`New in v1.5` 
   - How to link a parameter's animation graph to specific frequencies in an audio file.

@@ -38,6 +38,7 @@
 
 **🐞 Bug Fixes:**
 - The Fit button to the right of the graph now expands to show handles on all keyframes.
+- OSC controls can now push through graph limits, and they'll adjust them in real time as you push past them. Thanks for reporting, Moritz Holzinger!
 
 ---
 
