@@ -1,5 +1,21 @@
 # Release Notes
 
+### 2.0.0 (Build 59)
+
+**🎉 Released:**
+- xx October 2026
+
+**🔨 Improvements:**
+- **You can now use the new Keyframe Toolbox Time Remap effect to create speed ramps**.
+  - Full instructions are included in the How to Use section of our website, and a Quick Start is found in the plug-in itself.
+  - To use Time Remap, you'll need to run the Keyframe Toolbox app once to update the installed templates, and restart FCP if it's running.
+  - To retime a clip, you'll trim it to the part you want to use, convert it to a compound clip, then apply the new effect, choose the Active Duration you wish to map the output to, then manipulate the graph to move through the clip.
+    - For smoother results, you can then use FCP's Smooth Slo Mo feature to create new intermediate frames if desired.
+- Select All Keyframes has been added to the right-click and graph menus, making it easier to modify an existing graph's keyframes.
+
+**🐞 Bug Fixes:**
+- Vertical clips in widescreen timelines now fill the frame precisely, avoiding rounding errors. Thanks for reporting, MonoCipher!
+
 ### 1.5.0 (Build 57)
 
 **🎉 Released:**

@@ -36,3 +36,4 @@
 - [Sample Animations](https://keyframetoolbox.fcp.cafe/how-to-use/sample-animations.md): Some examples of the kinds of animations you can create with Keyframe Toolbox. Think of this is a cheat sheet that links the kinds of instructions you might get from a client with the kinds of curves you'd need to make it happen.
 - [360 Reframe](https://keyframetoolbox.fcp.cafe/how-to-use/360-reframe.md): You can reframe 360° footage with the same keyframe graphs as in the regular product. New in v1.4
 - [Import Audio as Graph](https://keyframetoolbox.fcp.cafe/how-to-use/import-audio-as-graph.md): This feature links a parameter to the volume of specific frequencies in an audio file. New in v1.5
+- [Time Remap](https://keyframetoolbox.fcp.cafe/how-to-use/time-remap.md): Use a Time graph to control playback of any clip. New in v2.0
