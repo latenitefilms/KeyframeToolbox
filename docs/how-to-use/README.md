@@ -76,4 +76,4 @@ However, if that's too much detail — read on for a Quick Start with a brief s
   - How to link a parameter's animation graph to specific frequencies in an audio file.
  
 - [Time Remap](time-remap)`New in v2.0` 
-  - How to use a graph to control clip playback, for speed ramps and more.
+  - How to use a Time graph to control clip playback, for speed ramps and more.
