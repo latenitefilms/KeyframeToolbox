@@ -3,7 +3,7 @@
 ### 2.0.0 (Build 59)
 
 **🎉 Released:**
-- xx October 2026
+- 15th October 2026
 
 **🔨 Improvements:**
 - **You can now use the new Keyframe Toolbox Time Remap effect to create speed ramps**.
@@ -15,6 +15,8 @@
 
 **🐞 Bug Fixes:**
 - Vertical clips in widescreen timelines now fill the frame precisely, avoiding rounding errors. Thanks for reporting, MonoCipher!
+
+---
 
 ### 1.5.0 (Build 57)
 
