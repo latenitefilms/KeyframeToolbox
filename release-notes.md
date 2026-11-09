@@ -3,7 +3,7 @@
 ### 2.0.1 (Build 60)
 
 **🎉 Released:**
-- 8th November 2026
+- 10th November 2026
 
 **🐞 Bug Fix:**
 - Downgraded the Motion Templates so that Keyframe Toolbox still works on older versions of Final Cut Pro. Thanks for reporting dedicatedfilm!
