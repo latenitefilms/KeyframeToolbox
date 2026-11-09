@@ -1,5 +1,15 @@
 # Release Notes
 
+### 2.0.1 (Build 60)
+
+**🎉 Released:**
+- 8th November 2026
+
+**🐞 Bug Fix:**
+- Downgraded the Motion Templates so that Keyframe Toolbox still works on older versions of Final Cut Pro. Thanks for reporting dedicatedfilm!
+
+---
+
 ### 2.0.0 (Build 59)
 
 **🎉 Released:**
@@ -13,7 +23,7 @@
     - For smoother results, you can then use FCP's Smooth Slo Mo feature to create new intermediate frames if desired.
 - Select All Keyframes has been added to the right-click and graph menus, making it easier to modify an existing graph's keyframes.
 
-**🐞 Bug Fixes:**
+**🐞 Bug Fix:**
 - Vertical clips in widescreen timelines now fill the frame precisely, avoiding rounding errors. Thanks for reporting, MonoCipher!
 
 ---
