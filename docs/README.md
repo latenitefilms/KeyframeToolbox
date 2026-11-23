@@ -10,18 +10,14 @@
 
 ## Why do you need this?
 
-Because linear keyframes create clunky animations.  
+Because linear keyframes create clunky animations, and even the new easing controls in FCP 13 don't give enough control. 
   
-Here are the same keyframes in FCP, and with custom smoothing curves applied in Keyframe Toolbox:
+Final Cut Pro's new easing presets are quite limited. While they are easy to adjust on the Position property in the Viewer, *movement is only one kind of animation*. To access easing on any other property, you have to open the Video Animation panel, where most properties can't be shown as a keyframe graph at all.
 
-<div style="padding:100% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1188923236?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Keyframe Toolbox vs native linear keyframes"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-  
-Final Cut Pro only includes basic keyframe controls — in many contexts, only linear keyframes can be created.  
-
-With Keyframe Toolbox, you can create exactly the movement you're looking for, with custom smoothing curves:
+With Keyframe Toolbox, you can create exactly the animation you're looking for, with custom smoothing curves:
 
 ![](/static/kt-sample-graphs.png)
+
 
 ---
 
