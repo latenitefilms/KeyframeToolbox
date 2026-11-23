@@ -9,6 +9,7 @@
 - [How To Use](https://keyframetoolbox.fcp.cafe/how-to-use/readme.md): This section contains all the information you need to get up-and-running with Keyframe Toolbox.
 - [Support](https://keyframetoolbox.fcp.cafe/support.md): If you run into any bugs, crashes, or you have a feature request, you can post an issue here.
 - [Release Notes](https://keyframetoolbox.fcp.cafe/release-notes.md): 🎉 Released:
+- [LLM Agents](https://keyframetoolbox.fcp.cafe/agents.md): This page is mainly for LLM agents - however, humans are welcome too! 🤖
 - [Uninstall](https://keyframetoolbox.fcp.cafe/uninstall.md): To uninstall Keyframe Toolbox, simply drag the application to the trash/bin.
 - [Credits](https://keyframetoolbox.fcp.cafe/credits.md): Keyframe Toolbox has been created by Iain Anderson and Chris Hocking.
 - [Privacy Policy](https://keyframetoolbox.fcp.cafe/privacy.md): This is the privacy policy for the Keyframe Toolbox, macOS Application that is available on the macOS App Store and TestFlight.

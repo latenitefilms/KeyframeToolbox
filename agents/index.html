@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.848746876127">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 4.6.0">
+
+    <!-- Primary Meta Tags -->
+    <title>LLM Agents</title>
+    <meta name="title" content="LLM Agents">
+    <meta name="description" content="This page is mainly for LLM agents - however, humans are welcome too! 🤖">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://keyframetoolbox.fcp.cafe/agents/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://keyframetoolbox.fcp.cafe/sitemap.xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://keyframetoolbox.fcp.cafe/agents/">
+    <meta property="og:title" content="LLM Agents">
+    <meta property="og:description" content="This page is mainly for LLM agents - however, humans are welcome too! 🤖">
+    <meta property="og:site_name" content="Keyframe Toolbox">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://keyframetoolbox.fcp.cafe/agents/">
+    <meta name="twitter:title" content="LLM Agents">
+    <meta name="twitter:description" content="This page is mainly for LLM agents - however, humans are welcome too! 🤖">
+
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://keyframetoolbox.fcp.cafe/agents.md">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link id="retype-favicon" rel="icon" href="../static/favicon.ico" />
+    <link href="../resources/css/retype.css?v=4.6.0.848746876127" rel="stylesheet">
+
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.848746876127" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.848746876127" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=4.6.0.848746876127" defer></script>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+    <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+    
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="https://keyframetoolbox.fcp.cafe/" class="flex items-center leading-snug text-xl">
+                        <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                            <img class="max-h-10 md:inline-block" src="../static/logo.png" alt="" width="40" height="40">
+                        </span>
+                        <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Keyframe Toolbox</span>
+                    </a>
+                </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../buy/">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/>
+                                </svg>
+                                <span>Buy on Mac App Store</span>
+                            </a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://ltnt.tv/discord" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
+                                </svg>
+                                <span>Discord</span>
+                            </a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/latenitefilms/KeyframeToolbox/issues" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"/>
+                                </svg>
+                                <span>Bugs &amp; Feature Requests</span>
+                            </a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/>
+                                </svg>
+                                <span>FCP Cafe</span>
+                            </a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe/latenite/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <path d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.751.751 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/>
+                                </svg>
+                                <span>LateNite</span>
+                            </a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="retype-container" class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        
+            <div class="flex items-center h-16 px-6">
+                <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+            </div>
+        
+            <div class="pl-6 mt-1 mb-4">
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            </div>
+        
+        </div>
+        
+        <!-- Sidebar component -->
+        <doc-sidebar v-cloak>
+            <template #sidebar-footer>
+                <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+        
+                    <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                        <nav>
+                            <ul class="flex flex-wrap justify-center items-center">
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../buy/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M11.25 9.331V.75a.75.75 0 0 1 1.5 0v8.58l1.949-2.11A.75.75 0 1 1 15.8 8.237l-3.25 3.52a.75.75 0 0 1-1.102 0l-3.25-3.52A.75.75 0 1 1 9.3 7.22l1.949 2.111Z"/><path d="M2.5 3.75v11.5c0 .138.112.25.25.25h18.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25h-5.5a.75.75 0 0 1 0-1.5h5.5c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0 1 21.25 17h-6.204c.171 1.375.805 2.652 1.769 3.757A.752.752 0 0 1 16.25 22h-8.5a.75.75 0 0 1-.566-1.243c.965-1.105 1.599-2.382 1.77-3.757H2.75A1.75 1.75 0 0 1 1 15.25V3.75C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 0 1 0 1.5h-5.5a.25.25 0 0 0-.25.25ZM10.463 17c-.126 1.266-.564 2.445-1.223 3.5h5.52c-.66-1.055-1.098-2.234-1.223-3.5Z"/>
+                                        </svg>
+                                        <span>Buy on Mac App Store</span>
+                                    </a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://ltnt.tv/discord" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M1.75 1h12.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 14.25 14H8.061l-2.574 2.573A1.458 1.458 0 0 1 3 15.543V14H1.75A1.75 1.75 0 0 1 0 12.25v-9.5C0 1.784.784 1 1.75 1ZM1.5 2.75v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25H1.75a.25.25 0 0 0-.25.25Z"/><path d="M22.5 8.75a.25.25 0 0 0-.25-.25h-3.5a.75.75 0 0 1 0-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0 1 22.25 20H21v1.543a1.457 1.457 0 0 1-2.487 1.03L15.939 20H10.75A1.75 1.75 0 0 1 9 18.25v-1.465a.75.75 0 0 1 1.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 0 1 .53.22l2.72 2.72v-2.19a.75.75 0 0 1 .75-.75h2a.25.25 0 0 0 .25-.25v-9.5Z"/>
+                                        </svg>
+                                        <span>Discord</span>
+                                    </a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/latenitefilms/KeyframeToolbox/issues" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Zm9.5 2a2 2 0 1 1-.001-3.999A2 2 0 0 1 12 14Z"/>
+                                        </svg>
+                                        <span>Bugs &amp; Feature Requests</span>
+                                    </a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M15 4.75a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM2.5 19.25a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0Zm0-14.5a3.25 3.25 0 1 1 6.5 0 3.25 3.25 0 0 1-6.5 0ZM5.75 6.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 6.5Zm0 14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 5.75 21Zm12.5-14.5a1.75 1.75 0 1 0-.001-3.501A1.75 1.75 0 0 0 18.25 6.5Z"/><path d="M5.75 16.75A.75.75 0 0 1 5 16V8a.75.75 0 0 1 1.5 0v8a.75.75 0 0 1-.75.75Z"/><path d="M17.5 8.75v-1H19v1a3.75 3.75 0 0 1-3.75 3.75h-7a1.75 1.75 0 0 0-1.75 1.75H5A3.25 3.25 0 0 1 8.25 11h7a2.25 2.25 0 0 0 2.25-2.25Z"/>
+                                        </svg>
+                                        <span>FCP Cafe</span>
+                                    </a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://fcp.cafe/latenite/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0 mr-1.5" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                            <path d="M12 2.5c-3.81 0-6.5 2.743-6.5 6.119 0 1.536.632 2.572 1.425 3.56.172.215.347.422.527.635l.096.112c.21.25.427.508.63.774.404.531.783 1.128.995 1.834a.75.75 0 0 1-1.436.432c-.138-.46-.397-.89-.753-1.357a18.111 18.111 0 0 0-.582-.714l-.092-.11c-.18-.212-.37-.436-.555-.667C4.87 12.016 4 10.651 4 8.618 4 4.363 7.415 1 12 1s8 3.362 8 7.619c0 2.032-.87 3.397-1.755 4.5-.185.23-.375.454-.555.667l-.092.109c-.21.248-.405.481-.582.714-.356.467-.615.898-.753 1.357a.751.751 0 0 1-1.437-.432c.213-.706.592-1.303.997-1.834.202-.266.419-.524.63-.774l.095-.112c.18-.213.355-.42.527-.634.793-.99 1.425-2.025 1.425-3.561C18.5 5.243 15.81 2.5 12 2.5ZM8.75 18h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm.75 3.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.75-.75Z"/>
+                                        </svg>
+                                        <span>LateNite</span>
+                                    </a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </template>
+        </doc-sidebar>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+<div class="flex">
+    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+        <main class="relative pb-12 lg:pt-2">
+            <div class="relative retype-markdown" id="retype-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="retype-sidebar-right-toggle"></div>
+                <nav id="retype-breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+                    <ol role="list">
+                        <li class="pr-4">
+                            <a href="../" class="pr-4">
+                                Welcome
+                            </a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"/>
+                            </svg>
+                        </li>
+                        <li class="pr-4">
+                            <a href="../agents/" class="pr-4">
+                                LLM Agents
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <doc-page-actions></doc-page-actions>
+
+                <!-- Page content  -->
+<h1 id="llm-agents">LLM Agents</h1>
+<p>This page is mainly for LLM agents - however, humans are welcome too! <span class="docs-emoji">&#x1F916;</span></p>
+<hr>
+<h2 id="download-skill">Download Skill</h2>
+<p>You can find the Keyframe Toolbox Skill on <a href="https://github.com/latenitefilms/KeyframeToolbox/tree/main/skills/keyframe-toolbox-fcpxml" class="outbound" target="_blank"><span>GitHub</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a>.</p>
+<p>You can download it and use it in Claude, Codex or your preferred LLM. Need help? Ask you LLM.</p>
+<hr>
+<h2 id="generate-fcpxml-with-keyframe-toolbox-effects">Generate FCPXML with Keyframe Toolbox effects</h2>
+<p>Use an <code translate="no" v-pre>effect</code> resource to identify the installed Motion template, a <code translate="no" v-pre>filter-video</code> to apply it to a clip, and one <code translate="no" v-pre>param</code> per Toolbox graph you want to change. Each graph is a single custom FxPlug value. Its keyframes live in JSON inside that value. Final Cut’s <code translate="no" v-pre>keyframeAnimation</code> element and <code translate="no" v-pre>adjust-transform</code> control other kinds of animation.</p>
+<p>This guide targets <strong>Keyframe Toolbox v2.1.0 (Build 61)</strong> and <strong>FCPXML v1.15</strong>. The worked example creates a four-second project with an editable Scale graph and Final Cut’s built-in Counting generator. It needs no external footage. The encoder uses Python 3.9+ and the standard library. To view the result, launch Keyframe Toolbox to install its Motion templates and open Final Cut Pro. <doc-anchor-trigger to="#generate-a-zoom-and-hold">Run the zoom example</doc-anchor-trigger> · <doc-anchor-trigger to="#choose-the-property-and-its-units">Look up a graph ID</doc-anchor-trigger></p>
+<hr>
+<h3 id="what-final-cut-actually-exports">What Final Cut actually exports</h3>
+<p>The Build 61 export used one regular Keyframe Toolbox instance. Its <code translate="no" v-pre>filter-video ref=&quot;r4&quot;</code> pointed to a Motion template. Four direct <code translate="no" v-pre>param</code> children had <code translate="no" v-pre>name=&quot;&quot;</code> and keys ending in <code translate="no" v-pre>100</code> (inspector settings), <code translate="no" v-pre>102</code> (Position X), <code translate="no" v-pre>103</code> (Position Y), and <code translate="no" v-pre>104</code> (Scale). The portable reference project retains these four original parameter values and uses the built-in Counting generator in place of the original media. A generator can omit untouched rows. The 360 Reframe and Time Remap mappings below come from their shipped templates and FxPlug registrations. <a href="build-61-example.fcpxml">Build 61 reference project</a></p>
+<retype-table copy-text="| Effect name | `resources/effect/@uid` for the standard user installation |
+| --- | --- |
+| Keyframe Toolbox | `~/Effects.localized/Keyframe Toolbox/Keyframe Toolbox/Keyframe Toolbox.moef` |
+| Keyframe Toolbox 360 Reframe | `~/Effects.localized/Keyframe Toolbox/Keyframe Toolbox 360 Reframe/Keyframe Toolbox 360 Reframe.moef` |
+| Keyframe Toolbox Time Remap | `~/Effects.localized/Keyframe Toolbox/Keyframe Toolbox Time Remap/Keyframe Toolbox Time Remap.moef` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Effect name</th>
+<th><code translate="no" v-pre>resources/effect/@uid</code> for the standard user installation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keyframe Toolbox</td>
+<td><code translate="no" v-pre>~/Effects.localized/Keyframe Toolbox/Keyframe Toolbox/Keyframe Toolbox.moef</code></td>
+</tr>
+<tr>
+<td>Keyframe Toolbox 360 Reframe</td>
+<td><code translate="no" v-pre>~/Effects.localized/Keyframe Toolbox/Keyframe Toolbox 360 Reframe/Keyframe Toolbox 360 Reframe.moef</code></td>
+</tr>
+<tr>
+<td>Keyframe Toolbox Time Remap</td>
+<td><code translate="no" v-pre>~/Effects.localized/Keyframe Toolbox/Keyframe Toolbox Time Remap/Keyframe Toolbox Time Remap.moef</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>Keep the literal <code translate="no" v-pre>~/</code> and spaces in the UID. The optional <code translate="no" v-pre>src</code> in an export is a file URL for that Mac. Omit it when generating for a standard installation on another Mac. The UUID inside a <code translate="no" v-pre>.moef</code> identifies its renderer. The template path above is the identifier that goes in FCPXML. <a href="../../../../keyframe20toolbox/wrapper20application/code/contentview.swift">Template installer</a> · <a href="https://developer.apple.com/documentation/professional-video-applications/effect" class="outbound" target="_blank"><span>Apple’s effect resource reference</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></p>
+<p>Every Build 61 graph uses the full key <strong><code translate="no" v-pre>9999/10003/10007/3/10021/20/&lt;graph ID&gt;</code></strong>. For example, regular Scale is <code translate="no" v-pre>9999/10003/10007/3/10021/20/104</code>. The DTD requires a <code translate="no" v-pre>name</code> attribute. These rows export it as <code translate="no" v-pre>name=&quot;&quot;</code>. Match the effect by resource UID and the parameter by its full key. Resource IDs such as <code translate="no" v-pre>r4</code> are local to each document.</p>
+<hr>
+<h3 id="choose-the-property-and-its-units">Choose the property and its units</h3>
+<p>Each cell gives the property&#x27;s authoring range and factory default. The <strong>graph ID</strong> is the last component of the FCPXML key. The <strong>property ID</strong> belongs in <code translate="no" v-pre>propertyVisibility.visibleParameterIDs</code> if you edit inspector settings. Reused IDs take their meaning from the effect instance. <a href="../../../../keyframe20toolbox/plugin/code/keyframeparameterbridge.swift">Graph definitions, defaults and normalization</a> · <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxplugin2bparameters.swift">FxPlug parameter registrations</a></p>
+<retype-table copy-text="| Graph ID | Property ID | Keyframe Toolbox | 360 Reframe | Time Remap |
+| ---: | ---: | --- | --- | --- |
+| 101 | 1 | Opacity 0–100%, default 100 | Same | — |
+| 102 | 2 | Position X −8000…8000 px, default 0 | Pan −720…720°, default 0 | — |
+| 103 | 3 | Position Y −8000…8000 px, default 0 | Tilt −720…720°, default 0 | — |
+| 104 | 4 | Scale 0–2000%, default 100 | Field of View 1–360°, default 120 | — |
+| 105 | 5 | Rotation Z −1440…1440°, default 0 | Roll −720…720°, default 0 | — |
+| 106 | 6 | Blur 0–500 px, default 0 | Same | — |
+| 107 | 7 | Rotation X −1440…1440°, default 0 | — | — |
+| 108 | 8 | Rotation Y −1440…1440°, default 0 | — | — |
+| 111 | 9 | — | Distortion offset −100…100, default 0 | — |
+| 112 | 10 | Scale X 0–2000%, default 100 | — | — |
+| 113 | 11 | Scale Y 0–2000%, default 100 | — | — |
+| 114 | 12 | — | — | Time 0–100% of source, default ramp 0 → 100 |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th style="text-align: right;">Graph ID</th>
+<th style="text-align: right;">Property ID</th>
+<th>Keyframe Toolbox</th>
+<th>360 Reframe</th>
+<th>Time Remap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">1</td>
+<td>Opacity 0–100%, default 100</td>
+<td>Same</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">2</td>
+<td>Position X −8000…8000 px, default 0</td>
+<td>Pan −720…720°, default 0</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">3</td>
+<td>Position Y −8000…8000 px, default 0</td>
+<td>Tilt −720…720°, default 0</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">4</td>
+<td>Scale 0–2000%, default 100</td>
+<td>Field of View 1–360°, default 120</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">5</td>
+<td>Rotation Z −1440…1440°, default 0</td>
+<td>Roll −720…720°, default 0</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">6</td>
+<td>Blur 0–500 px, default 0</td>
+<td>Same</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">7</td>
+<td>Rotation X −1440…1440°, default 0</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">8</td>
+<td>Rotation Y −1440…1440°, default 0</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">9</td>
+<td>—</td>
+<td>Distortion offset −100…100, default 0</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">10</td>
+<td>Scale X 0–2000%, default 100</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">11</td>
+<td>Scale Y 0–2000%, default 100</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">12</td>
+<td>—</td>
+<td>—</td>
+<td>Time 0–100% of source, default ramp 0 → 100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<ul>
+<li><strong>Regular transforms.</strong> A Scale value of <code translate="no" v-pre>150</code> means 150%. Scale X and Y multiply the overall scale, so Scale <code translate="no" v-pre>150</code> and Scale X <code translate="no" v-pre>200</code> together give 300% width. A fixed pivot uses <code translate="no" v-pre>anchorOffset</code> in pixels in the Position X and Position Y graph objects. Degrees are stored in the graph and converted at render time. <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxplugin2bpluginstate.swift">Transform evaluation</a></li>
+<li><strong>360 Reframe.</strong> Use equirectangular footage interpreted as <strong>Rectangular</strong> in Final Cut, a regular project, and Spatial Conform set to Fill. For a 90° pan, edit graph <code translate="no" v-pre>102</code> from <code translate="no" v-pre>0</code> to <code translate="no" v-pre>90</code>. Projection is a separate static menu at leaf <code translate="no" v-pre>110</code>. Its renderer indices are <code translate="no" v-pre>0</code> Rectilinear, <code translate="no" v-pre>1</code> Wide/Panini, <code translate="no" v-pre>2</code> Fisheye, <code translate="no" v-pre>3</code> Stereographic (default), and <code translate="no" v-pre>4</code> Tiny Planet. To override the menu, copy its native <code translate="no" v-pre>param</code> from an export with that projection selected. Each projection applies its own Field of View limits. <a href="../../../../keyframe20toolbox/plugin/code/keyframeinspectorheader.swift">360 setup</a> · <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxplugin2brendering.swift">Projection definitions</a></li>
+<li><strong>Time Remap.</strong> A value of <code translate="no" v-pre>25</code> selects the source frame one-quarter of the way through the input. Equal values hold a frame and decreasing values reverse playback. For a freeze halfway through, use <code translate="no" v-pre>(progress, value)</code> pairs <code translate="no" v-pre>(0, 0), (0.5, 50), (1, 50)</code>. The effect requests video frames and leaves the timeline clip duration as authored. The separate Super Slow-Mo compound preparation writes a native <code translate="no" v-pre>conform-rate</code> and <code translate="no" v-pre>timeMap</code>. To keep the curve editable in Toolbox, write graph <code translate="no" v-pre>114</code>. <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxtimeremapplugin.swift">Time Remap renderer</a> · <a href="../../../../keyframe20toolbox/plugin/code/timeremapfcpxmlservice.swift">Compound preparation</a></li>
+</ul>
+<hr>
+<h3 id="write-a-graph">Write a graph</h3>
+<p>A <code translate="no" v-pre>ParameterGraphStorage</code> object uses <code translate="no" v-pre>version: 2</code>. Give each point a numeric <code translate="no" v-pre>progress</code>, a numeric <code translate="no" v-pre>value</code> in the property’s units, and a Boolean <code translate="no" v-pre>handlesBroken</code>. Use <code translate="no" v-pre>isUserEdited: true</code> for authored curves. Emit finite numbers, ascending progress in <code translate="no" v-pre>[0, 1]</code>, and values within the table bounds. The plug-in merges points within <code translate="no" v-pre>0.000001</code> progress. For a constant value, write two equal-valued points at <code translate="no" v-pre>0</code> and <code translate="no" v-pre>1</code>.</p>
+<p>For normal <strong>relative</strong> timing on an <code translate="no" v-pre>N</code>-frame clip, frame <code translate="no" v-pre>i</code> (zero-based) starts at <code translate="no" v-pre>i / N</code>. For example, frame 50 of a 100-frame clip begins at <code translate="no" v-pre>0.5</code>. Progress <code translate="no" v-pre>1</code> denotes the graph endpoint. To reach an exact value on the last displayed frame, put a point at <code translate="no" v-pre>(N − 1) / N</code> and hold it. In the reference export, the clip is <code translate="no" v-pre>10100/2500s</code> at 25 fps, or 101 frames. Its Position X and Y end at <code translate="no" v-pre>0.9900990099009901</code> (<code translate="no" v-pre>100/101</code>), while Scale has a point at <code translate="no" v-pre>1</code>. Clip <code translate="no" v-pre>start</code>, parent <code translate="no" v-pre>offset</code>, and project timecode are separate FCPXML times. Keep those as rational seconds such as <code translate="no" v-pre>1001/30000s</code>. <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxplugin2bpluginstate.swift">Render-time progress</a> · <a href="../../../../keyframe20toolbox/plugin/code/keyframeparameterbridge.swift">Frame occupancy</a></p>
+<p>For a straight segment, omit the left point’s <code translate="no" v-pre>outHandle</code> and the right point’s <code translate="no" v-pre>inHandle</code>. For Bézier easing, each handle stores <code translate="no" v-pre>timeOffset</code> in normalized graph time and <code translate="no" v-pre>valueOffset</code> in property units, both <strong>relative to their own point</strong>. An outgoing handle extends to the right and an incoming handle to the left. Keep control times inside the segment and control values inside the property range. A horizontal handle has <code translate="no" v-pre>valueOffset: 0</code>. Set <code translate="no" v-pre>handlesBroken</code> when the two handles should be independently editable. A shared optional <code translate="no" v-pre>linkedGroupID</code> UUID links coincident points across graphs in the same instance.</p>
+<p>The optional <code translate="no" v-pre>beforeFirstKeyframeMode</code> and <code translate="no" v-pre>afterLastKeyframeMode</code> each accept <code translate="no" v-pre>constant</code> (hold), <code translate="no" v-pre>pingPong</code> (alternate direction), or <code translate="no" v-pre>progressive</code> (repeat with a cumulative value offset). <code translate="no" v-pre>displayLowerBound</code> and <code translate="no" v-pre>displayUpperBound</code> set the graph’s display range. <a href="../../../../keyframe20toolbox/plugin/code/keyframeparameterbridge.swift">Graph storage and extrapolation</a></p>
+<p>For new relative graphs, omit <code translate="no" v-pre>timingReferenceTimelineStartSeconds</code> and <code translate="no" v-pre>timingReferenceEffectiveDurationSeconds</code>. In absolute timing, the renderer uses these together to remap points after a trim. Its reference start is the host’s <strong>input start</strong> in seconds, and its effective duration is the input duration less one input frame, falling back to the input duration for very short clips. Preserve the pair when editing an absolute-timing graph. Time Remap always evaluates relative timing. Its optional <code translate="no" v-pre>activeDurationFrames</code> limits the graph to the opening frames of a longer clip. For an active window of <code translate="no" v-pre>A</code> frames, <code translate="no" v-pre>1 &lt; A &lt; N</code>, the last active frame maps to progress <code translate="no" v-pre>1</code> at frame <code translate="no" v-pre>A − 1</code>. <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxplugin2bpluginstate.swift">Absolute timing</a> · <a href="../../../../keyframe20toolbox/plugin/code/timeremapactivedurationmapping.swift">Active Duration mapping</a></p>
+<hr>
+<h3 id="generate-a-zoom-and-hold">Generate a zoom and hold</h3>
+<p>The starter is a complete four-second project using Final Cut’s built-in Counting generator with the regular Toolbox effect at its defaults. The accompanying JSON specifies three Scale points. Horizontal Bézier handles ease the zoom from 100% to 150% over two seconds. At 25 fps, the expected values are 100% on frame 0, 125% on frame 25, and 150% on frames 50 through 99. <a href="../assets/zoom-base.fcpxml">Starter project</a> · <a href="../assets/zoom-scale.json">Scale edit</a></p>
+<p>The commands below run from the repository root. For a standalone copy, set <code translate="no" v-pre>skill</code> to the skill’s location. Pass a DTD file for the target FCPXML version to validate the output before saving. The path shown is from Final Cut Pro on macOS.</p>
+<div id="generate-a-zoom-and-hold-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">skill=&quot;$PWD/.agents/skills/keyframe-toolbox-fcpxml&quot;
+mkdir -p Zoom.fcpxmld
+python3 &quot;$skill/scripts/kt_graph.py&quot; set &quot;$skill/assets/zoom-base.fcpxml&quot; &quot;Keyframe Toolbox&quot; 104 \
+  &quot;$skill/assets/zoom-scale.json&quot; Zoom.fcpxmld \
+  --dtd &quot;/Applications/Final Cut Pro.app/Contents/Frameworks/Interchange.framework/Versions/A/Resources/FCPXMLv1_15.dtd&quot;
+python3 &quot;$skill/scripts/kt_graph.py&quot; read Zoom.fcpxmld &quot;Keyframe Toolbox&quot; 104
+python3 &quot;$skill/scripts/kt_graph.py&quot; read Zoom.fcpxmld &quot;Keyframe Toolbox&quot; 104 --default</code></pre>
+</doc-codeblock></div>
+<p>The first read returns the authored <code translate="no" v-pre>points</code> and handles. The second returns two points at 100%, the factory reset value. For a new project using footage, place the <code translate="no" v-pre>filter-video</code> on the target <code translate="no" v-pre>asset-clip</code> or <code translate="no" v-pre>video</code> and reference the <code translate="no" v-pre>effect</code> resource’s local ID. On an <code translate="no" v-pre>asset-clip</code>, video filters follow intrinsic adjustments, connected items, markers, and audio channel sources, and precede audio filters and metadata. Preserve the order of stacked filters. <a href="https://developer.apple.com/documentation/professional-video-applications/creating-fcpxml-documents" class="outbound" target="_blank"><span>Apple’s FCPXML document structure</span><svg xmlns="http://www.w3.org/2000/svg" class="retype-outbound-trigger docs-icon ml-1" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M15.5 2.25a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V4.06l-6.22 6.22a.75.75 0 1 1-1.06-1.06L19.94 3h-3.69a.75.75 0 0 1-.75-.75Z"/><path d="M2.5 4.25c0-.966.784-1.75 1.75-1.75h8.5a.75.75 0 0 1 0 1.5h-8.5a.25.25 0 0 0-.25.25v15.5c0 .138.112.25.25.25h15.5a.25.25 0 0 0 .25-.25v-8.5a.75.75 0 0 1 1.5 0v8.5a1.75 1.75 0 0 1-1.75 1.75H4.25a1.75 1.75 0 0 1-1.75-1.75V4.25Z"/></g></svg></a></p>
+<hr>
+<h3 id="edit-an-existing-export">Edit an existing export</h3>
+<p>Run <code translate="no" v-pre>python3 &quot;$skill/scripts/kt_graph.py&quot; inspect INPUT</code> to list the clip path, timing, saved graph IDs, and occurrence of each effect. Use <code translate="no" v-pre>--instance N</code> on <code translate="no" v-pre>read</code> and <code translate="no" v-pre>set</code> when multiple instances of the same effect are present. An absent graph reads as the factory curve. The helper accepts a plain FCPXML file, an existing <code translate="no" v-pre>.fcpxmld</code> bundle, or its <code translate="no" v-pre>Info.fcpxml</code>. To deliver a separate version of an existing bundle, copy the whole bundle, then target that copy. <a href="../scripts/kt_graph.py">Python helper</a></p>
+<p>The JSON edit replaces only the supplied top-level fields. Supplying <code translate="no" v-pre>points</code> replaces the entire point array. To move a single keyframe, read the graph, update that point in the returned JSON, and pass the complete array back. The helper preserves the existing OZML factory value and other parameter rows. For 360 Reframe and Time Remap, attach the corresponding template and pass its full effect name on the command line.</p>
+<hr>
+<h3 id="encode-the-custom-parameter">Encode the custom parameter</h3>
+<p>From the outside in, Build 61 uses the following representations. The two Base64 alphabets have different jobs.</p>
+<ol>
+<li>FCPXML <code translate="no" v-pre>param/@value</code> is <strong>standard Base64</strong> of a complete UTF-8 <code translate="no" v-pre>ozml</code> channel document. The supplied export uses OZML <code translate="no" v-pre>5.15</code>. The inner <code translate="no" v-pre>parameter/@id</code> equals the graph ID. Its <code translate="no" v-pre>numberOfKeypoints</code> is <code translate="no" v-pre>0</code> even on animated graphs.</li>
+<li><code translate="no" v-pre>parameter/dataValue</code> is the current value. <code translate="no" v-pre>defaultVal</code> holds the factory value used for reset. Preserve <code translate="no" v-pre>defaultVal</code> when editing an existing row.</li>
+<li>Motion’s alphabet is <code translate="no" v-pre>*-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</code> in index order. Decoding <code translate="no" v-pre>dataValue</code> yields an eight-byte <strong>big-endian</strong> byte count, one type byte (<code translate="no" v-pre>0x2A</code>), then exactly that many bytes of binary plist. Zero bytes at the end fill the last three-byte group. The length counts only the plist.</li>
+<li>The outer plist is an <code translate="no" v-pre>NSKeyedArchiver</code>. Its <code translate="no" v-pre>$top.BlindDataObject</code> UID refers into <code translate="no" v-pre>$objects</code> to the <strong>bytes of a second binary keyed archive</strong>. <code translate="no" v-pre>$top.DataIsLegacy</code> refers to false. Inside, <code translate="no" v-pre>$top[&quot;Custom Data&quot;]</code> refers to the object of class <code translate="no" v-pre>Keyframe_Toolbox_Renderer.ParameterGraphValue</code>. Its <code translate="no" v-pre>storageData</code> UID refers to UTF-8 JSON <strong>bytes</strong>. Follow UID references when reading an export. <a href="../../../../keyframe20toolbox/plugin/code/keyframeparameterbridge.swift">Production secure-coding class</a> · <a href="../../../../keyframe20toolbox/wrapper20application/resources/motion20templates">Bundled Motion templates</a></li>
+</ol>
+<hr>
+<h3 id="check-the-result">Check the result</h3>
+<p>The generated zoom passed Apple’s 1.15 DTD. The production Swift decoder read the graph and the evaluator returned 100%, 125%, 150%, and 150% at the four specified frames. The factory graphs for all three effects were checked against their shipped Motion templates. A fresh Final Cut import and re-export is the remaining host check for the generated project.</p>
+<ol>
+<li><strong>Check the document.</strong> Match the root <code translate="no" v-pre>version</code> to the DTD. The supplied export is 1.15. Every <code translate="no" v-pre>id</code> must be unique, every <code translate="no" v-pre>ref</code> must point to the right resource type, and clip durations and offsets must land on the intended frame boundaries. For real media, use accessible <code translate="no" v-pre>media-rep/@src</code> URLs. Preserve unrelated resources, filters, clip timing, and any other files in an existing <code translate="no" v-pre>.fcpxmld</code> bundle. For FCPXML 1.14 documents, use the repository’s <a href="../../../../llm20references/fcpxmlv1_14.dtd">1.14 DTD</a>.</li>
+<li><strong>Decode the generated row.</strong> Read <code translate="no" v-pre>param/@value</code> with standard Base64, parse the resulting XML, and run <code translate="no" v-pre>decode_storage</code> on <code translate="no" v-pre>parameter/dataValue</code>. Compare its <code translate="no" v-pre>points</code>, handles, and modes with the request. Decode <code translate="no" v-pre>defaultVal</code> separately to check the reset behavior. DTD validation checks XML structure. It treats the encoded parameter as text and cannot detect a wrong graph ID, archive class, or packed value.</li>
+<li><strong>Check it in Final Cut.</strong> Use <strong>File → Import → XML</strong> and select <code translate="no" v-pre>Zoom.fcpxmld</code>. Open <em>Editable Zoom</em>, select the Counting clip, and inspect the three Scale points. If Scale is hidden, enable it in the effect’s Settings. Scrub frames 0, 25, 50, and 99. Export XML again and decode graph <code translate="no" v-pre>104</code>. Compare the decoded values and curve, since JSON key order, plist object order, and document-local resource IDs can change on export.</li>
+</ol>
+<p>For edits to an existing project, the <code translate="no" v-pre>100</code> row uses the same encoding with an <code translate="no" v-pre>InspectorPanelSettings</code> JSON object. Decode that object, change only the requested setting, and preserve the other fields. For instance, adding property ID <code translate="no" v-pre>10</code> to <code translate="no" v-pre>propertyVisibility.visibleParameterIDs</code> exposes the regular Scale X graph (<code translate="no" v-pre>112</code>). Rendering still evaluates a graph when it is hidden in the inspector. For an explicit per-instance settings change, set <code translate="no" v-pre>isSeededDefault</code> to <code translate="no" v-pre>false</code> and omit <code translate="no" v-pre>seededDefaultRevision</code>. Leaf <code translate="no" v-pre>109</code> is a transient refresh pulse and has no saved FCPXML value. <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxplugin2bpluginstate.swift">Inspector settings and rendering</a> · <a href="../../../../keyframe20toolbox/plugin/code/keyframetoolboxplugin2bparameters.swift">Saved parameter flags</a></p>
+<p>For a different Toolbox build, export a clip with an edited graph in the target effect. Compare its UID, full key, OZML wrapper, factory default, archive class, and decoded JSON before reusing this encoder.</p>
+
+                
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+            </div>
+            <footer id="retype-content-footer" class="clear-both">
+            
+                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../release-notes/">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                            <span>
+                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
+                                <span class="block mt-1">Release Notes</span>
+                            </span>
+                        </a>
+                    </div>
+            
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../uninstall/">
+                            <span>
+                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
+                                <span class="block mt-1">Uninstall</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                        </a>
+                    </div>
+                </nav>
+            </footer>
+        </main>
+
+        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                <div id="retype-footer-links" class="print:hidden">
+                    <ul class="flex flex-wrap items-center text-sm">
+                    </ul>
+                </div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright 2026 LateNite Films Pty Ltd. All rights reserved.</p></div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+        </div>
+    </div>
+
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+    <div id="retype-overlay-target"></div>
+
+        <script data-cfasync="false">window.__DOCS__ = { "title": "LLM Agents", level: 1, icon: "file", hasPrism: true, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/agents.md" }</script>
+</body>
+</html>
