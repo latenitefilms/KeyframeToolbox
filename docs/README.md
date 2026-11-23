@@ -10,7 +10,7 @@
 
 ## Why do you need this?
 
-Because linear keyframes create clunky animations, and the new easing controls in Final Cut Pro 13 don't give enough control. 
+Because linear keyframes create clunky animations, and the new keyframe easing feature in Final Cut Pro 13 doesn't give enough control. 
   
 While FCP 13's easing controls are easy to adjust on the Position property in the Viewer, *movement is only one kind of animation*. To access easing on any other property, you have to open the Video Animation panel, where most properties can't be shown as a keyframe graph at all. FCP offers limited easing presets, while Keyframe Toolbox includes full manual control with visible graphs, and much more powerful, customizable presets.
 
