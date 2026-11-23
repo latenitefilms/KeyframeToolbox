@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.15">
+  <resources>
+    <format id="r1" name="FFVideoFormat1080p25" frameDuration="1/25s" width="1920" height="1080"/>
+    <effect id="r2" name="Counting" uid=".../Generators.localized/Elements.localized/Counting.localized/Counting.motn"/>
+    <effect id="r3" name="Keyframe Toolbox" uid="~/Effects.localized/Keyframe Toolbox/Keyframe Toolbox/Keyframe Toolbox.moef"/>
+  </resources>
+  <event name="Toolbox Examples">
+    <project name="Editable Zoom">
+      <sequence format="r1" duration="4s" tcStart="0s" tcFormat="NDF">
+        <spine>
+          <video ref="r2" name="Counting" offset="0s" start="3600s" duration="4s">
+            <filter-video ref="r3" name="Keyframe Toolbox"/>
+          </video>
+        </spine>
+      </sequence>
+    </project>
+  </event>
+</fcpxml>

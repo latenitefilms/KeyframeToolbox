@@ -1,0 +1,7 @@
+{
+  "points": [
+    {"progress": 0,   "value": 100, "handlesBroken": false, "outHandle": {"timeOffset": 0.125, "valueOffset": 0}},
+    {"progress": 0.5, "value": 150, "handlesBroken": false, "inHandle": {"timeOffset": -0.125, "valueOffset": 0}},
+    {"progress": 1,   "value": 150, "handlesBroken": false}
+  ]
+}
