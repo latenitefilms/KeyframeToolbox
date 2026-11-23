@@ -2,7 +2,18 @@
 
 Use an `effect` resource to identify the installed Motion template, a `filter-video` to apply it to a clip, and one `param` per Toolbox graph you want to change. Each graph is a single custom FxPlug value. Its keyframes live in JSON inside that value. Final Cut’s `keyframeAnimation` element and `adjust-transform` control other kinds of animation.
 
-This guide targets **Keyframe Toolbox 2.1.0 (Build 61)** and **FCPXML 1.15**. The worked example creates a four-second project with an editable Scale graph and Final Cut’s built-in Counting generator. It needs no external footage. The encoder uses Python 3.9+ and the standard library. To view the result, launch Keyframe Toolbox to install its Motion templates and open Final Cut Pro. [Run the zoom example](#generate-a-zoom-and-hold) · [Look up a graph ID](#choose-the-property-and-its-units)
+The helper supports **Keyframe Toolbox 2.0.1 (Build 60) and 2.1.0 (Build 61)**. It uses Python 3.9+ and the standard library. The four-second Counting project works without external footage. Launch Keyframe Toolbox to install its Motion templates on the editing Mac. [Run the zoom example](#generate-a-zoom-and-hold) · [Look up a graph ID](#choose-the-property-and-its-units)
+
+## Choose the host format
+
+| Target | Project and validation DTD | OZML for a new custom row |
+| --- | --- | --- |
+| Final Cut Pro 11.2 | [1.13 starter](../assets/zoom-base-1.13.fcpxml) and `FCPXMLv1_13.dtd` | `5.14` |
+| A host using FCPXML 1.15 | [1.15 starter](../assets/zoom-base.fcpxml) and `FCPXMLv1_15.dtd` | `5.15` |
+
+The `fcpxml/@version` declares the project format. Each custom row contains a separate `ozml/@version`. Start with an export or starter for the target host. The helper keeps the project version and each existing wrapper version. For new rows it defaults to `5.14` through FCPXML 1.14 and `5.15` from 1.15. The 1.14 choice is a helper default. Pass `set --ozml-version 5.14` or `5.15` to override the version of the rows that command writes, including the settings row with `--reveal`. Other rows keep their original values. [Apple’s Final Cut Pro release notes](https://support.apple.com/en-au/102825)
+
+**Using 2.0.1.** Both release tags contain byte-identical Motion templates, FxPlug parameter registrations and graph archive class. The tagged 2.0.1 Swift decoder and evaluator read generated 5.14 graphs and Inspector settings. These edits can target 2.0.1 directly. Build 61 changed how the plug-in recognizes saved Inspector defaults. A live Final Cut Pro 11.2 import and re-export remains unverified. [Graph storage and secure decoder](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeParameterBridge.swift) · [Inspector defaults](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BPluginState.swift)
 
 ## What Final Cut actually exports
 
@@ -38,7 +49,7 @@ Each cell gives the property's authoring range and factory default. The **graph 
 | 114 | 12 | — | — | Time 0–100% of source, default ramp 0 → 100 |
 
 - **Regular transforms.** A Scale value of `150` means 150%. Scale X and Y multiply the overall scale, so Scale `150` and Scale X `200` together give 300% width. A fixed pivot uses `anchorOffset` in pixels in the Position X and Position Y graph objects. Degrees are stored in the graph and converted at render time. [Transform evaluation](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BPluginState.swift)
-- **360 Reframe.** Use equirectangular footage interpreted as **Rectangular** in Final Cut, a regular project, and Spatial Conform set to Fill. For a 90° pan, edit graph `102` from `0` to `90`. Projection is a separate static menu at leaf `110`. Its renderer indices are `0` Rectilinear, `1` Wide/Panini, `2` Fisheye, `3` Stereographic (default), and `4` Tiny Planet. To override the menu, copy its native `param` from an export with that projection selected. Each projection applies its own Field of View limits. [360 setup](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeInspectorHeader.swift) · [Projection definitions](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BRendering.swift)
+- **360 Reframe.** Use equirectangular footage interpreted as **Rectangular** in Final Cut, a regular project, and Spatial Conform set to Fill. For a 90° pan, edit graph `102` from `0` to `90`. Projection is a static menu at leaf `110`. Each mode applies its own Field of View limits. [Set the projection](#edit-inspector-settings-and-projection) · [360 setup](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeInspectorHeader.swift) · [Projection definitions](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BRendering.swift)
 - **Time Remap.** A value of `25` selects the source frame one-quarter of the way through the input. Equal values hold a frame and decreasing values reverse playback. For a freeze halfway through, use `(progress, value)` pairs `(0, 0), (0.5, 50), (1, 50)`. The effect requests video frames and leaves the timeline clip duration as authored. The separate Super Slow-Mo compound preparation writes a native `conform-rate` and `timeMap`. To keep the curve editable in Toolbox, write graph `114`. [Time Remap renderer](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxTimeRemapPlugIn.swift) · [Compound preparation](../../../../Keyframe%20Toolbox/Plugin/Code/TimeRemapFCPXMLService.swift)
 
 ## Write a graph
@@ -55,27 +66,64 @@ For new relative graphs, omit `timingReferenceTimelineStartSeconds` and `timingR
 
 ## Generate a zoom and hold
 
-The starter is a complete four-second project using Final Cut’s built-in Counting generator with the regular Toolbox effect at its defaults. The accompanying JSON specifies three Scale points. Horizontal Bézier handles ease the zoom from 100% to 150% over two seconds. At 25 fps, the expected values are 100% on frame 0, 125% on frame 25, and 150% on frames 50 through 99. [Starter project](../assets/zoom-base.fcpxml) · [Scale edit](../assets/zoom-scale.json)
+Both starters contain Final Cut’s built-in Counting generator and the regular Toolbox effect. Horizontal Bézier handles ease the zoom from 100% to 150% over two seconds. At 25 fps, the expected values are 100% on frame 0, 125% on frame 25, and 150% on frames 50 through 99. [Scale edit](../assets/zoom-scale.json)
 
 The commands below run from the repository root. For a standalone copy, set `skill` to the skill’s location. Pass a DTD file for the target FCPXML version to validate the output before saving. The path shown is from Final Cut Pro on macOS.
 
 ```sh
 skill="$PWD/.agents/skills/keyframe-toolbox-fcpxml"
+kt="$skill/scripts/kt_graph.py"
+dtd="/Applications/Final Cut Pro.app/Contents/Frameworks/Interchange.framework/Versions/A/Resources/FCPXMLv1_13.dtd"
 mkdir -p Zoom.fcpxmld
-python3 "$skill/scripts/kt_graph.py" set "$skill/assets/zoom-base.fcpxml" "Keyframe Toolbox" 104 \
-  "$skill/assets/zoom-scale.json" Zoom.fcpxmld \
-  --dtd "/Applications/Final Cut Pro.app/Contents/Frameworks/Interchange.framework/Versions/A/Resources/FCPXMLv1_15.dtd"
-python3 "$skill/scripts/kt_graph.py" read Zoom.fcpxmld "Keyframe Toolbox" 104
-python3 "$skill/scripts/kt_graph.py" read Zoom.fcpxmld "Keyframe Toolbox" 104 --default
+python3 "$kt" set "$skill/assets/zoom-base-1.13.fcpxml" "Keyframe Toolbox" 104 \
+  "$skill/assets/zoom-scale.json" Zoom.fcpxmld --reveal --dtd "$dtd"
+python3 "$kt" read Zoom.fcpxmld "Keyframe Toolbox" 104
+python3 "$kt" read Zoom.fcpxmld "Keyframe Toolbox" 104 --default
 ```
 
-The first read returns the authored `points` and handles. The second returns two points at 100%, the factory reset value. For a new project using footage, place the `filter-video` on the target `asset-clip` or `video` and reference the `effect` resource’s local ID. On an `asset-clip`, video filters follow intrinsic adjustments, connected items, markers, and audio channel sources, and precede audio filters and metadata. Preserve the order of stacked filters. [Apple’s FCPXML document structure](https://developer.apple.com/documentation/professional-video-applications/creating-fcpxml-documents)
+The first read returns the authored `points` and handles. The second returns two points at 100%, the factory reset value.
 
 ## Edit an existing export
 
 Run `python3 "$skill/scripts/kt_graph.py" inspect INPUT` to list the clip path, timing, saved graph IDs, and occurrence of each effect. Use `--instance N` on `read` and `set` when multiple instances of the same effect are present. An absent graph reads as the factory curve. The helper accepts a plain FCPXML file, an existing `.fcpxmld` bundle, or its `Info.fcpxml`. To deliver a separate version of an existing bundle, copy the whole bundle, then target that copy. [Python helper](../scripts/kt_graph.py)
 
 The JSON edit replaces only the supplied top-level fields. Supplying `points` replaces the entire point array. To move a single keyframe, read the graph, update that point in the returned JSON, and pass the complete array back. The helper preserves the existing OZML factory value and other parameter rows. For 360 Reframe and Time Remap, attach the corresponding template and pass its full effect name on the command line.
+
+### Attach an effect
+
+```sh
+python3 "$kt" attach Input.fcpxml "Keyframe Toolbox 360 Reframe" Attached.fcpxml \
+  --project "My Edit" --clip "Shot A" --dtd "$dtd"
+python3 "$kt" inspect Attached.fcpxml
+```
+
+`--clip` matches the exact clip name, falling back to the resource name on unnamed clips. `--project` scopes the search. If multiple clips still match, add `--clip-occurrence N` (one-based in document order among the matches). `--instance N` on subsequent edits selects an occurrence of the **effect** in the entire document. Use the instance number from `inspect`.
+
+The helper reuses an `effect` resource by template UID or allocates a document-unique ID. It appends to the video filter stack on an `asset-clip`, `clip`, `ref-clip`, `sync-clip`, `video`, `title`, or `live-drawing`. On an `asset-clip` the stack follows markers and audio channel sources and precedes audio filters and metadata. On a `video` it precedes `reserved`. Attaching the same template to the same clip again keeps the existing instance, including a masked instance. [Apple’s FCPXML document structure](https://developer.apple.com/documentation/professional-video-applications/creating-fcpxml-documents)
+
+### Edit Inspector settings and Projection
+
+Row `100` stores `InspectorPanelSettings` for each effect. Read the saved settings or supply only the nested fields to change. For example, enable motion blur on a regular effect and read back its settings with these commands.
+
+```sh
+python3 "$kt" read Zoom.fcpxmld "Keyframe Toolbox" 100
+printf '%s\n' '{"temporalBlurSettings":{"isEnabled":true,"sampleCount":12}}' > blur.json
+python3 "$kt" set Zoom.fcpxmld "Keyframe Toolbox" 100 blur.json Zoom.fcpxmld --dtd "$dtd"
+python3 "$kt" read Zoom.fcpxmld "Keyframe Toolbox" 100
+```
+
+- **Motion blur.** Regular and 360 Reframe expose it. `sampleCount` accepts integers 2–32, `shutterDurationFrames` accepts 0–8, and `maxBlurClampPixels` accepts 0–10000. `shutterBias` accepts `centered`, `trailing`, or `leading`. `weightCurve` accepts `box`, `triangle`, or `gaussian`. A partial edit preserves the other settings, including which transforms receive blur.
+- **Graph visibility.** Add `--reveal` to `set` when writing a curve. For regular Scale X (row `112`), the helper adds **property ID `10`** to the current list. To select an exact set, use a row 100 patch such as `{"propertyVisibility":{"visibleParameterIDs":[2,3,4,10]}}`. The plug-in still evaluates hidden graphs. Time Remap’s shipped header stores `[1]` and its renderer resolves this to its only property, Time. An explicit reveal writes Time’s ID `12`.
+- **Instance defaults.** An omitted row reads as the template’s stored value. `read --default` returns its reset value. Final Cut may apply the editor’s saved Inspector preferences to a seeded instance. An explicit settings edit or reveal pins the serialized settings to this instance, clears `isSeededDefault`, and removes `seededDefaultRevision`. Build 61 recognizes one exact ordering of the original regular five-property layout as a legacy seed. The helper serializes that same visible set in a different ID order when pinning it. The Inspector displays properties in definition order. [Settings and visibility](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BPluginState.swift)
+
+For **360 Reframe Projection**, pass the displayed title or its numeric index. `0` is Rectilinear, `1` Wide/Panini, `2` Fisheye, `3` Stereographic (the template default), and `4` Tiny Planet.
+
+```sh
+python3 "$kt" projection Attached.fcpxml "Tiny Planet" Projected.fcpxml --dtd "$dtd"
+python3 "$kt" read Projected.fcpxml "Keyframe Toolbox 360 Reframe" 110
+```
+
+A new Projection override writes `<param name="Projection" key="9999/10003/10007/3/10021/20/110" value="4 (Tiny Planet)"/>`. The index and title come from the FxPlug popup registration. The `index (title)` syntax follows exported FCPXML Motion popups. The equivalent `set` command accepts a JSON string or integer for row `110`. A native 11.2 Toolbox Projection round-trip is still unverified. Leaf `109` is a transient refresh pulse. [Projection registration](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BParameters.swift) · [Exported popup example](../../../../LLM%20References/FCPXMLKit/TestResources.bundle/fcpxmls/80_collins_commercial.v1.6.fcpxml)
 
 ## Encode the custom parameter
 
@@ -88,12 +136,10 @@ From the outside in, Build 61 uses the following representations. The two Base64
 
 ## Check the result
 
-The generated zoom passed Apple’s 1.15 DTD. The production Swift decoder read the graph and the evaluator returned 100%, 125%, 150%, and 150% at the four specified frames. The factory graphs for all three effects were checked against their shipped Motion templates. A fresh Final Cut import and re-export is the remaining host check for the generated project.
+Both generated zoom projects passed their matching Apple DTDs. The 2.0.1 Swift decoder opened the generated current and reset archives for all 18 graphs and all three Inspector headers. Its evaluator returned 100%, 125%, 150%, and 150% at the four specified frames in both projects.
 
 1. **Check the document.** Match the root `version` to the DTD. The supplied export is 1.15. Every `id` must be unique, every `ref` must point to the right resource type, and clip durations and offsets must land on the intended frame boundaries. For real media, use accessible `media-rep/@src` URLs. Preserve unrelated resources, filters, clip timing, and any other files in an existing `.fcpxmld` bundle. For FCPXML 1.14 documents, use the repository’s [1.14 DTD](../../../../LLM%20References/FCPXMLv1_14.dtd).
 2. **Decode the generated row.** Read `param/@value` with standard Base64, parse the resulting XML, and run `decode_storage` on `parameter/dataValue`. Compare its `points`, handles, and modes with the request. Decode `defaultVal` separately to check the reset behavior. DTD validation checks XML structure. It treats the encoded parameter as text and cannot detect a wrong graph ID, archive class, or packed value.
 3. **Check it in Final Cut.** Use **File → Import → XML** and select `Zoom.fcpxmld`. Open *Editable Zoom*, select the Counting clip, and inspect the three Scale points. If Scale is hidden, enable it in the effect’s Settings. Scrub frames 0, 25, 50, and 99. Export XML again and decode graph `104`. Compare the decoded values and curve, since JSON key order, plist object order, and document-local resource IDs can change on export.
-
-For edits to an existing project, the `100` row uses the same encoding with an `InspectorPanelSettings` JSON object. Decode that object, change only the requested setting, and preserve the other fields. For instance, adding property ID `10` to `propertyVisibility.visibleParameterIDs` exposes the regular Scale X graph (`112`). Rendering still evaluates a graph when it is hidden in the inspector. For an explicit per-instance settings change, set `isSeededDefault` to `false` and omit `seededDefaultRevision`. Leaf `109` is a transient refresh pulse and has no saved FCPXML value. [Inspector settings and rendering](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BPluginState.swift) · [Saved parameter flags](../../../../Keyframe%20Toolbox/Plugin/Code/KeyframeToolboxPlugIn%2BParameters.swift)
 
 For a different Toolbox build, export a clip with an edited graph in the target effect. Compare its UID, full key, OZML wrapper, factory default, archive class, and decoded JSON before reusing this encoder.
